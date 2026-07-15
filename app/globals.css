@@ -1,0 +1,304 @@
+@import "tailwindcss";
+
+/* ============================================
+   ALLYONOARCADE.COM — NEON COIN-OP UI FOUNDATION
+   Design System: Arcade Cabinet Dark
+   Mobile-first: base rules target the smallest
+   viewport; breakpoints layer up from there.
+   ============================================ */
+
+:root {
+  /* Void / panel surfaces — cooler & darker than a generic navy dashboard */
+  --color-void-950: #05060c;
+  --color-void-900: #090b16;
+  --color-panel-800: #0e1120;
+  --color-panel-700: #141830;
+  --color-panel-line: rgba(255, 255, 255, 0.08);
+
+  /* Arcade Accent Palette — cyan / magenta marquee lights */
+  --color-cyan-400: #35f2ff;
+  --color-cyan-500: #10d8ee;
+  --color-magenta-400: #ff3fb0;
+  --color-magenta-500: #e6198f;
+  --color-violet-400: #8b6bff;
+
+  /* Coin / token warm accent — used sparingly for primary CTAs only */
+  --color-coin-400: #ffb02e;
+  --color-coin-500: #ff7a3d;
+
+  /* Supporting */
+  --color-mint-400: #3ce6a4;
+  --color-danger-400: #ff5470;
+  --color-ink-200: #cdd3ee;
+  --color-ink-400: #8a92b8;
+
+  /* Glow */
+  --glow-cyan: rgba(53, 242, 255, 0.22);
+  --glow-magenta: rgba(255, 63, 176, 0.2);
+  --glow-coin: rgba(255, 122, 61, 0.3);
+
+  /* Typography */
+  --font-display: "Space Grotesk", "Sora", system-ui, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+
+  /* Layout */
+  --header-height: 64px;
+  --content-max: 1240px;
+}
+
+@theme inline {
+  --color-background: var(--color-void-950);
+  --color-foreground: #f3f5ff;
+}
+
+/* ============================================
+   BASE RESET & MOBILE-FIRST FOUNDATION
+   ============================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  /* Mobile-first base type scale; scales up at sm/md breakpoints via Tailwind classes, not here */
+  font-size: 15px;
+}
+
+@media (min-width: 640px) {
+  html { font-size: 16px; }
+}
+
+body {
+  background-color: var(--color-void-950);
+  color: #f3f5ff;
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Respect notches / gesture bars on mobile devices */
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+/* Minimum comfortable touch target on mobile */
+a, button {
+  -webkit-tap-highlight-color: transparent;
+}
+button, [role="button"] {
+  touch-action: manipulation;
+}
+
+/* ============================================
+   CUSTOM SCROLLBAR
+   ============================================ */
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-void-900); }
+::-webkit-scrollbar-thumb { background: #241b3d; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--color-cyan-500); }
+
+/* ============================================
+   ARCADE CABINET SURFACE
+   A card with a glowing marquee edge + bezel
+   corner brackets — the signature motif that
+   replaces generic "glassmorphism card" look.
+   ============================================ */
+
+.cabinet {
+  position: relative;
+  background: linear-gradient(180deg, var(--color-panel-700) 0%, var(--color-panel-800) 100%);
+  border: 1px solid var(--color-panel-line);
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.cabinet::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-cyan-400), var(--color-violet-400), var(--color-magenta-400));
+  opacity: 0.9;
+}
+
+.cabinet-corner {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: var(--color-cyan-400);
+  opacity: 0.55;
+  pointer-events: none;
+}
+.cabinet-corner.tl { top: 8px; left: 8px; border-top: 2px solid; border-left: 2px solid; border-top-left-radius: 4px; }
+.cabinet-corner.br { bottom: 8px; right: 8px; border-bottom: 2px solid; border-right: 2px solid; border-bottom-right-radius: 4px; color: var(--color-magenta-400); border-color: var(--color-magenta-400); }
+
+/* Opt-in hover polish for cards that are actually clickable (grid tiles,
+   accordions) — deliberately NOT applied to .cabinet globally, since
+   several cabinets (KeyTakeaways, trust teaser) are static info boxes
+   with no interaction to signal. */
+@property --border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.cabinet-interactive {
+  position: relative;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+
+/* Running RGB ring — an animated conic-gradient masked down to a thin
+   border outline. Sits at inset:0 (not extending past the card) so it
+   isn't clipped by .cabinet's own overflow:hidden; the outward glow
+   comes from the separate box-shadow below, which overflow:hidden never
+   clips regardless. Only animates on :hover, not ambiently on all 55
+   cards at once — that would be a real cost on a budget-Android page. */
+.cabinet-interactive::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1.5px;
+  background: conic-gradient(from var(--border-angle), var(--color-cyan-400), var(--color-violet-400), var(--color-magenta-400), var(--color-cyan-400));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+
+.cabinet-interactive:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 32px rgba(0, 0, 0, 0.35), 0 0 26px rgba(53, 242, 255, 0.2), 0 0 26px rgba(255, 63, 176, 0.12);
+}
+.cabinet-interactive:hover::after {
+  opacity: 1;
+  animation: rgb-border-spin 2.4s linear infinite;
+}
+.cabinet-interactive:active { transform: translateY(-1px); }
+
+@keyframes rgb-border-spin {
+  to { --border-angle: 360deg; }
+}
+
+/* ============================================
+   ACCORDION OPEN ANIMATION
+   Native <details> can't animate height:auto without
+   JS, but the revealed content itself can fade + drop
+   in on open — cheap, real motion with zero JS cost.
+   ============================================ */
+
+@keyframes accordion-content-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+details[open] > .accordion-content {
+  animation: accordion-content-in 0.22s ease-out;
+}
+
+/* ============================================
+   SCANLINE / GRID TEXTURE — subtle, not kitschy
+   ============================================ */
+
+.arcade-grid-bg {
+  background-image:
+    linear-gradient(rgba(53, 242, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(53, 242, 255, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+}
+
+.scanlines::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.025) 0px,
+    rgba(255, 255, 255, 0.025) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  opacity: 0.5;
+}
+
+/* ============================================
+   GLOW UTILITIES
+   ============================================ */
+
+.glow-cyan { box-shadow: 0 0 24px var(--glow-cyan), 0 0 48px rgba(53, 242, 255, 0.08); }
+.glow-magenta { box-shadow: 0 0 24px var(--glow-magenta), 0 0 48px rgba(255, 63, 176, 0.08); }
+
+/* Primary CTA glow — brand gradient only. Amber/coin is reserved for
+   Callout warning tone and must never be reused on a button. */
+.btn-brand {
+  box-shadow: 0 0 18px var(--glow-cyan), 0 4px 20px rgba(255, 63, 176, 0.2);
+  transition: box-shadow 0.25s ease, transform 0.15s ease;
+}
+.btn-brand:hover { box-shadow: 0 0 28px var(--glow-cyan), 0 4px 28px rgba(255, 63, 176, 0.3); }
+.btn-brand:active { transform: scale(0.97); }
+
+/* ============================================
+   FLUID HERO TYPE SCALE
+   Replaces hard breakpoint jumps (34px→52px→58px)
+   with smooth scaling and a smaller mobile floor,
+   so the headline is less likely to wrap to 3 lines
+   on a 375-390px viewport.
+   ============================================ */
+
+.hero-headline {
+  font-size: clamp(1.75rem, 4.62vw + 0.67rem, 3.625rem); /* ~28px → 58px */
+  line-height: 1.08;
+}
+
+/* ============================================
+   FLOATING BADGE ASSETS
+   Decorative bonus/reward icons around the Hero
+   phone mockup. Gentle bob + slight rotation;
+   .float-1/2/3 stagger timing so they don't move
+   in lockstep. Neutralized by the reduced-motion
+   rule below.
+   ============================================ */
+
+@keyframes float-bob {
+  0%, 100% { transform: translateY(0) rotate(-4deg); }
+  50% { transform: translateY(-10px) rotate(4deg); }
+}
+
+.float-asset { animation: float-bob 4.5s ease-in-out infinite; }
+.float-1 { animation-delay: 0s; }
+.float-2 { animation-delay: 0.9s; }
+.float-3 { animation-delay: 1.8s; }
+
+/* ============================================
+   GRADIENT TEXT
+   ============================================ */
+
+.text-neon {
+  background: linear-gradient(90deg, var(--color-cyan-400), var(--color-magenta-400));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ============================================
+   ACCESSIBILITY: reduced motion
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
