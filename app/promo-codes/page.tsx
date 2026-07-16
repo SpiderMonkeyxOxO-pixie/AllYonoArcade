@@ -28,9 +28,12 @@ export const metadata: Metadata = {
   },
 };
 
-// promo-code.txt is hand-edited throughout the day — re-render periodically
-// instead of freezing this page at build time.
-export const revalidate = 300;
+// promo-code.txt is hand-edited throughout the day. A plain fs.readFileSync
+// isn't a signal Next.js's static analysis picks up (unlike fetch/cookies/
+// headers), so without this the page gets fully static-generated once at
+// build time and only refreshes on a 5-minute ISR window — stale for most
+// of the day. force-dynamic renders fresh on every single request instead.
+export const dynamic = "force-dynamic";
 
 export default function PromoCodesPage() {
   const { entries, lastUpdated } = getPromoCodes();
