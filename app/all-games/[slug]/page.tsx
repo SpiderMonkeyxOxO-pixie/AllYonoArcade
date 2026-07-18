@@ -9,6 +9,7 @@ import FAQSection from "../../components/sections/FAQSection";
 import { DownloadIcon, ExternalLinkIcon } from "../../components/icons/Icons";
 import { PLATFORMS, getPlatform, targetKeyword } from "../../lib/platforms";
 import RelatedLinks from "../../components/sections/RelatedLinks";
+import ComingSoonCard from "../../components/sections/ComingSoonCard";
 
 export function generateStaticParams() {
   return PLATFORMS.map((p) => ({ slug: p.slug }));
@@ -60,7 +61,15 @@ export default async function PlatformPage({
       />
 
       <div className="mx-auto max-w-[760px] px-4 sm:px-6 py-2">
-        {platform.downloadUrl ? (
+        {platform.comingSoon && platform.releaseDate ? (
+          <ComingSoonCard
+            name={platform.name}
+            image={platform.image}
+            releaseDate={platform.releaseDate}
+            description={platform.description}
+            blogHref={platform.blogHref}
+          />
+        ) : platform.downloadUrl ? (
           <a
             href={platform.downloadUrl}
             target="_blank"
@@ -84,44 +93,48 @@ export default async function PlatformPage({
 
       <RelatedLinks exclude="all-games" />
 
-      <Callout
-        tone="warning"
-        title={`We haven't verified a relationship between ${platform.name} and Yono Arcade`}
-        badge="unverified"
-      >
-        <p>
-          We don't know whether {platform.name} shares a developer, publisher, or company with
-          Yono Arcade, or whether it's an entirely unrelated app that happens to use a similar
-          visual style. Treat them as separate products until you can confirm otherwise on each
-          app's own store listing.
-        </p>
-      </Callout>
+      {!platform.comingSoon && (
+        <>
+          <Callout
+            tone="warning"
+            title={`We haven't verified a relationship between ${platform.name} and Yono Arcade`}
+            badge="unverified"
+          >
+            <p>
+              We don't know whether {platform.name} shares a developer, publisher, or company with
+              Yono Arcade, or whether it's an entirely unrelated app that happens to use a similar
+              visual style. Treat them as separate products until you can confirm otherwise on each
+              app's own store listing.
+            </p>
+          </Callout>
 
-      <ContentSection heading={`Is the ${platform.name} APK worth installing?`}>
-        <p>
-          The description above is our read of the branding and naming alone — it isn't a
-          confirmed feature list, and we haven't installed or tested {platform.name} ourselves.
-          Treat it as a starting point for your own research, not a verdict.
-        </p>
-        <span className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[12px] font-medium"
-          style={{ background: "rgba(53,242,255,0.08)", color: "var(--color-cyan-400)" }}>
-          Category (inferred): {platform.category}
-        </span>
-      </ContentSection>
+          <ContentSection heading={`Is the ${platform.name} APK worth installing?`}>
+            <p>
+              The description above is our read of the branding and naming alone — it isn't a
+              confirmed feature list, and we haven't installed or tested {platform.name} ourselves.
+              Treat it as a starting point for your own research, not a verdict.
+            </p>
+            <span className="inline-flex items-center gap-1.5 rounded-full px-3 py-1 text-[12px] font-medium"
+              style={{ background: "rgba(53,242,255,0.08)", color: "var(--color-cyan-400)" }}>
+              Category (inferred): {platform.category}
+            </span>
+          </ContentSection>
 
-      <ContentSection heading="Before you install it">
-        <BulletList
-          items={[
-            "Check the publisher/developer name on the store listing, not just the icon or app name.",
-            "If someone linked you here expecting Yono Arcade specifically, confirm this is actually the app they meant.",
-            "The same safety checklist applies regardless of which app in this family you're looking at — see our Safety Review.",
-          ]}
-        />
-        <p>
-          <Link href="/is-yono-arcade-safe">Read the general safety checklist</Link> or{" "}
-          <Link href="/all-games">see the full list of similarly branded apps</Link>.
-        </p>
-      </ContentSection>
+          <ContentSection heading="Before you install it">
+            <BulletList
+              items={[
+                "Check the publisher/developer name on the store listing, not just the icon or app name.",
+                "If someone linked you here expecting Yono Arcade specifically, confirm this is actually the app they meant.",
+                "The same safety checklist applies regardless of which app in this family you're looking at — see our Safety Review.",
+              ]}
+            />
+            <p>
+              <Link href="/is-yono-arcade-safe">Read the general safety checklist</Link> or{" "}
+              <Link href="/all-games">see the full list of similarly branded apps</Link>.
+            </p>
+          </ContentSection>
+        </>
+      )}
 
       {others.length > 0 && (
         <ContentSection heading={`Other ${platform.category.toLowerCase()}-style apps in this family`}>
@@ -141,16 +154,33 @@ export default async function PlatformPage({
 
       <FAQSection
         heading={`${platform.name} questions`}
-        items={[
-          {
-            question: `Is ${platform.name} the same as Yono Arcade?`,
-            answer: `Not as far as we've confirmed. They're separately named and branded, and we have no verified evidence connecting the two developers. Treat them as different apps.`,
-          },
-          {
-            question: `Is ${platform.name} safe to install?`,
-            answer: `We haven't reviewed this specific app. Use the same checklist as our Yono Arcade safety review — permissions requested, distribution source, and any real-money claims — before installing anything.`,
-          },
-        ]}
+        items={
+          platform.comingSoon
+            ? [
+                {
+                  question: `When does ${platform.name} launch?`,
+                  answer: `Expected between 8:00–9:00 AM IST on ${new Date(platform.releaseDate!).toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric", timeZone: "Asia/Kolkata" })}. That's our current schedule, not a guarantee — join the Telegram channel above for the actual launch confirmation.`,
+                },
+                {
+                  question: `Is ${platform.name} the same as Yono Arcade?`,
+                  answer: `Not as far as we've confirmed. They're separately named and branded, and we have no verified evidence connecting the two developers. Treat them as different apps.`,
+                },
+                {
+                  question: `Will there be a download link or promo code for ${platform.name}?`,
+                  answer: `Not yet — there's nothing to download until it actually launches. We'll add a verified download source, category, and any promo codes to this page once it's live and we can review it directly.`,
+                },
+              ]
+            : [
+                {
+                  question: `Is ${platform.name} the same as Yono Arcade?`,
+                  answer: `Not as far as we've confirmed. They're separately named and branded, and we have no verified evidence connecting the two developers. Treat them as different apps.`,
+                },
+                {
+                  question: `Is ${platform.name} safe to install?`,
+                  answer: `We haven't reviewed this specific app. Use the same checklist as our Yono Arcade safety review — permissions requested, distribution source, and any real-money claims — before installing anything.`,
+                },
+              ]
+        }
       />
     </>
   );

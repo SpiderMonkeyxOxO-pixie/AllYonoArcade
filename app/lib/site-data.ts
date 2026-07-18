@@ -179,6 +179,16 @@ export const BLOG_PILLARS: BlogPillar[] = [
     keyword: "yono arcade 2026",
     volume: "4.6K/mo",
   },
+  {
+    slug: "/blog/dhangame-promo-code-bonus-guide",
+    title: "DhanGame Promo Code, Bonus & Withdrawal Guide",
+    description:
+      "DhanGame's pre-launch welcome bonus, minimum withdrawal, and promo code details ahead of its July 23, 2026 launch — updated as we get closer to release.",
+    icon: "gift",
+    image: "/images/guides/dhangame-promo-featured.webp",
+    keyword: "dhangame promo code",
+    volume: "new listing",
+  },
 ];
 
 export const TOP_NAV_SLUGS = ["/download", "/all-games", "/promo-codes", "/is-yono-arcade-safe"];

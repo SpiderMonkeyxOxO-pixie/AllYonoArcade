@@ -158,16 +158,25 @@ export default function PlatformGrid() {
                         {platform.name}
                       </span>
                     </Link>
-                    <a
-                      href={downloadHref}
-                      {...(isExternal ? { target: "_blank", rel: "nofollow noopener noreferrer" } : {})}
-                      className="mt-1 inline-flex w-full items-center justify-center gap-1.5 rounded-md py-1.5 text-[11px] font-semibold transition-colors hover:bg-[rgba(53,242,255,0.16)]"
-                      style={{ background: "rgba(53,242,255,0.08)", color: "var(--color-cyan-400)" }}
-                    >
-                      <DownloadIcon size={12} />
-                      Download
-                      {isExternal && <ExternalLinkIcon size={10} />}
-                    </a>
+                    {platform.comingSoon ? (
+                      <span
+                        className="mt-1 inline-flex w-full items-center justify-center gap-1.5 rounded-md py-1.5 text-[11px] font-semibold"
+                        style={{ background: "rgba(139,107,255,0.12)", color: "var(--color-violet-400)" }}
+                      >
+                        Coming Soon
+                      </span>
+                    ) : (
+                      <a
+                        href={downloadHref}
+                        {...(isExternal ? { target: "_blank", rel: "nofollow noopener noreferrer" } : {})}
+                        className="mt-1 inline-flex w-full items-center justify-center gap-1.5 rounded-md py-1.5 text-[11px] font-semibold transition-colors hover:bg-[rgba(53,242,255,0.16)]"
+                        style={{ background: "rgba(53,242,255,0.08)", color: "var(--color-cyan-400)" }}
+                      >
+                        <DownloadIcon size={12} />
+                        Download
+                        {isExternal && <ExternalLinkIcon size={10} />}
+                      </a>
+                    )}
                   </div>
                 );
               })}

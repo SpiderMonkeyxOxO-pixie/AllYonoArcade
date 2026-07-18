@@ -6,7 +6,9 @@ import ClusterGrid from "./components/sections/ClusterGrid";
 import PlatformGrid from "./components/sections/PlatformGrid";
 import FAQSection from "./components/sections/FAQSection";
 import Reveal from "./components/sections/Reveal";
+import ComingSoonCard from "./components/sections/ComingSoonCard";
 import { ShieldCheckIcon, ArrowRightIcon } from "./components/icons/Icons";
+import { PLATFORMS } from "./lib/platforms";
 
 export const metadata: Metadata = {
   title: "Yono Arcade — Download Guide, All Games & Safety Review",
@@ -65,6 +67,19 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG_SCHEMA) }}
       />
       <Hero />
+
+      {PLATFORMS.filter((p) => p.comingSoon && p.releaseDate).map((p) => (
+        <Reveal key={p.slug} className="mx-auto max-w-[1240px] px-4 sm:px-6 py-4">
+          <ComingSoonCard
+            name={p.name}
+            image={p.image}
+            releaseDate={p.releaseDate!}
+            description={p.description}
+            blogHref={p.blogHref}
+          />
+        </Reveal>
+      ))}
+
       <KeyTakeaways />
       <ClusterGrid />
 

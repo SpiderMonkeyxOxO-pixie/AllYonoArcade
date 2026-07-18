@@ -48,6 +48,13 @@ export type Platform = {
   description: string;
   /** External download/agent link, if provided. Unverified third party. */
   downloadUrl?: string;
+  /** Not yet released — hides the Download CTA in favor of a countdown, and
+   *  excludes the entry from the promo codes grid until it actually exists. */
+  comingSoon?: boolean;
+  /** ISO 8601 timestamp (with offset) for comingSoon entries only. */
+  releaseDate?: string;
+  /** Optional link to a full blog write-up (bonus/promo code details, etc). */
+  blogHref?: string;
 };
 
 function categorize(name: string): PlatformCategory {
@@ -67,7 +74,15 @@ export function targetKeyword(name: string): string {
   return `${name} Download APK, Promo Code & Guide`;
 }
 
-const RAW_PLATFORMS: { name: string; image: string; description: string; downloadUrl?: string }[] = [
+const RAW_PLATFORMS: {
+  name: string;
+  image: string;
+  description: string;
+  downloadUrl?: string;
+  comingSoon?: boolean;
+  releaseDate?: string;
+  blogHref?: string;
+}[] = [
   {
     name: "101z",
     image: "/images/platforms/101z.webp",
@@ -130,6 +145,15 @@ const RAW_PLATFORMS: { name: string; image: string; description: string; downloa
     description:
       "Club INR names its currency directly, pointing at a real-money games app rather than one specific title — see our Club INR download and promo code notes.",
     downloadUrl: "https://clubinr2.top/?code=WZJ9KYQMY2X&t=1781949863",
+  },
+  {
+    name: "DhanGame",
+    image: "/images/platforms/dhangame.webp",
+    description:
+      "DhanGame is joining this catalogue but hasn't launched yet — we'll add its category, promo codes, and safety notes once it's available and we can review it independently.",
+    comingSoon: true,
+    releaseDate: "2026-07-23T08:00:00+05:30",
+    blogHref: "/blog/dhangame-promo-code-bonus-guide",
   },
   {
     name: "Game Rummy",
@@ -462,6 +486,9 @@ export const PLATFORMS: Platform[] = RAW_PLATFORMS.map((p) => ({
   category: categorize(p.name),
   description: p.description,
   downloadUrl: p.downloadUrl,
+  comingSoon: p.comingSoon,
+  releaseDate: p.releaseDate,
+  blogHref: p.blogHref,
 }));
 
 export function getPlatform(slug: string): Platform | undefined {

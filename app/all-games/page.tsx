@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import PageHeader from "../components/sections/PageHeader";
 import AppInfoCard from "../components/sections/AppInfoCard";
 import PlatformGrid from "../components/sections/PlatformGrid";
+import ComingSoonCard from "../components/sections/ComingSoonCard";
+import Reveal from "../components/sections/Reveal";
+import { PLATFORMS } from "../lib/platforms";
 import ContentSection from "../components/sections/ContentSection";
 import BulletList from "../components/sections/BulletList";
 import Callout from "../components/sections/Callout";
@@ -75,6 +78,18 @@ export default function AllGamesPage() {
           ]}
         />
       </ContentSection>
+
+      {PLATFORMS.filter((p) => p.comingSoon && p.releaseDate).map((p) => (
+        <Reveal key={p.slug} mode="mount" className="mx-auto max-w-[1240px] px-4 sm:px-6 mb-6">
+          <ComingSoonCard
+            name={p.name}
+            image={p.image}
+            releaseDate={p.releaseDate!}
+            description={p.description}
+            blogHref={p.blogHref}
+          />
+        </Reveal>
+      ))}
 
       <PlatformGrid />
 
