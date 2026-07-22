@@ -476,6 +476,14 @@ const RAW_PLATFORMS: {
   },
 ];
 
+/**
+ * Manually curated front-of-grid order (site owner's call, not alphabetical).
+ * To bump a new platform to #1, add its exact `name` to the front of this
+ * list — everything else shifts down automatically, no array surgery needed.
+ * Entries not listed here keep their existing relative order, after these.
+ */
+const FEATURED_ORDER = ["DhanGame", "Max Rummy", "Yono Rummy", "Yono Games", "Yono 777"];
+
 export const PLATFORMS: Platform[] = RAW_PLATFORMS.map((p) => ({
   slug: p.name
     .toLowerCase()
@@ -489,7 +497,14 @@ export const PLATFORMS: Platform[] = RAW_PLATFORMS.map((p) => ({
   comingSoon: p.comingSoon,
   releaseDate: p.releaseDate,
   blogHref: p.blogHref,
-}));
+})).sort((a, b) => {
+  const ai = FEATURED_ORDER.indexOf(a.name);
+  const bi = FEATURED_ORDER.indexOf(b.name);
+  if (ai === -1 && bi === -1) return 0;
+  if (ai === -1) return 1;
+  if (bi === -1) return -1;
+  return ai - bi;
+});
 
 export function getPlatform(slug: string): Platform | undefined {
   return PLATFORMS.find((p) => p.slug === slug);

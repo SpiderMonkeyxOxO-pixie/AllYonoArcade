@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import { ExternalLinkIcon } from "../icons/Icons";
+import { ExternalLinkIcon, DownloadIcon } from "../icons/Icons";
 
 const TELEGRAM_URL = "https://t.me/OfficialAllYonoArcade";
 
@@ -48,10 +48,15 @@ export default function ComingSoonCard({
 }) {
   const target = new Date(releaseDate).getTime();
   const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
+  const [isReleaseWindow, setIsReleaseWindow] = useState(false);
 
   useEffect(() => {
-    setTimeLeft(getTimeLeft(target));
-    const id = setInterval(() => setTimeLeft(getTimeLeft(target)), 1000);
+    const tick = () => {
+      setTimeLeft(getTimeLeft(target));
+      setIsReleaseWindow(Date.now() >= target);
+    };
+    tick();
+    const id = setInterval(tick, 1000);
     return () => clearInterval(id);
   }, [target]);
 
@@ -76,7 +81,7 @@ export default function ComingSoonCard({
           />
           <div className="min-w-0">
             <span className="block text-[11px] font-bold uppercase tracking-wide text-[var(--color-violet-400)]">
-              Coming Soon
+              {isReleaseWindow ? "Launch Window Open" : "Coming Soon"}
             </span>
             <span className="block font-display text-[16px] sm:text-[18px] font-semibold text-[#f3f5ff]">
               {name}
@@ -84,7 +89,7 @@ export default function ComingSoonCard({
           </div>
         </div>
 
-        {timeLeft && (
+        {timeLeft && !isReleaseWindow && (
           <div className="flex gap-1.5">
             <Unit value={timeLeft.days} label="Days" />
             <Unit value={timeLeft.hours} label="Hrs" />
@@ -101,18 +106,29 @@ export default function ComingSoonCard({
             style={{ background: "rgba(139,107,255,0.14)", color: "var(--color-violet-400)", border: "1px solid rgba(139,107,255,0.35)" }}
           >
             <span className="h-1.5 w-1.5 rounded-full" style={{ background: "var(--color-violet-400)" }} aria-hidden="true" />
-            Scheduled
+            {isReleaseWindow ? "Live Today" : "Scheduled"}
           </span>
         </div>
         <h3 className="font-display text-[16px] sm:text-[18px] font-semibold text-[#f3f5ff]">
           {name} is joining the {catalogueLabel} catalogue
         </h3>
         <p className="mt-1.5 text-[13px] leading-relaxed text-[var(--color-ink-400)]">
-          Expected between 8:00–9:00 AM IST on {releaseLabel}. {description}
+          {isReleaseWindow
+            ? `We're inside the announced launch window (8:00–9:00 AM IST, ${releaseLabel}). The verified APK link goes live here the moment we can confirm it — until then, ${description.charAt(0).toLowerCase()}${description.slice(1)}`
+            : `Expected between 8:00–9:00 AM IST on ${releaseLabel}. ${description}`}
         </p>
       </div>
 
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
+        {isReleaseWindow && (
+          <span
+            className="inline-flex w-full items-center justify-center gap-1.5 rounded-full border border-dashed border-white/15 px-5 py-2.5 text-[13px] font-semibold text-[var(--color-ink-400)] sm:w-auto"
+            title="Verified download link not published yet"
+          >
+            <DownloadIcon size={14} />
+            APK link coming shortly
+          </span>
+        )}
         <a
           href={TELEGRAM_URL}
           target="_blank"
