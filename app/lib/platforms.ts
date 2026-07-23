@@ -150,9 +150,8 @@ const RAW_PLATFORMS: {
     name: "DhanGame",
     image: "/images/platforms/dhangame.webp",
     description:
-      "DhanGame is joining this catalogue but hasn't launched yet — we'll add its category, promo codes, and safety notes once it's available and we can review it independently.",
-    comingSoon: true,
-    releaseDate: "2026-07-23T08:00:00+05:30",
+      "DhanGame pairs a crown-and-slot-reel icon with “Dhan” — Hindi for wealth — for its branding; here's the DhanGame APK download and what we've verified about its welcome bonus and promo codes.",
+    downloadUrl: "https://dhanwinplay.com/?code=L2VRQRRF2UK&t=1784778249",
     blogHref: "/blog/dhangame-promo-code-bonus-guide",
   },
   {

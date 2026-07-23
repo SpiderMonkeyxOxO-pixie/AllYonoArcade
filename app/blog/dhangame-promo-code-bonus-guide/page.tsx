@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { DownloadIcon, ExternalLinkIcon } from "../../components/icons/Icons";
 import PageHeader from "../../components/sections/PageHeader";
 import ContentSection from "../../components/sections/ContentSection";
 import BulletList from "../../components/sections/BulletList";
@@ -6,12 +7,11 @@ import Callout from "../../components/sections/Callout";
 import FAQSection from "../../components/sections/FAQSection";
 import RelatedLinks from "../../components/sections/RelatedLinks";
 import GuideImage from "../../components/sections/GuideImage";
-import ComingSoonCard from "../../components/sections/ComingSoonCard";
 import { getPlatform } from "../../lib/platforms";
 
 const TITLE = "DhanGame Promo Code, Bonus & Withdrawal Guide";
 const DESCRIPTION =
-  "DhanGame's pre-launch welcome bonus, minimum withdrawal, and promo code details ahead of its July 23, 2026 launch — updated as we get closer to release.";
+  "DhanGame's welcome bonus, minimum withdrawal, and promo code details, now that it's live — download the app and see what we've verified so far.";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -36,7 +36,7 @@ export default function DhanGamePromoGuidePage() {
       <PageHeader
         eyebrow="Blog"
         title="DhanGame Promo Code, Bonus & Withdrawal Guide"
-        answer="DhanGame is joining the catalogue on 23 July 2026, between 8:00–9:00 AM IST. Here's what's been announced so far for its welcome bonus, minimum withdrawal, and promo codes — and how we'll keep this page updated as launch gets closer."
+        answer="DhanGame launched on 23 July 2026. Here's what we've verified so far for its welcome bonus, minimum withdrawal, and promo codes, plus the download link."
       />
 
       <RelatedLinks />
@@ -47,81 +47,83 @@ export default function DhanGamePromoGuidePage() {
         className="mx-auto max-w-[760px] px-4 sm:px-6 mt-2"
       />
 
-      {dhanGame?.releaseDate && (
+      {dhanGame?.downloadUrl && (
         <div className="mx-auto max-w-[760px] px-4 sm:px-6 py-4">
-          <ComingSoonCard
-            name="DhanGame"
-            image={dhanGame.image}
-            releaseDate={dhanGame.releaseDate}
-            description={dhanGame.description}
-          />
+          <a
+            href={dhanGame.downloadUrl}
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            className="btn-brand inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-[14px] font-semibold"
+            style={{
+              background: "linear-gradient(135deg, var(--color-cyan-400), var(--color-magenta-400))",
+              color: "#1a0e00",
+            }}
+          >
+            <DownloadIcon size={16} />
+            Download DhanGame
+            <ExternalLinkIcon size={13} />
+          </a>
         </div>
       )}
 
       <ContentSection heading="What is DhanGame?">
         <p>
-          DhanGame is the newest addition to this catalogue, set to launch on 23 July 2026. The
-          name pairs "Dhan" — Hindi for wealth — with the crown-and-slot-reel branding you can see
-          in the icon above, putting it in the same coin-op / real-money games category as most of
-          the other apps tracked on this site. It isn't live yet, so there's nothing to install or
-          test right now — this page exists to collect what's been announced ahead of launch in
-          one place, rather than leaving you to piece it together from scattered promotional
-          posts.
+          DhanGame is the newest addition to this catalogue, live as of 23 July 2026. The name
+          pairs "Dhan" — Hindi for wealth — with the crown-and-slot-reel branding you can see in
+          the icon above, putting it in the same coin-op / real-money games category as most of
+          the other apps tracked on this site.
         </p>
         <p>
           Unlike the 55+ similarly branded apps elsewhere in our{" "}
           <a href="/all-games">All Games directory</a> — most of which we discovered purely
           through search patterns and icon branding, with no direct line to the developer —
-          DhanGame's launch is being run through the official{" "}
+          DhanGame's launch was run through the official{" "}
           <a href="https://t.me/OfficialAllYonoArcade" target="_blank" rel="nofollow noopener noreferrer">
             @OfficialAllYonoArcade
           </a>{" "}
-          Telegram channel, which is why we're able to publish specific pre-launch figures here
-          instead of the usual "unverified" framing you'll see on other listings.
+          Telegram channel, which is why we're able to publish specific figures here instead of
+          the usual "unverified" framing you'll see on other listings.
         </p>
       </ContentSection>
 
       <ContentSection heading="DhanGame's welcome bonus">
         <p>
-          Ahead of launch, DhanGame's welcome bonus is set at approximately{" "}
-          <strong>₹50–₹500</strong>. That range is standard for this category of app — new
-          accounts are typically credited a starting bonus automatically or after a first action
-          like a deposit, rather than a single fixed figure for everyone. The exact amount within
-          that range usually depends on the specific promotion running at the time you sign up.
+          DhanGame's welcome bonus is approximately <strong>₹50–₹500</strong>. That range is
+          standard for this category of app — new accounts are typically credited a starting
+          bonus automatically or after a first action like a deposit, rather than a single fixed
+          figure for everyone. The exact amount within that range depends on the specific
+          promotion running at the time you sign up.
         </p>
         <p>
-          We'll confirm the exact claim process — whether it's automatic on signup, tied to a
-          promo code, or requires a first deposit — once the app is actually live and we can walk
-          through it ourselves rather than repeat pre-launch marketing copy as if it's a
-          guarantee.
+          We haven't independently walked through the exact claim process ourselves yet — whether
+          it's automatic on signup, tied to a promo code, or requires a first deposit. We'll
+          update this section once we've confirmed it directly rather than repeat marketing copy
+          as if it's guaranteed.
         </p>
       </ContentSection>
 
       <ContentSection heading="Minimum withdrawal">
         <p>
-          DhanGame's minimum withdrawal is set at <strong>₹100</strong>. A minimum withdrawal
-          threshold like this is standard across real-money gaming apps — it exists so that
-          payment processing fees don't outweigh tiny payouts, not as a sign of anything unusual
-          about this specific app.
+          DhanGame's minimum withdrawal is <strong>₹100</strong>. A minimum withdrawal threshold
+          like this is standard across real-money gaming apps — it exists so that payment
+          processing fees don't outweigh tiny payouts, not as a sign of anything unusual about
+          this specific app.
         </p>
         <p>
-          What we can't confirm yet, because the app hasn't launched: exact processing time, which
-          payment methods are supported, and whether KYC verification is required before your
-          first withdrawal. All of that is standard territory for this app category — see our
-          general{" "}
+          What we haven't confirmed yet: exact processing time, which payment methods are
+          supported, and whether KYC verification is required before your first withdrawal. All
+          of that is standard territory for this app category — see our general{" "}
           <a href="/blog/yono-arcade-withdrawal-deposit-guide">withdrawal &amp; deposit guide</a>{" "}
-          for the checklist worth running through on any app like this, DhanGame included, once
-          you actually have an account.
+          for the checklist worth running through on any app like this, DhanGame included.
         </p>
       </ContentSection>
 
       <ContentSection heading="Promo codes, vouchers & special bonuses">
         <p>
-          Once DhanGame is live, we'll track its promo codes the same way we already do for every
-          other app in this catalogue — on our{" "}
-          <a href="/promo-codes">Promo Codes page</a>, broken out by morning, afternoon, and
-          evening release windows, with a code only published once we can verify it ourselves.
-          Nothing pre-launch here should be treated as an active code.
+          We track DhanGame's promo codes the same way we already do for every other app in this
+          catalogue — on our <a href="/promo-codes">Promo Codes page</a>, broken out by morning,
+          afternoon, and evening release windows, with a code only published once we can verify it
+          ourselves.
         </p>
         <p>
           For context on how these mechanics generally work across apps in this category: a
@@ -142,26 +144,26 @@ export default function DhanGamePromoGuidePage() {
         />
       </ContentSection>
 
-      <Callout tone="info" title="Get notified the moment it launches">
+      <Callout tone="info" title="Stay updated on codes and changes">
         <p>
-          The fastest way to catch the actual launch — and any day-one promo codes — is the
+          The fastest way to catch new promo codes or any changes to the figures above is the
           official Telegram channel,{" "}
           <a href="https://t.me/OfficialAllYonoArcade" target="_blank" rel="nofollow noopener noreferrer">
             @OfficialAllYonoArcade
           </a>
-          . We'll also update this page and the{" "}
-          <a href="/all-games/dhangame">DhanGame catalogue page</a> as soon as it's live.
+          . We also keep this page and the{" "}
+          <a href="/all-games/dhangame">DhanGame catalogue page</a> current as we verify more.
         </p>
       </Callout>
 
-      <ContentSection heading="How to get ready before launch">
+      <ContentSection heading="Getting started">
         <BulletList
           items={[
+            "Download DhanGame using the button above, then check the publisher name and requested permissions before installing anything, same as any other app in this family.",
             <>
-              Join <a href="https://t.me/OfficialAllYonoArcade" target="_blank" rel="nofollow noopener noreferrer">@OfficialAllYonoArcade</a> on Telegram — this is where the actual launch, and any day-one codes, get announced first.
+              Join <a href="https://t.me/OfficialAllYonoArcade" target="_blank" rel="nofollow noopener noreferrer">@OfficialAllYonoArcade</a> on Telegram for new promo codes as they're released.
             </>,
-            "Bookmark this page and the DhanGame catalogue page — both get updated as soon as the app is live and we can verify details directly.",
-            "Decide your own spending limit ahead of time, independent of whatever welcome bonus is being advertised at launch.",
+            "Decide your own spending limit before you start, independent of whatever welcome bonus is being advertised.",
             "If you're new to this category of app generally, read our Safety Review first — the same checklist applies here as everywhere else in this catalogue.",
           ]}
         />
@@ -169,10 +171,9 @@ export default function DhanGamePromoGuidePage() {
 
       <ContentSection heading="Before you play">
         <p>
-          Everything above reflects what's been announced ahead of DhanGame's launch — treat
-          figures as the current plan, not something locked in until the app is actually live and
-          we can verify it directly, the same standard we hold every other listing on this site
-          to. A few things worth checking regardless of what's promised pre-launch:
+          Everything above reflects what we've verified so far — treat any figure as subject to
+          change until we can re-confirm it, the same standard we hold every other listing on this
+          site to. A few things worth checking regardless:
         </p>
         <BulletList
           items={[
@@ -187,24 +188,24 @@ export default function DhanGamePromoGuidePage() {
         heading="DhanGame questions"
         items={[
           {
-            question: "When does DhanGame launch?",
+            question: "Is DhanGame available now?",
             answer:
-              "Expected between 8:00–9:00 AM IST on 23 July 2026. That's the current schedule, not a guarantee — join the Telegram channel above for the actual launch confirmation.",
+              "Yes — it launched on 23 July 2026. Use the download button above to get it.",
           },
           {
             question: "How much is the DhanGame welcome bonus?",
             answer:
-              "Approximately ₹50–500, based on what's been announced ahead of launch. The exact amount depends on the live promotion running when you sign up — we'll confirm the precise claim process once the app is live.",
+              "Approximately ₹50–500. The exact amount depends on the live promotion running when you sign up — we haven't independently confirmed the precise claim process yet and will update this once we have.",
           },
           {
             question: "What's the minimum withdrawal on DhanGame?",
             answer:
-              "₹100, per pre-launch details. Processing time and supported payment methods aren't confirmed yet — we'll update this once we can verify them directly.",
+              "₹100. Processing time and supported payment methods aren't confirmed yet — we'll update this once we can verify them directly.",
           },
           {
             question: "Is there a DhanGame promo code available right now?",
             answer:
-              "Not yet — the app hasn't launched. Once it's live, we'll track real codes on our Promo Codes page the same way we do for every other app here, only publishing a code once we've verified it ourselves.",
+              "Check our Promo Codes page — we track DhanGame there the same way we do for every other app here, only publishing a code once we've verified it ourselves.",
           },
         ]}
       />
