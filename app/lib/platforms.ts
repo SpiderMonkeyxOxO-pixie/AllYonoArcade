@@ -425,6 +425,14 @@ const RAW_PLATFORMS: {
     downloadUrl: "https://www.toprummy.cc/?code=M4GW3PJNE81&t=1781967667",
   },
   {
+    name: "Win Rummy",
+    image: "/images/platforms/win-rummy.webp",
+    description:
+      "Win Rummy pairs an outcome-focused name with a crown-and-slot-reel icon similar to others in this family — here's what we'll confirm about its download and promo codes once it's live.",
+    comingSoon: true,
+    releaseDate: "2026-07-29T08:00:00+05:30",
+  },
+  {
     name: "Yes Spin",
     image: "/images/platforms/yes-spin.webp",
     description:
@@ -481,7 +489,7 @@ const RAW_PLATFORMS: {
  * list — everything else shifts down automatically, no array surgery needed.
  * Entries not listed here keep their existing relative order, after these.
  */
-const FEATURED_ORDER = ["DhanGame", "Max Rummy", "Yono Rummy", "Yono Games", "Yono 777"];
+const FEATURED_ORDER = ["Win Rummy", "DhanGame", "Max Rummy", "Yono Rummy", "Yono Games", "Yono 777"];
 
 export const PLATFORMS: Platform[] = RAW_PLATFORMS.map((p) => ({
   slug: p.name
