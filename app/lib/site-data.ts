@@ -189,6 +189,16 @@ export const BLOG_PILLARS: BlogPillar[] = [
     keyword: "dhangame promo code",
     volume: "new listing",
   },
+  {
+    slug: "/blog/win-rummy-vs-yono-arcade",
+    title: "Win Rummy vs Yono Arcade: Games, Features and Key Differences",
+    description:
+      "Compare Win Rummy vs Yono Arcade by game types, app features, access, Mall tools and verification status before using either platform.",
+    icon: "swap",
+    image: "/images/guides/win-rummy-vs-yono-arcade-comparison.webp",
+    keyword: "win rummy vs yono arcade",
+    volume: "new listing",
+  },
 ];
 
 export const TOP_NAV_SLUGS = ["/download", "/all-games", "/promo-codes", "/is-yono-arcade-safe"];
