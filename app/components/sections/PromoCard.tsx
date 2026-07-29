@@ -19,6 +19,7 @@ export default function PromoCard({
   image,
   href,
   featured = false,
+  highlighted = false,
   isExternal = false,
   morning = null,
   afternoon = null,
@@ -28,6 +29,10 @@ export default function PromoCard({
   image: string;
   href: string;
   featured?: boolean;
+  /** Lighter-weight highlight for the current #1 platform — a "New" badge
+   *  and glow, without the bigger layout/CTA the Yono Arcade `featured`
+   *  card gets (that treatment is reserved for the site's own subject). */
+  highlighted?: boolean;
   /** True when `href` is a third-party site rather than an internal guide page. */
   isExternal?: boolean;
   morning?: string | null;
@@ -59,6 +64,8 @@ export default function PromoCard({
       className={
         featured
           ? "cabinet glow-cyan relative px-4 pb-4 pt-9 sm:px-5 sm:pb-5 sm:pt-10"
+          : highlighted
+          ? "cabinet-interactive glow-cyan relative rounded-lg border border-white/10 bg-[var(--color-panel-800)] p-3"
           : "cabinet-interactive rounded-lg border border-white/10 bg-[var(--color-panel-800)] p-3"
       }
     >
@@ -77,6 +84,17 @@ export default function PromoCard({
           }}
         >
           Featured
+        </span>
+      )}
+      {highlighted && !featured && (
+        <span
+          className="absolute top-2 right-2 rounded-full px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide"
+          style={{
+            background: "linear-gradient(135deg, var(--color-cyan-400), var(--color-magenta-400))",
+            color: "#05060c",
+          }}
+        >
+          New
         </span>
       )}
 

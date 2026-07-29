@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { PLATFORMS, CATEGORY_COLORS, type PlatformCategory } from "../../lib/platforms";
+import { PLATFORMS, CATEGORY_COLORS, TOP_FEATURED_SLUG, type PlatformCategory } from "../../lib/platforms";
 import { SearchIcon, XIcon, DownloadIcon, GamepadIcon, ExternalLinkIcon } from "../icons/Icons";
 import Reveal from "./Reveal";
 
@@ -133,11 +133,27 @@ export default function PlatformGrid() {
                 const isExternal = Boolean(platform.downloadUrl);
                 const downloadHref = platform.downloadUrl ?? infoHref;
                 const categoryColor = CATEGORY_COLORS[platform.category];
+                const isTopFeatured = platform.slug === TOP_FEATURED_SLUG;
                 return (
                   <div
                     key={platform.slug}
-                    className="cabinet cabinet-interactive relative flex flex-col items-center gap-2 p-3 text-center"
+                    className={
+                      isTopFeatured
+                        ? "cabinet cabinet-interactive glow-cyan relative flex flex-col items-center gap-2 p-3 text-center"
+                        : "cabinet cabinet-interactive relative flex flex-col items-center gap-2 p-3 text-center"
+                    }
                   >
+                    {isTopFeatured && (
+                      <span
+                        className="absolute top-2 right-2 rounded-full px-2 py-0.5 text-[9px] font-bold uppercase tracking-wide"
+                        style={{
+                          background: "linear-gradient(135deg, var(--color-cyan-400), var(--color-magenta-400))",
+                          color: "#05060c",
+                        }}
+                      >
+                        New
+                      </span>
+                    )}
                     <span
                       className="absolute top-2 left-2 h-2 w-2 rounded-full"
                       style={{ background: categoryColor, boxShadow: `0 0 6px ${categoryColor}` }}

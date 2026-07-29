@@ -1,6 +1,6 @@
 import PromoCard from "./PromoCard";
 import Reveal from "./Reveal";
-import { PLATFORMS } from "../../lib/platforms";
+import { PLATFORMS, TOP_FEATURED_SLUG } from "../../lib/platforms";
 import { getPromoCodes, findPromoEntry } from "../../lib/promo-codes";
 
 export default function PromoCodeGrid() {
@@ -35,6 +35,7 @@ export default function PromoCodeGrid() {
               image={platform.image}
               href={platform.downloadUrl ?? `/all-games/${platform.slug}`}
               isExternal={Boolean(platform.downloadUrl)}
+              highlighted={platform.slug === TOP_FEATURED_SLUG}
               morning={entry?.morning}
               afternoon={entry?.afternoon}
               evening={entry?.evening}

@@ -428,9 +428,8 @@ const RAW_PLATFORMS: {
     name: "Win Rummy",
     image: "/images/platforms/win-rummy.webp",
     description:
-      "Win Rummy pairs an outcome-focused name with a crown-and-slot-reel icon similar to others in this family — here's what we'll confirm about its download and promo codes once it's live.",
-    comingSoon: true,
-    releaseDate: "2026-07-29T08:00:00+05:30",
+      "Win Rummy pairs an outcome-focused name with a crown-and-card-suit icon similar to others in this family — here's the Win Rummy APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://www.winrummy10.com/?code=8JT9D83WCC3&t=1785293043",
   },
   {
     name: "Yes Spin",
@@ -516,3 +515,8 @@ export const PLATFORMS: Platform[] = RAW_PLATFORMS.map((p) => ({
 export function getPlatform(slug: string): Platform | undefined {
   return PLATFORMS.find((p) => p.slug === slug);
 }
+
+/** Whichever platform currently sits at #1 in FEATURED_ORDER — highlighted
+ *  in the grid and on the promo codes page. Follows FEATURED_ORDER
+ *  automatically, so it never needs updating by hand. */
+export const TOP_FEATURED_SLUG = PLATFORMS[0]?.slug;
