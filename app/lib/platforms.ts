@@ -450,7 +450,7 @@ const RAW_PLATFORMS: {
     image: "/images/platforms/yono-777.webp",
     description:
       "Yono 777 combines the Yono name with the classic slots jackpot number — this guide covers its APK download and promo code status.",
-    downloadUrl: "https://uono777.co/?code=F9MPD4LNMMX&t=1781970461",
+    downloadUrl: "https://yononewgames.vip/?code=SCHFQRY8DAS",
   },
   {
     name: "Yono Games",
@@ -488,7 +488,7 @@ const RAW_PLATFORMS: {
  * list — everything else shifts down automatically, no array surgery needed.
  * Entries not listed here keep their existing relative order, after these.
  */
-const FEATURED_ORDER = ["Win Rummy", "DhanGame", "Max Rummy", "Yono Rummy", "Yono Games", "Yono 777"];
+const FEATURED_ORDER = ["Win Rummy", "Yono 777", "DhanGame", "Max Rummy", "Yono Rummy", "Yono Games"];
 
 export const PLATFORMS: Platform[] = RAW_PLATFORMS.map((p) => ({
   slug: p.name
