@@ -135,6 +135,14 @@ const RAW_PLATFORMS: {
       "Yono 777 combines the Yono name with the classic slots jackpot number — this guide covers its APK download and promo code status.",
     downloadUrl: "https://yononewgames.vip/?code=SCHFQRY8DAS",
   },
+  {
+    name: "Gold Rummy",
+    image: "/images/platforms/gold-rummy.png",
+    description:
+      "Gold Rummy is a new rummy platform set to launch shortly — its download link, welcome bonus and promo codes haven't been published yet, and this page will update as soon as they're confirmed.",
+    comingSoon: true,
+    releaseDate: "2026-08-19T08:00:00+05:30",
+  },
 ];
 
 /**
@@ -146,7 +154,7 @@ const RAW_PLATFORMS: {
  * PHASE 3 WAVE 1: "Max Rummy", "Yono Rummy", and "Yono Games" were removed from
  * this list because those platforms were removed from RAW_PLATFORMS above.
  */
-const FEATURED_ORDER = ["Win Rummy", "Yono 777", "DhanGame"];
+const FEATURED_ORDER = ["Gold Rummy", "Win Rummy", "Yono 777", "DhanGame"];
 
 export const PLATFORMS: Platform[] = RAW_PLATFORMS.map((p) => ({
   slug: p.name
