@@ -139,9 +139,8 @@ const RAW_PLATFORMS: {
     name: "Gold Rummy",
     image: "/images/platforms/gold-rummy.png",
     description:
-      "Gold Rummy is a new rummy platform set to launch shortly — its download link, welcome bonus and promo codes haven't been published yet, and this page will update as soon as they're confirmed.",
-    comingSoon: true,
-    releaseDate: "2026-08-19T08:00:00+05:30",
+      "Gold Rummy launched August 19, 2026 — here's the Gold Rummy APK download. No welcome bonus or promo code has been announced yet, and this page will update once that's confirmed.",
+    downloadUrl: "https://goldrummy20.com/?code=JLX7LRP2YTG&t=1787111858",
     blogHref: "/blog/what-is-gold-rummy",
   },
 ];
