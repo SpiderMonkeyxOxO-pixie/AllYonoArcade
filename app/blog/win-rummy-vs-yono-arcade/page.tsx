@@ -15,6 +15,7 @@ const DESCRIPTION =
 const URL = "https://allyonoarcade.com/blog/win-rummy-vs-yono-arcade";
 const IMAGE = "https://allyonoarcade.com/images/guides/win-rummy-vs-yono-arcade-comparison.webp";
 const PUBLISHED = "2026-07-28";
+const LAST_REVIEWED = "2026-08-09";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -46,7 +47,7 @@ const ARTICLE_SCHEMA = {
     logo: { "@type": "ImageObject", url: "https://allyonoarcade.com/logo.png" },
   },
   datePublished: PUBLISHED,
-  dateModified: PUBLISHED,
+  dateModified: LAST_REVIEWED,
   mainEntityOfPage: { "@type": "WebPage", "@id": URL },
 };
 
@@ -73,7 +74,7 @@ export default function WinRummyVsYonoArcadePage() {
       />
 
       <div className="mx-auto max-w-[760px] px-4 sm:px-6 -mt-2 mb-2 text-[12.5px] text-[var(--color-ink-400)]">
-        Published: July 28, 2026 · Last reviewed: July 28, 2026
+        Published: July 28, 2026 · Last reviewed: August 9, 2026
       </div>
 
       <RelatedLinks />
@@ -352,9 +353,9 @@ export default function WinRummyVsYonoArcadePage() {
           reviewed.
         </p>
         <p>
-          The current AllYonoArcade.com listing schedules Win Rummy for an update between 8:00 and
-          9:00 AM IST on July 29, 2026. That is the directory's expected verification window, not a
-          guaranteed original launch date.
+          As of this review, the AllYonoArcade.com listing for Win Rummy points to a live download
+          source rather than a pending update — see the current{" "}
+          <Link href="/all-games/win-rummy">Win Rummy listing</Link> for what's confirmed.
         </p>
       </ContentSection>
 

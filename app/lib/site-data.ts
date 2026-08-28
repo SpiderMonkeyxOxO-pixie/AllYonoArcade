@@ -60,6 +60,15 @@ export const CLUSTER_PAGES: ClusterPage[] = [
     volume: "7.3K/mo",
   },
   {
+    slug: "/yono-arcade-apps",
+    label: "App Identity Checks",
+    navLabel: "Apps",
+    description: "How Mall listings differ from games, and what to check before trusting an app.",
+    icon: "store",
+    keyword: "yono arcade apps",
+    volume: "growing",
+  },
+  {
     slug: "/pure-apk",
     label: "Pure APK",
     navLabel: "Pure APK",
@@ -123,6 +132,9 @@ export type BlogPillar = {
   image: string;
   keyword: string;
   volume: string;
+  /** Matches the verification badge/callout actually shown on the pillar's own page —
+   *  kept in sync by hand since none of these guides claims full verification yet. */
+  verificationStatus: "verified" | "unverified" | "pending";
 };
 
 /** The 5 blog pillars — matching the content plan's "slots/aviator/rummy
@@ -138,6 +150,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     image: "/images/guides/slots-guide-featured.webp",
     keyword: "yono arcade slots",
     volume: "600/mo",
+    verificationStatus: "pending",
   },
   {
     slug: "/blog/yono-arcade-rummy-guide",
@@ -148,6 +161,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     image: "/images/guides/rummy-guide-featured.webp",
     keyword: "yono arcade rummy",
     volume: "290/mo combined",
+    verificationStatus: "pending",
   },
   {
     slug: "/blog/yono-arcade-aviator-guide",
@@ -158,6 +172,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     image: "/images/guides/aviator-guide-featured.webp",
     keyword: "yono arcade aviator",
     volume: "low, rising",
+    verificationStatus: "unverified",
   },
   {
     slug: "/blog/yono-arcade-withdrawal-deposit-guide",
@@ -168,6 +183,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     image: "/images/guides/withdrawal-deposit-guide-featured.webp",
     keyword: "yono arcade withdrawal",
     volume: "low, transactional",
+    verificationStatus: "unverified",
   },
   {
     slug: "/blog/whats-new-in-yono-arcade-2026",
@@ -178,16 +194,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     image: "/images/guides/whats-new-2026-featured.webp",
     keyword: "yono arcade 2026",
     volume: "4.6K/mo",
+    verificationStatus: "pending",
   },
   {
     slug: "/blog/dhangame-promo-code-bonus-guide",
     title: "DhanGame Promo Code, Bonus & Withdrawal Guide",
     description:
-      "DhanGame's pre-launch welcome bonus, minimum withdrawal, and promo code details ahead of its July 23, 2026 launch — updated as we get closer to release.",
+      "DhanGame's welcome bonus, minimum withdrawal, and promo code details, now that it's live — download the app and see what we've verified so far.",
     icon: "gift",
     image: "/images/guides/dhangame-promo-featured.webp",
     keyword: "dhangame promo code",
     volume: "new listing",
+    verificationStatus: "pending",
   },
   {
     slug: "/blog/win-rummy-vs-yono-arcade",
@@ -198,10 +216,11 @@ export const BLOG_PILLARS: BlogPillar[] = [
     image: "/images/guides/win-rummy-vs-yono-arcade-comparison.webp",
     keyword: "win rummy vs yono arcade",
     volume: "new listing",
+    verificationStatus: "pending",
   },
 ];
 
-export const TOP_NAV_SLUGS = ["/download", "/all-games", "/promo-codes", "/is-yono-arcade-safe"];
+export const TOP_NAV_SLUGS = ["/download", "/game-apk", "/is-yono-arcade-safe", "/login"];
 
 export const FOOTER_LINKS = [
   { label: "About", href: "/about" },

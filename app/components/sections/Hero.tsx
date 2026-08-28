@@ -12,7 +12,7 @@ const CHIPS = [
 ];
 
 const STATS = [
-  { value: "55+", label: "Related Apps Tracked" },
+  { value: "3", label: "APK Variants Explained" },
   { value: "10", label: "In-Depth Guides" },
   { value: "Weekly", label: "Promo Code Checks" },
   { value: "100%", label: "Independent" },
@@ -86,21 +86,21 @@ export default function Hero() {
 
             <motion.div variants={item} className="mt-8 flex flex-col sm:flex-row gap-3 max-w-md sm:max-w-none">
               <Link
-                href="/all-games"
+                href="/download"
                 className="btn-brand inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 sm:py-3 text-[14px] font-semibold"
                 style={{
                   background: "linear-gradient(135deg, var(--color-cyan-400), var(--color-magenta-400))",
                   color: "#1a0e00",
                 }}
               >
-                <GamepadIcon size={16} />
-                All Games
+                <DownloadIcon size={16} />
+                Download Guide
               </Link>
               <Link
-                href="/promo-codes"
+                href="/is-yono-arcade-safe"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3.5 sm:py-3 text-[14px] font-semibold text-[#f3f5ff] hover:border-[var(--color-cyan-400)]/60 transition-colors"
               >
-                Promo Codes
+                Safety Review
                 <ArrowRightIcon size={15} />
               </Link>
             </motion.div>

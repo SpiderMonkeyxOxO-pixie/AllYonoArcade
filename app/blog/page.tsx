@@ -54,7 +54,7 @@ export default function BlogIndexPage() {
                   <span className="font-display text-[15px] font-semibold text-[#f3f5ff]">
                     {pillar.title}
                   </span>
-                  <VerificationBadge status="verified" />
+                  <VerificationBadge status={pillar.verificationStatus} />
                 </span>
                 <span className="mt-1 block text-[13px] leading-relaxed text-[var(--color-ink-400)]">
                   {pillar.description}

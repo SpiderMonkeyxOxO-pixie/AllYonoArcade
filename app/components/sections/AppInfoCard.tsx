@@ -13,7 +13,7 @@ export default function AppInfoCard({
     "@type": "ImageObject",
     contentUrl: "https://allyonoarcade.com/images/yono-arcade-icon.webp",
     name: "Yono Arcade app icon",
-    description: "Official app icon for Yono Arcade, a coin-op/rummy-style games app.",
+    description: "App icon for Yono Arcade, a coin-op/rummy-style games app.",
   };
 
   return (
