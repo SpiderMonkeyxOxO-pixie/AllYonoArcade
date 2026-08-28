@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import PageHeader from "../components/sections/PageHeader";
-import ContentSection from "../components/sections/ContentSection";
-import BulletList from "../components/sections/BulletList";
-import Callout from "../components/sections/Callout";
-import FAQSection from "../components/sections/FAQSection";
-import RelatedLinks from "../components/sections/RelatedLinks";
-import GuideImage from "../components/sections/GuideImage";
+import PageHeader from "../../components/sections/PageHeader";
+import ContentSection from "../../components/sections/ContentSection";
+import BulletList from "../../components/sections/BulletList";
+import Callout from "../../components/sections/Callout";
+import FAQSection from "../../components/sections/FAQSection";
+import RelatedLinks from "../../components/sections/RelatedLinks";
+import GuideImage from "../../components/sections/GuideImage";
 
 const TITLE = "Yono Arcade Apps: Mall Listings & App Checks";
 const DESCRIPTION =
   "Searching for Yono Arcade apps? Learn how Mall listings differ from games, what app labels mean, and what to verify before using an app.";
-const URL = "https://allyonoarcade.com/yono-arcade-apps";
+const URL = "https://allyonoarcade.com/blog/yono-arcade-apps";
 const IMAGE = "https://allyonoarcade.com/images/guides/yono-arcade-apps-verification.webp";
+const PUBLISHED = "2026-08-28";
+const LAST_REVIEWED = "2026-08-28";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -30,21 +32,56 @@ export const metadata: Metadata = {
   },
 };
 
+const ARTICLE_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Yono Arcade Apps: Mall Listings & App Checks",
+  description: DESCRIPTION,
+  image: IMAGE,
+  author: { "@type": "Organization", name: "AllYonoArcade.com", url: "https://allyonoarcade.com" },
+  publisher: {
+    "@type": "Organization",
+    name: "AllYonoArcade.com",
+    url: "https://allyonoarcade.com",
+    logo: { "@type": "ImageObject", url: "https://allyonoarcade.com/logo.png" },
+  },
+  datePublished: PUBLISHED,
+  dateModified: LAST_REVIEWED,
+  mainEntityOfPage: { "@type": "WebPage", "@id": URL },
+};
+
+const BREADCRUMB_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://allyonoarcade.com" },
+    { "@type": "ListItem", position: 2, name: "Blog", item: "https://allyonoarcade.com/blog" },
+    { "@type": "ListItem", position: 3, name: "Yono Arcade Apps", item: URL },
+  ],
+};
+
 export default function YonoArcadeAppsPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ARTICLE_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+
       <PageHeader
-        eyebrow="Apps"
+        eyebrow="App Guide"
         title="Yono Arcade Apps: Mall Listings & App Checks"
         answer="Identify what type of result you're looking at first, then verify it using the developer name, package ID, installation source, privacy policy, and permissions — not the logo."
       />
+
+      <div className="mx-auto max-w-[760px] px-4 sm:px-6 -mt-2 mb-2 text-[12.5px] text-[var(--color-ink-400)]">
+        Published: August 28, 2026 · Last reviewed: August 28, 2026
+      </div>
 
       <RelatedLinks />
 
       <GuideImage
         src="/images/guides/yono-arcade-apps-verification.webp"
         alt="Yono Arcade apps interface with a magnifying glass and verification shield illustrating app identity checks"
-        className="mx-auto max-w-[760px] px-4 sm:px-6"
+        className="mx-auto max-w-[760px] px-4 sm:px-6 mt-2"
       />
 
       <ContentSection heading="What &quot;Yono Arcade apps&quot; can mean">

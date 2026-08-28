@@ -33,8 +33,8 @@ export default function ClusterGrid() {
           Every Yono Arcade topic, covered
         </h2>
         <p className="mt-2.5 text-[13.5px] sm:text-[15px] text-[var(--color-ink-400)] leading-relaxed">
-          Eleven focused guides instead of one thin overview — tap any topic to preview it, then
-          read the full guide.
+          Ten focused guides instead of one thin overview — tap any topic to preview it, then read
+          the full guide.
         </p>
       </Reveal>
 

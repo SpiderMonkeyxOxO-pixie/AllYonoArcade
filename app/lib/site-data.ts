@@ -60,15 +60,6 @@ export const CLUSTER_PAGES: ClusterPage[] = [
     volume: "7.3K/mo",
   },
   {
-    slug: "/yono-arcade-apps",
-    label: "App Identity Checks",
-    navLabel: "Apps",
-    description: "How Mall listings differ from games, and what to check before trusting an app.",
-    icon: "store",
-    keyword: "yono arcade apps",
-    volume: "growing",
-  },
-  {
     slug: "/pure-apk",
     label: "Pure APK",
     navLabel: "Pure APK",
@@ -216,6 +207,17 @@ export const BLOG_PILLARS: BlogPillar[] = [
     image: "/images/guides/win-rummy-vs-yono-arcade-comparison.webp",
     keyword: "win rummy vs yono arcade",
     volume: "new listing",
+    verificationStatus: "pending",
+  },
+  {
+    slug: "/blog/yono-arcade-apps",
+    title: "Yono Arcade Apps: Mall Listings & App Checks",
+    description:
+      "How Mall listings differ from games and separately published apps, and the developer, package-ID and permissions checks worth running before you trust one.",
+    icon: "store",
+    image: "/images/guides/yono-arcade-apps-verification.webp",
+    keyword: "yono arcade apps",
+    volume: "growing",
     verificationStatus: "pending",
   },
 ];

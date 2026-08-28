@@ -69,6 +69,8 @@ const nextConfig: NextConfig = {
     return [
       // Platform pages moved from /alternatives/[slug] to /all-games/[slug].
       { source: "/alternatives/:slug", destination: "/all-games/:slug", permanent: true },
+      // Moved from a top-level cluster page to a blog article shortly after launch.
+      { source: "/yono-arcade-apps", destination: "/blog/yono-arcade-apps", permanent: true },
     ];
   },
 };
