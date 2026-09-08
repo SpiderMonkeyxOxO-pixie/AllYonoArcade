@@ -143,6 +143,14 @@ const RAW_PLATFORMS: {
     downloadUrl: "https://goldrummy20.com/?code=JLX7LRP2YTG&t=1787111858",
     blogHref: "/blog/what-is-gold-rummy",
   },
+  {
+    name: "Money Rummy",
+    image: "/images/platforms/money-rummy.jpg",
+    description:
+      "Money Rummy is a new rummy platform reported to be the 57th release on the Yono network, set to launch September 9, 2026 — its download link, welcome bonus and promo codes haven't been published yet, and this page will update as soon as they're confirmed.",
+    comingSoon: true,
+    releaseDate: "2026-09-09T08:00:00+05:30",
+  },
 ];
 
 /**
@@ -154,7 +162,7 @@ const RAW_PLATFORMS: {
  * PHASE 3 WAVE 1: "Max Rummy", "Yono Rummy", and "Yono Games" were removed from
  * this list because those platforms were removed from RAW_PLATFORMS above.
  */
-const FEATURED_ORDER = ["Gold Rummy", "Win Rummy", "Yono 777", "DhanGame"];
+const FEATURED_ORDER = ["Money Rummy", "Gold Rummy", "Win Rummy", "Yono 777", "DhanGame"];
 
 export const PLATFORMS: Platform[] = RAW_PLATFORMS.map((p) => ({
   slug: p.name
