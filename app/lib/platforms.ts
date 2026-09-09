@@ -147,9 +147,8 @@ const RAW_PLATFORMS: {
     name: "Money Rummy",
     image: "/images/platforms/money-rummy.jpg",
     description:
-      "Money Rummy is a new rummy platform reported to be the 57th release on the Yono network, set to launch September 9, 2026 — its download link, welcome bonus and promo codes haven't been published yet, and this page will update as soon as they're confirmed.",
-    comingSoon: true,
-    releaseDate: "2026-09-09T08:00:00+05:30",
+      "Money Rummy launched September 9, 2026 — here's the Money Rummy APK download. Reported to be the 57th release on the Yono network. No welcome bonus or promo code has been announced yet, and this page will update once that's confirmed.",
+    downloadUrl: "https://moneyrummyff.com/?code=T1XR7S7YJ9T&t=1788922546",
   },
 ];
 

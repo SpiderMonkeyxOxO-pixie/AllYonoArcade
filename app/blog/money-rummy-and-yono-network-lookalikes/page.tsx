@@ -9,11 +9,11 @@ import GuideImage from "../../components/sections/GuideImage";
 
 const TITLE = "Money Rummy and the Growing Yono-Network Look-Alikes";
 const DESCRIPTION =
-  "Money Rummy is reported to launch September 9, 2026, reported as the 57th platform on the Yono network — here's what's confirmed, and how to verify it's the platform you think it is.";
+  "Money Rummy launched September 9, 2026, reported as the 57th platform on the Yono network — here's what's confirmed, and how to verify it's the platform you think it is.";
 const URL = "https://allyonoarcade.com/blog/money-rummy-and-yono-network-lookalikes";
 const IMAGE = "https://allyonoarcade.com/images/guides/money-rummy-and-yono-network-lookalikes.jpg";
 const PUBLISHED = "2026-09-08";
-const LAST_REVIEWED = "2026-09-08";
+const LAST_REVIEWED = "2026-09-09";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -68,11 +68,11 @@ export default function MoneyRummyLookalikesPage() {
       <PageHeader
         eyebrow="App Guide"
         title="Money Rummy and the Growing Yono-Network Look-Alikes"
-        answer="Money Rummy is reported to launch September 9, 2026, joining a list of similarly-named apps in this space — here's what's confirmed, and how to verify it's the platform you think it is."
+        answer="Money Rummy launched September 9, 2026, joining a list of similarly-named apps in this space — here's what's confirmed, and how to verify it's the platform you think it is."
       />
 
       <div className="mx-auto max-w-[760px] px-4 sm:px-6 -mt-2 mb-2 text-[12.5px] text-[var(--color-ink-400)]">
-        Published: September 8, 2026 · Last reviewed: September 8, 2026
+        Published: September 8, 2026 · Last reviewed: September 9, 2026
       </div>
 
       <RelatedLinks />
@@ -85,26 +85,25 @@ export default function MoneyRummyLookalikesPage() {
 
       <ContentSection heading="A new name joins a familiar pattern">
         <p>
-          Money Rummy is reported to launch on September 9, 2026, joining a list of similarly-named
-          apps in this space that AllYonoArcade already tracks — Gold Rummy, Win Rummy, DhanGame,
-          Yono 777, and others that follow a comparable naming pattern. It&apos;s reported to be
-          the 57th platform on the Yono network, a claim made by the app&apos;s own operator, not
+          Money Rummy launched on September 9, 2026, joining a list of similarly-named apps in
+          this space that AllYonoArcade already tracks — Gold Rummy, Win Rummy, DhanGame, Yono
+          777, and others that follow a comparable naming pattern. It&apos;s reported to be the
+          57th platform on the Yono network, a claim made by the app&apos;s own operator, not
           independently verified here.
         </p>
         <p>
-          What&apos;s confirmed so far: the name, the rummy category, and the reported September 9
-          launch date. No download link, welcome bonus, or promo code exists yet, because the app
-          hasn&apos;t launched. Any other claim about Money Rummy circulating right now — bonus
-          amounts, download counts, specific game modes — should be treated as unverified until it
-          can be checked directly.
+          What&apos;s confirmed so far: the name, the rummy category, the September 9 launch date,
+          and a working download link. No welcome bonus or promo code has been announced yet. Any
+          other claim about Money Rummy circulating right now — bonus amounts, download counts,
+          specific game modes — should be treated as unverified until it can be checked directly.
         </p>
       </ContentSection>
 
-      <Callout tone="warning" title="Reported, not confirmed" badge="pending">
+      <Callout tone="warning" title="Launched, but details are still unverified" badge="pending">
         <p>
-          The &quot;57th Yono platform&quot; framing, Money Rummy&apos;s feature set, and any
-          bonus terms have not yet been independently tested. This page will be updated as those
-          checks are completed once the app is actually live.
+          The &quot;57th Yono platform&quot; framing, Money Rummy&apos;s in-app feature set, and
+          any bonus terms have not yet been independently tested. This page will be updated as
+          those checks are completed.
         </p>
       </Callout>
 
@@ -131,18 +130,18 @@ export default function MoneyRummyLookalikesPage() {
           A real comparison — like our{" "}
           <Link href="/blog/win-rummy-vs-yono-arcade">Win Rummy vs. Yono Arcade breakdown</Link> —
           requires testing both apps&apos; download links, feature sets, and promo mechanics side
-          by side. Money Rummy hasn&apos;t launched yet, so that testing hasn&apos;t happened.
+          by side. Money Rummy has only just launched, so that testing hasn&apos;t happened yet.
           This space is where a genuine comparison will go once it has.
         </p>
       </ContentSection>
 
-      <ContentSection heading="Where to check Money Rummy once it launches">
+      <ContentSection heading="Where to download Money Rummy">
         <p>
-          A download link is expected to go live on{" "}
-          <Link href="/all-games/money-rummy">Money Rummy&apos;s listing page</Link> around 8:00 AM
-          IST on September 9, 2026. AllYonoArcade does not host the file itself. What the app
-          actually installs, its permissions, and its in-app feature set will not be reviewable
-          until then.
+          A working download link is now live on{" "}
+          <Link href="/all-games/money-rummy">Money Rummy&apos;s listing page</Link>. AllYonoArcade
+          does not host the file itself — the link leads directly to Money Rummy&apos;s own site.
+          What the app actually installs, its permissions, and its in-app feature set have not yet
+          been independently reviewed.
         </p>
       </ContentSection>
 
@@ -169,7 +168,7 @@ export default function MoneyRummyLookalikesPage() {
           {
             question: "Has Money Rummy launched?",
             answer:
-              "Not yet — Money Rummy is reported to launch at 8:00 AM IST on September 9, 2026. This page will be updated once that's confirmed.",
+              "Yes — Money Rummy launched on September 9, 2026, and a working download link is now live.",
           },
           {
             question: "Is Money Rummy the same as Yono Arcade?",
@@ -184,7 +183,7 @@ export default function MoneyRummyLookalikesPage() {
           {
             question: "Does Money Rummy have a welcome bonus?",
             answer:
-              "No welcome bonus or promo code has been announced yet, since the app hasn't launched. Any figure circulating right now should be treated as unverified.",
+              "No welcome bonus or promo code was announced at launch. Any figure circulating right now should be treated as unverified.",
           },
           {
             question: "How does Money Rummy compare to other apps on this network?",
