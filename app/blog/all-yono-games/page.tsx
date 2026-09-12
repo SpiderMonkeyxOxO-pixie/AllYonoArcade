@@ -12,7 +12,7 @@ const TITLE = "All Yono Games: Apps, Categories & Key Differences";
 const DESCRIPTION =
   "Understand what All Yono Games refers to, why app collections differ, how game categories are grouped, and where Yono Arcade fits.";
 const URL = "https://allyonoarcade.com/blog/all-yono-games";
-const IMAGE = "https://allyonoarcade.com/images/guides/yono-arcade-apps-verification.webp";
+const IMAGE = "https://allyonoarcade.com/images/guides/all-yono-games-apps-categories.jpg";
 const PUBLISHED = "2026-09-12";
 const LAST_REVIEWED = "2026-09-12";
 
@@ -127,7 +127,7 @@ export default function AllYonoGamesPage() {
       <RelatedLinks />
 
       <GuideImage
-        src="/images/guides/yono-arcade-apps-verification.webp"
+        src="/images/guides/all-yono-games-apps-categories.jpg"
         alt="3D illustration showing All Yono Games with separate app categories including rummy, spin, arcade, 777 and bingo, with Yono Arcade shown as one specific app"
         className="mx-auto max-w-[760px] px-4 sm:px-6 mt-2"
       />

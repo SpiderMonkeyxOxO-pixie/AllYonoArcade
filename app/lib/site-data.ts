@@ -226,7 +226,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     description:
       "Why All Yono Games collections show different totals, how apps, categories and games differ, and where Yono Arcade fits among similarly branded apps.",
     icon: "store",
-    image: "/images/guides/yono-arcade-apps-verification.webp",
+    image: "/images/guides/all-yono-games-apps-categories.jpg",
     keyword: "all yono games",
     volume: "new listing",
     verificationStatus: "pending",
