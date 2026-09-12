@@ -220,6 +220,17 @@ export const BLOG_PILLARS: BlogPillar[] = [
     volume: "growing",
     verificationStatus: "pending",
   },
+  {
+    slug: "/blog/all-yono-games",
+    title: "All Yono Games: Apps, Categories & Key Differences",
+    description:
+      "Why All Yono Games collections show different totals, how apps, categories and games differ, and where Yono Arcade fits among similarly branded apps.",
+    icon: "store",
+    image: "/images/guides/yono-arcade-apps-verification.webp",
+    keyword: "all yono games",
+    volume: "new listing",
+    verificationStatus: "pending",
+  },
 ];
 
 export const TOP_NAV_SLUGS = ["/download", "/game-apk", "/is-yono-arcade-safe", "/login"];
