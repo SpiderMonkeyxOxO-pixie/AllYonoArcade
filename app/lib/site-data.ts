@@ -231,6 +231,17 @@ export const BLOG_PILLARS: BlogPillar[] = [
     volume: "new listing",
     verificationStatus: "pending",
   },
+  {
+    slug: "/blog/who-operates-yono-arcade",
+    title: "Who Operates Yono Arcade? Official Site & Fake Apps",
+    description:
+      "YonoArcade.com names Yono Tech Private Limited as its operator — how to tell the official source from the similarly named Google Play listings.",
+    icon: "shield",
+    image: "/images/guides/yono-arcade-owner-official-site-identity-check.webp",
+    keyword: "yono arcade owner",
+    volume: "new listing",
+    verificationStatus: "verified",
+  },
 ];
 
 export const TOP_NAV_SLUGS = ["/download", "/game-apk", "/is-yono-arcade-safe", "/login"];

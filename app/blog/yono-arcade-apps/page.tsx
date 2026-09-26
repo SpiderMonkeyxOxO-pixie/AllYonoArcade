@@ -94,7 +94,9 @@ export default function YonoArcadeAppsPage() {
         <p>
           Those results look related because they share branding. Shared branding is not
           evidence of a shared developer or operator. A familiar name, logo, rating, or badge
-          does not establish that two applications come from the same source.
+          does not establish that two applications come from the same source. For who actually
+          runs the platform and which Google Play listings are unofficial, see{" "}
+          <Link href="/blog/who-operates-yono-arcade">Who Operates Yono Arcade?</Link>
         </p>
         <BulletList
           items={[

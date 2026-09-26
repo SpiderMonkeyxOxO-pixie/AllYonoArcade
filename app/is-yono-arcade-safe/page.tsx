@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PageHeader from "../components/sections/PageHeader";
 import ContentSection from "../components/sections/ContentSection";
 import BulletList from "../components/sections/BulletList";
@@ -82,7 +83,8 @@ export default function SafetyPage() {
           Check whether the app lists a real developer/publisher name, a support contact, and a
           privacy policy — either on its store listing or within the app itself. Missing all
           three isn't automatically disqualifying, but it does mean you have fewer ways to get
-          help if something goes wrong.
+          help if something goes wrong. For the operator and support details YonoArcade.com
+          publishes, see <Link href="/blog/who-operates-yono-arcade">Who Operates Yono Arcade?</Link>
         </p>
       </ContentSection>
 
