@@ -4,160 +4,160 @@ import PageHeader from "../../components/sections/PageHeader";
 import ContentSection from "../../components/sections/ContentSection";
 import BulletList from "../../components/sections/BulletList";
 import Callout from "../../components/sections/Callout";
+import ComparisonTable from "../../components/sections/ComparisonTable";
 import FAQSection from "../../components/sections/FAQSection";
 import RelatedLinks from "../../components/sections/RelatedLinks";
 import GuideImage from "../../components/sections/GuideImage";
+import ArticleSchema from "../../components/sections/ArticleSchema";
+import ScheduledLink from "../../components/sections/ScheduledLink";
+
+// Re-render hourly so links to scheduled posts switch on after they publish.
+export const revalidate = 3600;
+
+const PATH = "/blog/yono-arcade-withdrawal-deposit-guide";
+const IMAGE = "/images/guides/withdrawal-deposit-guide-featured.webp";
+const H1 = "Yono Arcade Withdrawal Problems, KYC and TDS";
+const TITLE = "Yono Arcade Withdrawal Problem, KYC & TDS Explained (2026)";
+const DESCRIPTION =
+  "Yono Arcade withdrawal pending or failed? What its own terms say about KYC, PAN and TDS, why payments can fail since the 2026 law, and how to avoid withdrawal scams.";
 
 export const metadata: Metadata = {
-  title: "Yono Arcade Withdrawal & Deposit Guide",
-  description:
-    "How deposits and withdrawals are expected to work in an app like Yono Arcade, common problems people report, and what to check before you add funds.",
-  alternates: { canonical: "https://allyonoarcade.com/blog/yono-arcade-withdrawal-deposit-guide" },
-  openGraph: {
-    title: "Yono Arcade Withdrawal & Deposit Guide",
-    description:
-      "How deposits and withdrawals are expected to work in an app like Yono Arcade, common problems people report, and what to check before you add funds.",
-    url: "https://allyonoarcade.com/blog/yono-arcade-withdrawal-deposit-guide",
-  },
-  twitter: {
-    title: "Yono Arcade Withdrawal & Deposit Guide",
-    description:
-      "How deposits and withdrawals are expected to work in an app like Yono Arcade, common problems people report, and what to check before you add funds.",
-  },
+  title: { absolute: TITLE },
+  description: DESCRIPTION,
+  alternates: { canonical: `https://allyonoarcade.com${PATH}` },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: `https://allyonoarcade.com${PATH}` },
+  twitter: { title: TITLE, description: DESCRIPTION },
 };
 
 export default function WithdrawalDepositGuidePage() {
   return (
     <>
+      <ArticleSchema headline={H1} description={DESCRIPTION} path={PATH} image={IMAGE} published="2026-07-15" modified="2026-09-28" crumb="Yono Arcade Withdrawal, KYC & TDS" />
+
       <PageHeader
         eyebrow="Blog"
-        title="Yono Arcade Withdrawal & Deposit"
-        answer="Deposit and withdrawal searches point to real-money mechanics somewhere in the Yono Arcade family, and “withdrawal problem” is one of the search variants we track. Here's the general framework for evaluating this before you add funds — we haven't verified Yono Arcade's own specific process yet."
+        title={H1}
+        answer="YonoArcade.com says withdrawals go to your bank account or UPI and are “instant, 24x7”. Its own terms also require a valid PAN, deduct 30% TDS on large wins, and let it forfeit winnings if details are missing. Since 1 May 2026, banks and payment services are barred from processing money-game payments, so withdrawals can also fail for reasons neither you nor the app can fix."
       />
+
+      <div className="mx-auto max-w-[760px] px-4 sm:px-6 -mt-2 mb-2 text-[12.5px] text-[var(--color-ink-400)]">
+        Updated: September 28, 2026 · Operator details from YonoArcade.com, checked September 28, 2026
+      </div>
 
       <RelatedLinks />
 
-      <GuideImage
-        src="/images/guides/withdrawal-deposit-guide-featured.webp"
-        alt="Yono Arcade Withdrawal and Deposit guide featured graphic"
-        className="mx-auto max-w-[760px] px-4 sm:px-6 mt-2"
-      />
+      <GuideImage src={IMAGE} alt="Yono Arcade withdrawal, KYC and TDS guide" className="mx-auto max-w-[760px] px-4 sm:px-6 mt-2" />
 
-      <Callout tone="warning" title="We haven't verified Yono Arcade's specific withdrawal process" badge="unverified">
+      <ContentSection heading="What YonoArcade.com says (checked 28 September 2026)">
+        <ComparisonTable
+          headers={["Topic", "What the operator states", "What it means"]}
+          rows={[
+            ["Withdrawal methods", "Bank transfer and UPI", "No wallets or cards mentioned"],
+            ["Speed", "\"Instant Withdrawals of Winnings in 24X7\"", "A marketing claim; not verifiable from outside"],
+            ["Deposit bonus", "\"5% Bonus on every Add Cash up to ₹100,000\"", "Bonus money usually can't be withdrawn directly"],
+            ["PAN", "A valid PAN is required for wins that attract TDS", "No PAN, no payout on those wins"],
+            ["TDS", "30% TDS on winnings over ₹10,000 in a single game", "See the tax note below"],
+            ["Forfeiture", "Can forfeit winnings if required details aren't provided", "Read before depositing anything"],
+          ]}
+        />
         <p>
-          We don't have confirmed, first-hand details on deposit methods, minimum withdrawal
-          amounts, or processing times for Yono Arcade specifically. Treat any figure you see
-          elsewhere — including specific rupee amounts or “instant withdrawal” claims — as
-          unverified until you confirm it inside the app yourself.
-        </p>
-      </Callout>
-
-      <ContentSection heading="How deposits and withdrawals typically work in this app category">
-        <p>
-          Setting Yono Arcade's specific details aside, most Indian real-money gaming apps follow a
-          broadly similar flow. Deposits are usually made through UPI, net banking, or a debit/
-          credit card, landing in an in-app wallet balance rather than being spent directly.
-          Winnings accumulate in that same wallet, and withdrawing typically requires linking a
-          verified bank account or UPI ID that matches the account holder's own identity — a
-          mismatch between the deposit source and the withdrawal destination is one of the most
-          common reasons a withdrawal gets held up or rejected industry-wide.
-        </p>
-        <p>
-          Most legitimate apps in this category also require some level of KYC (Know Your Customer)
-          verification — typically a PAN card and a government photo ID — before allowing
-          withdrawals past a certain threshold, even if deposits and gameplay are allowed without
-          it. This isn't a red flag by itself; it's standard practice tied to India's anti-money
-          laundering requirements for real-money platforms. What is worth noticing is the opposite
-          case: an app that makes withdrawal unusually difficult, opaque, or conditional on
-          additional payments is behaving outside that norm.
+          <strong>Tax note:</strong> since 1 April 2023, Income Tax Act section 194BA requires 30% TDS
+          on net winnings from online games, with no ₹10,000 threshold. Yono Arcade&apos;s terms still
+          describe the older threshold rule.
         </p>
       </ContentSection>
 
-      <ContentSection heading="A checklist before you deposit anything">
+      <ContentSection heading="Yono games KYC kaise kare?">
+        <p>Apps in this network usually ask for:</p>
         <BulletList
           items={[
-            "Confirm a withdrawal method is actually working — not just that deposits are accepted — before you rely on the app for anything beyond casual amounts.",
-            "Check any minimum withdrawal threshold and stated processing time inside the app itself, not on a third-party page.",
-            "Look for KYC/ID verification requirements before withdrawing — its presence is generally a good sign, not a bad one.",
-            "Since 1 May 2026, the Promotion and Regulation of Online Gaming Act, 2025 prohibits offering, advertising and processing payments for online money games anywhere in India, whether the game is based on skill, chance or both. Banks and payment services are barred from processing these payments, so deposits and withdrawals can fail.",
+            "PAN (name and number, matching your bank account).",
+            "A bank account or UPI ID in your own name.",
+            "Sometimes Aadhaar or a selfie.",
+          ]}
+        />
+        <p>
+          Do KYC only inside the app, never on a website or through a WhatsApp &quot;agent&quot;. Real
+          KYC never needs your OTP, UPI PIN or card PIN.
+        </p>
+        <p>
+          KYC sirf app ke andar karein. PAN aur bank account aapke apne naam par hone chahiye. Koi bhi
+          &quot;agent&quot; jo OTP ya UPI PIN maange, woh fraud hai.
+        </p>
+      </ContentSection>
+
+      <ContentSection heading="Why a Yono Arcade withdrawal is pending or failed">
+        <ComparisonTable
+          headers={["What you see", "Likely cause", "What to do"]}
+          rows={[
+            ["\"Pending\" for hours or days", "Manual review, or the payment provider declined it", "Wait for the stated time, then email support@yonoarcade.com with the transaction ID"],
+            ["\"Failed\", money back in the app", "Bank or UPI rejected the transfer", "Check name, account and IFSC match your KYC"],
+            ["\"KYC required\"", "PAN or bank not verified", "Complete KYC inside the app"],
+            ["Withdrawal amount blocked", "Bonus or unplayed deposit money", "Only \"winnings\" balances are usually withdrawable"],
+            ["Account frozen", "Operator review", "Email support in writing; keep copies"],
+            ["Nothing works on any network", "Payment channel or service blocked", "See the legal note below"],
           ]}
         />
       </ContentSection>
 
-      <ContentSection heading="What “withdrawal problem” searches usually mean">
+      <ContentSection heading="Withdrawal scams to expect">
+        <BulletList
+          items={[
+            "A \"support agent\" asks for a fee, \"tax\" or \"GST\" to release your withdrawal.",
+            "A caller asks for your OTP or UPI PIN to \"verify\" you.",
+            "Someone asks you to install AnyDesk or another screen-sharing app.",
+            "A Telegram group promises to \"unlock\" frozen balances for a fee.",
+          ]}
+        />
         <p>
-          Search interest in “Yono Arcade withdrawal problem” tells us people are running into
-          friction, but that phrase covers a wide range of very different underlying issues across
-          this app category generally — a processing delay that resolves within the app's own
-          stated window, a KYC mismatch that needs correcting, a genuinely stuck payment that needs
-          escalation, or, less commonly, a deliberately obstructive pattern designed to discourage
-          withdrawals. We haven't verified which of these, if any, apply specifically to Yono
-          Arcade, and we'd caution against assuming the worst-case explanation just because the
-          search term exists — but it's also not something to ignore if you experience it yourself.
+          The operator publishes no phone number, so every caller is unofficial. See{" "}
+          <Link href="/customer-care">Yono Arcade customer care</Link> for the official contacts.
         </p>
       </ContentSection>
 
-      <ContentSection heading="What KYC verification usually involves">
+      <Callout tone="warning" title="Never pay to receive your own money">
         <p>
-          Since we can't yet confirm Yono Arcade's specific requirements, here's what KYC generally
-          looks like across comparable Indian real-money apps, so you know roughly what to expect
-          rather than being caught off guard. Most platforms request a PAN card for tax-reporting
-          purposes above certain winning thresholds, a government photo ID (Aadhaar, voter ID, or
-          driving licence) to confirm identity, and a bank account or UPI ID in the same name as the
-          verified identity — this last point is why deposits and withdrawals routed through
-          different, unmatched accounts are a common source of delay. Processing itself, once KYC is
-          cleared, is typically stated in hours for UPI and up to a few business days for bank
-          transfers on legitimate platforms — but treat any specific timeframe you see quoted for
-          Yono Arcade itself as unverified until you see it confirmed in-app.
-        </p>
-      </ContentSection>
-
-      <Callout tone="warning" title="A common scam pattern to watch for">
-        <p>
-          Being asked to pay an upfront “unlock,” “processing,” or “tax” fee before a withdrawal
-          completes is a hard red flag across this entire app category, not specific to any one
-          platform. Legitimate apps deduct any applicable fees from the withdrawal amount itself —
-          they don't ask you to pay in first to receive money you've already won.
+          If you&apos;ve lost money, call <strong>1930</strong>, report at cybercrime.gov.in, and
+          inform your bank immediately.
         </p>
       </Callout>
 
-      <ContentSection heading="If something feels wrong">
+      <ContentSection heading="The legal position">
         <p>
-          Document everything — screenshots of the transaction, the exact amount, timestamps, and
-          any in-app reference or transaction ID — before reaching out through the app's own
-          official support channel. Avoid third-party “recovery agents” or forums promising to
-          resolve a stuck withdrawal for a fee; that pattern is itself a common secondary scam
-          layered on top of the original problem.
-        </p>
-        <p>
-          See our <Link href="/customer-care">Customer Care</Link> guide for how we think about
-          finding legitimate support, and <Link href="/is-yono-arcade-safe">Is Yono Arcade Safe?</Link>{" "}
-          for the broader safety framework this page builds on.
+          Section 7 of the Online Gaming Act, 2025 bars banks and payment services from processing
+          payments for online money games, in force since 1 May 2026. Players aren&apos;t penalised,
+          but deposits can be declined and withdrawals delayed or reversed, and there&apos;s no
+          regulator to claim from. See{" "}
+          <ScheduledLink href="/blog/is-yono-arcade-banned-in-india" date="2026-09-29">Is Yono Arcade banned in India?</ScheduledLink>
         </p>
       </ContentSection>
 
       <FAQSection
-        heading="Withdrawal and deposit questions"
+        heading="Withdrawal and KYC questions"
         items={[
           {
-            question: "What payment methods does Yono Arcade support?",
+            question: "Why is my Yono Arcade withdrawal pending?",
             answer:
-              "We haven't independently confirmed the specific deposit methods Yono Arcade supports. UPI, net banking, and cards are standard across this app category, but treat any specific claim about Yono Arcade itself as unverified until you check in-app.",
+              "Usually a review, an unverified KYC, or a declined bank or UPI transfer. Email support@yonoarcade.com with the transaction ID and keep a record.",
           },
           {
-            question: "Why is my Yono Arcade withdrawal stuck or delayed?",
+            question: "How do I do Yono games KYC?",
             answer:
-              "We don't have Yono Arcade-specific information on this. Common industry-wide causes include KYC mismatches, processing windows stated in-app, or a genuine payment issue needing escalation through official support.",
+              "Inside the app, with your PAN and a bank account or UPI ID in your own name. Never through an agent or a website.",
           },
           {
-            question: "Is it normal to pay a fee before withdrawing winnings?",
+            question: "How much TDS does Yono Arcade deduct?",
             answer:
-              "No — this is a hard red flag across the entire real-money app category. Legitimate platforms deduct fees from the payout itself rather than requiring an upfront payment to unlock it.",
+              "Its terms say 30% on winnings over ₹10,000 in a game. Under section 194BA, TDS of 30% applies to net winnings with no threshold.",
           },
           {
-            question: "Does Yono Arcade require KYC verification?",
+            question: "Is a withdrawal unlock fee real?",
+            answer: "No. Any request to pay before you receive money is a scam.",
+          },
+          {
+            question: "Can Yono Arcade withdrawals fail because of the new law?",
             answer:
-              "We haven't confirmed this specifically. Most legitimate real-money apps in this category require some level of ID verification before allowing withdrawals, which is standard practice rather than a warning sign.",
+              "Yes. Banks and payment services are barred from processing money-game payments since 1 May 2026.",
           },
         ]}
       />

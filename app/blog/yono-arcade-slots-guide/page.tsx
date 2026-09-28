@@ -1,162 +1,127 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import PageHeader from "../../components/sections/PageHeader";
 import ContentSection from "../../components/sections/ContentSection";
 import BulletList from "../../components/sections/BulletList";
-import Callout from "../../components/sections/Callout";
+import ComparisonTable from "../../components/sections/ComparisonTable";
 import FAQSection from "../../components/sections/FAQSection";
 import RelatedLinks from "../../components/sections/RelatedLinks";
 import GuideImage from "../../components/sections/GuideImage";
+import ArticleSchema from "../../components/sections/ArticleSchema";
+import ScheduledLink from "../../components/sections/ScheduledLink";
+
+// Re-render hourly so links to scheduled posts switch on after they publish.
+export const revalidate = 3600;
+
+const PATH = "/blog/yono-arcade-slots-guide";
+const IMAGE = "/images/guides/slots-guide-featured.webp";
+const H1 = "Yono Arcade Slots: What's Actually in the App";
+const TITLE = "Yono Arcade Slots: Which Games Exist, RTP & \"Slot Tricks\"";
+const DESCRIPTION =
+  "Does Yono Arcade have slots? What YonoArcade.com lists, the slot-style games it does name (Roulette, Wingo, 7 Up Down), why slot tricks don't work, and the legal position.";
 
 export const metadata: Metadata = {
-  title: "Yono Arcade Slots: Games Guide",
-  description:
-    "What the slot-style games inside Yono Arcade look like, based on search patterns and icon branding — what we've verified and what's still unconfirmed.",
-  alternates: { canonical: "https://allyonoarcade.com/blog/yono-arcade-slots-guide" },
-  openGraph: {
-    title: "Yono Arcade Slots: Games Guide",
-    description:
-      "What the slot-style games inside Yono Arcade look like, based on search patterns and icon branding — what we've verified and what's still unconfirmed.",
-    url: "https://allyonoarcade.com/blog/yono-arcade-slots-guide",
-  },
-  twitter: {
-    title: "Yono Arcade Slots: Games Guide",
-    description:
-      "What the slot-style games inside Yono Arcade look like, based on search patterns and icon branding — what we've verified and what's still unconfirmed.",
-  },
+  title: { absolute: TITLE },
+  description: DESCRIPTION,
+  alternates: { canonical: `https://allyonoarcade.com${PATH}` },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: `https://allyonoarcade.com${PATH}` },
+  twitter: { title: TITLE, description: DESCRIPTION },
 };
 
 export default function SlotsGuidePage() {
   return (
     <>
+      <ArticleSchema headline={H1} description={DESCRIPTION} path={PATH} image={IMAGE} published="2026-07-15" modified="2026-09-28" crumb="Yono Arcade Slots" />
+
       <PageHeader
         eyebrow="Blog"
-        title="Yono Arcade Slots"
-        answer="“Slots” shows up constantly alongside Yono Arcade in search, and the app's own branding leans heavily on spin-wheel and jackpot imagery. This page tracks what we can actually confirm about the slot-style games inside it, and explains the mechanics honestly rather than repeating numbers nobody has verified."
+        title={H1}
+        answer="YonoArcade.com uses “Slots” in its page title, but none of the 10 games on its homepage is a slot machine. The closest games it names are Roulette, Wingo Lottery, 7 Up Down and Crash, all games of chance. Slot games may exist inside the app; we haven't counted the in-app catalogue."
       />
+
+      <div className="mx-auto max-w-[760px] px-4 sm:px-6 -mt-2 mb-2 text-[12.5px] text-[var(--color-ink-400)]">
+        Updated: September 28, 2026 · Source: YonoArcade.com, checked September 28, 2026
+      </div>
 
       <RelatedLinks />
 
-      <GuideImage
-        src="/images/guides/slots-guide-featured.webp"
-        alt="Yono Arcade Slots games guide featured graphic"
-        className="mx-auto max-w-[760px] px-4 sm:px-6 mt-2"
-      />
+      <GuideImage src={IMAGE} alt="Yono Arcade slots and slot-style games guide" className="mx-auto max-w-[760px] px-4 sm:px-6 mt-2" />
 
-      <Callout tone="warning" title="Full breakdown pending" badge="pending">
-        <p>
-          We haven't completed a verified, title-by-title breakdown of the slot games inside Yono
-          Arcade yet. Rather than guess at bet limits, RTP, or exact titles based on what other
-          pages claim, this guide will fill in those specifics once we've confirmed each one
-          directly in the app.
-        </p>
-      </Callout>
-
-      <ContentSection heading="What “slots” actually means here">
-        <p>
-          Search behavior around "Yono Arcade slots" is strong enough that it's clearly pointing at
-          something real inside the app, but the word itself is doing a lot of work. In mobile
-          coin-op apps like this, "slots" can mean a dedicated game category in the main menu, a
-          general description covering several spin-based game types (fruit machines, jackpot
-          wheels, scratch-style reels), or simply how players describe the app's overall visual
-          style — coin stacks, spinning symbols, and jackpot counters are baked into a lot of the
-          branding you'll see across the whole Yono-named app family, not just this one screen.
-        </p>
-        <p>
-          Until we can open the app and map exactly how the developer labels this category — if
-          it's labeled as a distinct category at all — we're treating "slots" as a description of a
-          game style rather than a confirmed menu item. That distinction matters more than it
-          sounds: a lot of pages targeting this keyword skip straight to naming specific titles and
-          payout figures they have no way of actually knowing, which is exactly the kind of
-          unverified claim we're avoiding here.
-        </p>
-      </ContentSection>
-
-      <ContentSection heading="How slot-style games generally work">
-        <p>
-          Setting Yono Arcade specifics aside for a moment, it's worth understanding how this whole
-          genre works mechanically, because the general principles apply regardless of which app
-          you're using. Digital slot games run on a Random Number Generator (RNG) — a piece of
-          software that determines the outcome of every spin independently of the spin before it.
-          There's no such thing as a machine being "due" for a win, no pattern to spot by watching
-          symbols, and no legitimate way to predict an outcome before it happens. Any claim that
-          contradicts this — a "hot streak" tracker, a "pattern" app, anything promising to improve
-          your odds — is not describing how RNG-based games actually function.
-        </p>
-        <p>
-          The other core concept is RTP, or Return to Player — a theoretical long-run percentage
-          that describes how much of all money wagered on a given game is expected to be paid back
-          out over a very large number of spins. It's a statistical average measured over millions
-          of rounds, not a promise about any single session, and it's set by the game's own math
-          model, not something a third-party site can accurately state unless the developer
-          discloses it. We have not seen a disclosed RTP figure for anything inside Yono Arcade, so
-          any number attached to it elsewhere online should be treated as a guess, not a fact.
-        </p>
-        <p>
-          Most mobile slot games also layer on secondary mechanics — paylines, wild symbols, bonus
-          rounds, progressive jackpots that grow with player activity — which are presentation and
-          volatility choices rather than anything that changes the underlying RNG fairness. None of
-          that is unique to Yono Arcade; it's standard across the category, and understanding it
-          generically is useful groundwork before you evaluate any specific app's claims.
-        </p>
-      </ContentSection>
-
-      <ContentSection heading="What we've verified vs. what we haven't">
-        <BulletList
-          items={[
-            "Confirmed: “slots” is a real, high-volume search association with Yono Arcade — the demand exists.",
-            "Confirmed: the app's marketing visuals (coin stacks, spinning reels, jackpot counters) match slot-genre conventions.",
-            "Not yet confirmed: specific game titles, number of slot games available, or how they're organized in-app.",
-            "Not yet confirmed: any RTP, volatility, or payout figures — we won't publish numbers we can't independently source.",
-            "Not yet confirmed: whether real-money wagering applies to all slot games or only some.",
+      <ContentSection heading="Slots and slot-style games Yono Arcade names">
+        <ComparisonTable
+          headers={["Game", "Named where", "Type"]}
+          rows={[
+            ["\"Slots\"", "Page title only", "Not named in the games list"],
+            ["Roulette", "Homepage games list", "Wheel, chance"],
+            ["Wingo Lottery", "Homepage games list", "Colour/number draw, chance"],
+            ["7 Up Down", "Homepage games list", "Dice, chance"],
+            ["Crash", "Homepage games list", "Multiplier, chance"],
+            ["Jhandi Munda", "Homepage games list", "Dice, chance"],
           ]}
         />
       </ContentSection>
 
-      <Callout tone="warning" title="Real-money slots are prohibited in India">
-        <p>
-          YonoArcade.com describes its games as &quot;Real Cash Games&quot;. Since 1 May 2026, the Promotion and Regulation of Online Gaming Act, 2025 prohibits offering, advertising and processing payments for online money games anywhere in India, whether the game is based on skill, chance or both. Slots are
-          games of chance, so no skill argument applies either. Nothing on this page is legal
-          advice.
-        </p>
-      </Callout>
-
-      <ContentSection heading="A short checklist before you play">
-        <p>
-          Whether or not we've finished verifying the specifics above, these checks apply the
-          moment you open any slot-style game inside an app like this:
-        </p>
+      <ContentSection heading="How slot games work">
         <BulletList
           items={[
-            "Look for an in-app RTP or “game info” disclosure before wagering — legitimate games often show this on request.",
-            "Set a personal spending limit before you start, independent of anything the app suggests.",
-            "Treat any “win pattern” or “lucky time” claim you see online about this app as false — RNG games don't work that way.",
-            "If a deposit is required to unlock a slot game, revisit our withdrawal and deposit guide before adding funds.",
+            "Each spin's result comes from a random number generator on the operator's server.",
+            "RTP (return to player) is the long-run share of stakes paid back. Below 100% means players lose on average. Yono Arcade publishes no RTP figures.",
+            "Spins are independent: a machine isn't \"due\" to pay after a losing streak.",
           ]}
         />
+      </ContentSection>
+
+      <ContentSection heading="Why “slot tricks” and “hacks” don't work">
+        <BulletList
+          items={[
+            "Timing your spins, changing bet size or playing at \"lucky hours\" doesn't affect a server-side random result.",
+            "\"Hack\" or \"mod\" APKs can't change what the server decides; they're often repackaged apps used to take logins or payments. Check the package name is com.arcade.games.yo.",
+            "\"Slot signal\" Telegram groups sell the same thing as Aviator predictors: nothing.",
+          ]}
+        />
+        <p>
+          How to check the genuine file:{" "}
+          <ScheduledLink href="/blog/yono-arcade-apk-review" date="2026-09-30">Yono Arcade APK review</ScheduledLink>.
+        </p>
+      </ContentSection>
+
+      <ContentSection heading="Other slot apps in the Yono network">
+        <p>
+          Separate apps in the same family, such as <Link href="/all-games/yono-777">Yono 777</Link>,
+          focus on slots. They&apos;re different apps with their own download sites and operators, not
+          part of Yono Arcade. See the <Link href="/all-games">Yono Arcade games list</Link>.
+        </p>
+      </ContentSection>
+
+      <ContentSection heading="The legal position">
+        <p>
+          Slots are games of chance, and Yono Arcade presents its games as real-cash games. Since 1
+          May 2026, online money games are prohibited in India. If gaming is affecting your money or
+          mood, call the free Tele-MANAS helpline on <strong>14416</strong>.
+        </p>
       </ContentSection>
 
       <FAQSection
         heading="Slots questions"
         items={[
           {
-            question: "Does Yono Arcade have real slot machine games?",
+            question: "Does Yono Arcade have slots?",
             answer:
-              "Search demand and the app's branding strongly suggest slot-style games are present, but we haven't independently confirmed specific titles or how they're categorized in-app yet. We'll update this page once that's verified directly.",
+              "Its website uses \"Slots\" in its title but doesn't name a slot game among its 10 listed games. Roulette, Wingo Lottery, 7 Up Down and Crash are the closest.",
+          },
+          {
+            question: "What is the RTP of Yono Arcade slots?",
+            answer: "The operator doesn't publish RTP figures.",
+          },
+          {
+            question: "Do slot tricks work in Yono Arcade?",
+            answer:
+              "No. Results come from a random number generator on the operator's server.",
           },
           {
             question: "Are Yono Arcade slots real money?",
             answer:
-              "YonoArcade.com advertises its games as real-cash games with deposits and withdrawals. Since 1 May 2026, the Promotion and Regulation of Online Gaming Act, 2025 prohibits offering, advertising and processing payments for online money games anywhere in India, whether the game is based on skill, chance or both.",
-          },
-          {
-            question: "Is there a demo or free-play mode?",
-            answer:
-              "We haven't verified whether Yono Arcade offers a free-play or demo mode for its slot games. Many apps in this category do offer one — check the app itself rather than assuming based on similar apps.",
-          },
-          {
-            question: "Can I predict or influence the outcome of a spin?",
-            answer:
-              "No. RNG-based slot games generate each result independently, with no pattern to detect and no legitimate way to influence the outcome. Any tool or “strategy” claiming otherwise is not describing how these games work.",
+              "The operator presents its games as real-cash games; online money games are prohibited in India since 1 May 2026.",
           },
         ]}
       />
