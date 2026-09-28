@@ -126,6 +126,8 @@ export type BlogPillar = {
   /** Matches the verification badge/callout actually shown on the pillar's own page —
    *  kept in sync by hand since none of these guides claims full verification yet. */
   verificationStatus: "verified" | "unverified" | "pending";
+  /** Scheduled posts only: YYYY-MM-DD; hidden from the blog index and sitemap until 07:00 IST that day. */
+  publishedAt?: string;
 };
 
 /** The 5 blog pillars — matching the content plan's "slots/aviator/rummy
@@ -242,7 +244,62 @@ export const BLOG_PILLARS: BlogPillar[] = [
     volume: "new listing",
     verificationStatus: "verified",
   },
+  {
+    slug: "/blog/is-yono-arcade-banned-in-india",
+    title: "Is Yono Arcade Banned in India? 2026 Status",
+    description:
+      "Is Yono Game banned? What the Online Gaming Act 2025 means for Yono Arcade, why its state list is out of date, and what happens to your balance.",
+    icon: "shield",
+    image: "/images/guides/yono-arcade-india-2026-rules-status-guide.webp",
+    keyword: "yono game legal or illegal",
+    volume: "autocomplete",
+    verificationStatus: "verified",
+    publishedAt: "2026-09-29",
+  },
+  {
+    slug: "/blog/yono-arcade-apk-review",
+    title: "Yono Arcade APK Review: Package, Version, Signer",
+    description:
+      "We inspected the official Yono Arcade APK: package name, version 1.1.9, the \"lamislot\" signing certificate, its 9 permissions and the per-download tracking tag.",
+    icon: "shield",
+    image: "/images/guides/play-store-vs-sideload.webp",
+    keyword: "yono arcade apk",
+    volume: "autocomplete",
+    verificationStatus: "verified",
+    publishedAt: "2026-09-30",
+  },
+  {
+    slug: "/blog/yono-arcade-old-version-apk",
+    title: "Yono Arcade Old Version APK: Should You Install One?",
+    description:
+      "Why Yono Arcade old version APKs fail or get blocked, how to check which version you have, and how to tell a genuine older build from a repackaged one.",
+    icon: "gamepad",
+    image: "/images/guides/yono-arcade-latest-version-vs-old-version.webp",
+    keyword: "yono arcade old version apk",
+    volume: "autocomplete",
+    verificationStatus: "verified",
+    publishedAt: "2026-10-01",
+  },
+  {
+    slug: "/blog/yono-arcade-not-opening-not-installing",
+    title: "Yono Arcade Not Opening or Not Installing? Fixes",
+    description:
+      "Fixes for Yono Arcade \"App not installed\", parse errors, crashes on launch and endless loading, based on what the official APK actually requires.",
+    icon: "gamepad",
+    image: "/images/guides/yono-arcade-install-flow.webp",
+    keyword: "yono arcade not opening",
+    volume: "autocomplete",
+    verificationStatus: "verified",
+    publishedAt: "2026-10-02",
+  },
 ];
+
+/** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
+export function livePillars(): BlogPillar[] {
+  if (process.env.SCHEDULE_PREVIEW === "1") return BLOG_PILLARS; // local preview only
+  const now = Date.now();
+  return BLOG_PILLARS.filter((p) => !p.publishedAt || now >= Date.parse(`${p.publishedAt}T01:30:00Z`));
+}
 
 export const TOP_NAV_SLUGS = ["/download", "/game-apk", "/is-yono-arcade-safe", "/login"];
 

@@ -45,7 +45,7 @@ export default function AboutPage() {
           items={[
             "We don't host, mirror, or link directly to APK files.",
             "We don't publish contact numbers, promo codes, or account-recovery steps we can't verify.",
-            "We don't give legal or financial advice — real-money gaming rules vary by Indian state and change over time.",
+            "We don't give legal or financial advice. Online money games have been prohibited across India since 1 May 2026 under the Online Gaming Act, 2025; see our disclaimer for the details.",
           ]}
         />
       </ContentSection>

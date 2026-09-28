@@ -79,8 +79,7 @@ export default function WithdrawalDepositGuidePage() {
             "Confirm a withdrawal method is actually working — not just that deposits are accepted — before you rely on the app for anything beyond casual amounts.",
             "Check any minimum withdrawal threshold and stated processing time inside the app itself, not on a third-party page.",
             "Look for KYC/ID verification requirements before withdrawing — its presence is generally a good sign, not a bad one.",
-            "Start with a small, disposable test amount before depositing anything you'd be upset to lose access to.",
-            "Confirm your state's current real-money gaming rules independently — this varies across India and isn't something any single site can certify for you.",
+            "Since 1 May 2026, the Promotion and Regulation of Online Gaming Act, 2025 prohibits offering, advertising and processing payments for online money games anywhere in India, whether the game is based on skill, chance or both. Banks and payment services are barred from processing these payments, so deposits and withdrawals can fail.",
           ]}
         />
       </ContentSection>

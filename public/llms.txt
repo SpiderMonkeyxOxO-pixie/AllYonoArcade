@@ -1,0 +1,24 @@
+# AllYonoArcade.com
+
+> Independent, unofficial reference for the Yono Arcade Android app: who operates it, what the official APK contains, which games it lists, its legal status in India, and how to spot lookalike apps and fake support. Not affiliated with Yono Arcade or Yono Tech Private Limited.
+
+Key facts (checked 28 September 2026):
+- Official website: YonoArcade.com; stated operator: Yono Tech Private Limited; support: support@yonoarcade.com and live chat on yonoarcadehelp.com; no phone number is published.
+- Official APK: package com.arcade.games.yo, version 1.1.9, signed by a self-issued "lamislot" certificate; not on Google Play or the App Store.
+- Google Play lists seven unrelated apps named "Yono Arcade" from six other developers.
+- Yono Arcade describes itself as a real-cash gaming app. Online money games have been prohibited in India since 1 May 2026 under the Promotion and Regulation of Online Gaming Act, 2025.
+
+## Core guides
+
+- [Yono Arcade games list](https://allyonoarcade.com/all-games): the games YonoArcade.com names, and which are games of chance
+- [Is Yono Arcade safe?](https://allyonoarcade.com/is-yono-arcade-safe): operator claims, contradictions and checks
+- [Who operates Yono Arcade?](https://allyonoarcade.com/blog/who-operates-yono-arcade): official site vs lookalike Google Play apps
+- [Yono Arcade Mall](https://allyonoarcade.com/mall): what the Mall is and why there is no Mall APK
+- [Customer care](https://allyonoarcade.com/customer-care): official contacts vs fake numbers
+- [Login help](https://allyonoarcade.com/login): login and OTP problems
+- [Promo code status](https://allyonoarcade.com/promo-codes): code status by release period
+
+## About
+
+- [Disclaimer](https://allyonoarcade.com/disclaimer)
+- [About](https://allyonoarcade.com/about)

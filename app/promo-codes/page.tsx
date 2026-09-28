@@ -9,23 +9,19 @@ import RelatedLinks from "../components/sections/RelatedLinks";
 import PromoCountdown from "../components/sections/PromoCountdown";
 import GuideImage from "../components/sections/GuideImage";
 import { getPromoCodes } from "../lib/promo-codes";
+import ComparisonTable from "../components/sections/ComparisonTable";
+import { LAW_SENTENCE } from "../lib/legal";
+
+const TITLE = "Yono Arcade Promo Code Today: Morning, Afternoon & Evening";
+const DESCRIPTION =
+  "Yono Arcade promo code status for today, by release period. We only list codes we have checked ourselves, and mark each as verified, expired or unsupported.";
 
 export const metadata: Metadata = {
-  title: "Yono Arcade Promo Codes — Morning, Afternoon & Evening Status",
-  description:
-    "Yono Arcade promo code status by release period, checked regularly. No codes are shown unless independently verified — see why below.",
+  title: { absolute: TITLE },
+  description: DESCRIPTION,
   alternates: { canonical: "https://allyonoarcade.com/promo-codes" },
-  openGraph: {
-    title: "Yono Arcade Promo Codes — Morning, Afternoon & Evening Status",
-    description:
-      "Yono Arcade promo code status by release period, checked regularly. No codes are shown unless independently verified — see why below.",
-    url: "https://allyonoarcade.com/promo-codes",
-  },
-  twitter: {
-    title: "Yono Arcade Promo Codes — Morning, Afternoon & Evening Status",
-    description:
-      "Yono Arcade promo code status by release period, checked regularly. No codes are shown unless independently verified — see why below.",
-  },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: "https://allyonoarcade.com/promo-codes" },
+  twitter: { title: TITLE, description: DESCRIPTION },
 };
 
 // promo-code.txt is hand-edited throughout the day. A plain fs.readFileSync
@@ -49,7 +45,7 @@ export default function PromoCodesPage() {
       <PageHeader
         eyebrow="Promo Codes"
         title="Yono Arcade Promo Code Status"
-        answer="Codes for apps like this typically release up to three times a day — morning, afternoon, and evening. We track all three periods, but only publish a code once we can verify it ourselves, which is why you'll see “Not released yet” below rather than a guessed value."
+        answer={`Codes for apps like this typically release up to three times a day: morning, afternoon and evening. We track all three periods and only publish a code once we have checked it ourselves${activeCount > 0 ? ` (${activeCount} app${activeCount === 1 ? "" : "s"} with a checked code right now)` : ""}. A period with no checked code shows “Not released yet” instead of a guessed value.`}
       />
 
       <div className="mb-4">
@@ -85,6 +81,21 @@ export default function PromoCodesPage() {
         />
       </ContentSection>
 
+      <ContentSection heading="How we label a code: verified, expired or unsupported">
+        <ComparisonTable
+          headers={["Label", "What it means", "What you should do"]}
+          rows={[
+            ["Verified", "We checked it for the stated release period", "It may still run out early; codes are often limited"],
+            ["Expired", "The period has passed or the code was rejected", "Don't use it; lists that keep old codes go stale fast"],
+            ["Unsupported", "Seen on another site or channel, but not checked by us", "Treat it as unconfirmed; we don't publish these"],
+          ]}
+        />
+        <p>
+          A code only ever changes an in-app reward. It can&apos;t unlock withdrawals, raise limits or
+          guarantee winnings, whatever a page claims.
+        </p>
+      </ContentSection>
+
       <Callout tone="warning" title="Watch for fake “code” scams">
         <p>
           A common scam pattern asks you to enter personal or payment details to "unlock" a
@@ -93,13 +104,20 @@ export default function PromoCodesPage() {
         </p>
       </Callout>
 
+      <Callout tone="info" title="18+ only. Online money games are prohibited in India">
+        <p>
+          {LAW_SENTENCE} This page reports code status for reference; it is not an invitation to
+          deposit or play for money. See our <a href="/disclaimer">disclaimer</a>.
+        </p>
+      </Callout>
+
       <FAQSection
         heading="Promo code questions"
         items={[
           {
-            question: "Why does every card say “Not released yet”?",
+            question: "Why do some cards say “Not released yet”?",
             answer:
-              "Because we haven't independently verified an active code for any of these apps yet. We'd rather show that honestly than publish expired or copied codes, which is unfortunately common on pages targeting this search term.",
+              "Because we haven't checked an active code for that app and period yet. We'd rather show that honestly than publish expired or copied codes, which is common on pages targeting this search term.",
           },
           {
             question: "What do the Morning / Afternoon / Evening tabs mean?",

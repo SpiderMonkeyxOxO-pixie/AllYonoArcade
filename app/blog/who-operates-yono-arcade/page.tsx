@@ -8,6 +8,7 @@ import RelatedLinks from "../../components/sections/RelatedLinks";
 import GuideImage from "../../components/sections/GuideImage";
 import BulletList from "../../components/sections/BulletList";
 import ComparisonTable from "../../components/sections/ComparisonTable";
+import ScheduledLink from "../../components/sections/ScheduledLink";
 
 const TITLE = "Who Operates Yono Arcade? Official Website and App Identity Explained";
 const META_TITLE = "Who Operates Yono Arcade? Official Site & Fake Apps Explained";
@@ -16,10 +17,13 @@ const DESCRIPTION =
 const URL = "https://allyonoarcade.com/blog/who-operates-yono-arcade";
 const IMAGE = "https://allyonoarcade.com/images/guides/yono-arcade-owner-official-site-identity-check.webp";
 const PUBLISHED = "2026-09-26";
-const LAST_REVIEWED = "2026-09-26";
+const LAST_REVIEWED = "2026-09-28";
 
 const OFFICIAL_SITE = "https://yonoarcade.com";
 const EXTERNAL = { target: "_blank", rel: "nofollow noopener noreferrer" } as const;
+
+// Re-render hourly so links to scheduled posts switch on after they publish.
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: { absolute: META_TITLE },
@@ -78,7 +82,7 @@ export default function WhoOperatesYonoArcadePage() {
       />
 
       <div className="mx-auto max-w-[760px] px-4 sm:px-6 -mt-2 mb-2 text-[12.5px] text-[var(--color-ink-400)]">
-        Published: September 26, 2026 · Last reviewed: September 26, 2026
+        Published: September 26, 2026 · Last reviewed: September 28, 2026
       </div>
 
       <RelatedLinks />
@@ -173,10 +177,34 @@ export default function WhoOperatesYonoArcadePage() {
 
       <ContentSection heading="Why are there other Yono Arcade apps on Google Play?">
         <p>
-          Google Play currently contains several applications using the Yono Arcade name,
-          including listings published by GIRRAJA FUTURE COACHING CLASSES, MAHIEE TECH SOLUTIONS
-          and 3NEX GLOBAL INDIA PRIVATE LIMITED.
+          On 28 September 2026, Google Play in India listed seven apps named exactly &quot;Yono
+          Arcade&quot; from six different developers, plus a &quot;Yono Arcade Spin&quot;. None of them
+          is published by Yono Tech Private Limited:
         </p>
+        <ComparisonTable
+          headers={["Google Play developer", "Package name", "Installs · last updated"]}
+          rows={[
+            ["DROPTI EDUCATION ACADEMY", "com.blgarcadegamebysk.app", "10K+ · 27 Sep 2026"],
+            ["3NEX GLOBAL INDIA PRIVATE LIMITED", "com.sknex.yonoarcadeapp", "10K+ · 17 Sep 2026"],
+            ["BLG PLASTO PRIVATE LIMITED", "com.skblgpl.yonoarcadespin", "1K+ · 14 Sep 2026"],
+            ["MAHIEE TECH SOLUTIONS", "com.mahieetech.yonooarcadee", "1K+ · 21 Sep 2026"],
+            ["BLG PLASTO PRIVATE LIMITED", "com.skblgpl.yonoarcade", "500+ · 14 Sep 2026"],
+            ["Ridhi siddhi enterprise", "com.skridhis.yonoarcade", "100+ · 21 Sep 2026"],
+            ["GIRRAJA FUTURE COACHING CLASSES", "com.girajyonoarcade.app", "Updated 3 Aug 2026"],
+            ["Gameraftosa (\"Yono Arcade Spin\")", "com.yaflo2p.faymwe", "Updated 22 Jan 2026"],
+          ]}
+        />
+        <p>
+          Most were updated in September 2026, so expect this list to change. Always compare the
+          developer and package name against what YonoArcade.com states. The official APK itself
+          is package <code>com.arcade.games.yo</code>; our{" "}
+          <ScheduledLink href="/blog/yono-arcade-apk-review" date="2026-09-30">Yono Arcade APK review</ScheduledLink> covers it in detail.
+        </p>
+        <GuideImage
+          src="/images/guides/yono-arcade-website-vs-google-play.webp"
+          alt="YonoArcade.com official website compared with unofficial Google Play apps named Yono Arcade"
+          className="mt-4"
+        />
         <p>
           These applications exist on Google Play, but they are not recognised by YonoArcade.com
           as official versions of its platform. Their developer information is different from the
@@ -348,8 +376,11 @@ export default function WhoOperatesYonoArcadePage() {
             ["YonoArcade.com", "Operator stated as Yono Tech Private Limited", "Official source"],
             ["support@yonoarcade.com", "Support email listed on YonoArcade.com", "Official contact"],
             ["GIRRAJA FUTURE COACHING CLASSES", "com.girajyonoarcade.app", "Fake / unofficial listing"],
-            ["MAHIEE TECH SOLUTIONS", "Google Play developer", "Fake / unofficial listing"],
+            ["MAHIEE TECH SOLUTIONS", "com.mahieetech.yonooarcadee", "Fake / unofficial listing"],
             ["3NEX GLOBAL INDIA PRIVATE LIMITED", "com.sknex.yonoarcadeapp", "Fake / unofficial listing"],
+            ["DROPTI EDUCATION ACADEMY", "com.blgarcadegamebysk.app", "Fake / unofficial listing"],
+            ["BLG PLASTO PRIVATE LIMITED", "com.skblgpl.yonoarcade, com.skblgpl.yonoarcadespin", "Fake / unofficial listing"],
+            ["Ridhi siddhi enterprise", "com.skridhis.yonoarcade", "Fake / unofficial listing"],
             ["Other apps using the name", "Varies", "Verify before treating as official"],
           ]}
         />
@@ -363,9 +394,9 @@ export default function WhoOperatesYonoArcadePage() {
           access.
         </p>
         <p>
-          Several applications using the Yono Arcade name currently appear on Google Play under
-          unrelated developers, including GIRRAJA FUTURE COACHING CLASSES, MAHIEE TECH SOLUTIONS
-          and 3NEX GLOBAL INDIA PRIVATE LIMITED. For this guide, they are classified as fake or
+          Seven applications named Yono Arcade appeared on Google Play on 28 September 2026, from
+          six unrelated developers including DROPTI EDUCATION ACADEMY, 3NEX GLOBAL INDIA PRIVATE
+          LIMITED, BLG PLASTO PRIVATE LIMITED and MAHIEE TECH SOLUTIONS. For this guide, they are classified as fake or
           unofficial Yono Arcade listings because their developer identities, package information
           and product descriptions do not match the official source.
         </p>
@@ -402,7 +433,7 @@ export default function WhoOperatesYonoArcadePage() {
           {
             question: "Is Yono Arcade available on Google Play?",
             answer:
-              "Several applications called Yono Arcade appear on Google Play, but the listings reviewed are published by developers that do not match the operator identified on YonoArcade.com. They should therefore not be treated as the official YonoArcade.com application.",
+              "Not officially. On 28 September 2026 Google Play listed seven apps named Yono Arcade from six developers, none of them Yono Tech Private Limited, the operator named on YonoArcade.com. The official app is an APK from YonoArcade.com.",
           },
           {
             question: "Is the GIRRAJA FUTURE COACHING CLASSES Yono Arcade app official?",

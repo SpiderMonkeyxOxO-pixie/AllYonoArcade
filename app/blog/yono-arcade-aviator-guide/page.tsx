@@ -146,7 +146,7 @@ export default function AviatorGuidePage() {
           {
             question: "Is Aviator-style betting legal in India?",
             answer:
-              "Unlike rummy, crash games are generally treated as games of pure chance rather than skill, which affects their legal standing — several states restrict real-money games in this category. Confirm your state's current rules before playing.",
+              "No. Crash games are games of chance, and since 1 May 2026, the Promotion and Regulation of Online Gaming Act, 2025 prohibits offering, advertising and processing payments for online money games anywhere in India, whether the game is based on skill, chance or both.",
           },
           {
             question: "How is Aviator different from a slot game?",

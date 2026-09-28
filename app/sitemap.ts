@@ -1,9 +1,15 @@
 import type { MetadataRoute } from "next";
-import { CLUSTER_PAGES, BLOG_PILLARS } from "./lib/site-data";
+import { CLUSTER_PAGES, livePillars } from "./lib/site-data";
 import { PLATFORMS } from "./lib/platforms";
 import { getPromoCodes } from "./lib/promo-codes";
 
 const BASE = "https://allyonoarcade.com";
+
+// Scheduled posts join the sitemap on their publish date, so build it per request.
+export const dynamic = "force-dynamic";
+
+/** Published posts that are linked from other pages but not listed on the blog index. */
+const UNLISTED_POSTS = ["/blog/what-is-gold-rummy", "/blog/money-rummy-and-yono-network-lookalikes"];
 
 /**
  * No per-page CMS/content timestamps are tracked in this repo, so `lastModified`
@@ -37,8 +43,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.4,
   }));
 
-  const blogPillars: MetadataRoute.Sitemap = BLOG_PILLARS.map((pillar) => ({
-    url: `${BASE}${pillar.slug}`,
+  const blogPillars: MetadataRoute.Sitemap = [...livePillars().map((p) => p.slug), ...UNLISTED_POSTS].map((slug) => ({
+    url: `${BASE}${slug}`,
     changeFrequency: "weekly" as const,
     priority: 0.5,
   }));

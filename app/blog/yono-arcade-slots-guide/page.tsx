@@ -112,12 +112,11 @@ export default function SlotsGuidePage() {
         />
       </ContentSection>
 
-      <Callout tone="warning" title="Real-money legality is a state-by-state question">
+      <Callout tone="warning" title="Real-money slots are prohibited in India">
         <p>
-          If real-money mechanics are involved in any slot game inside Yono Arcade, remember that
-          India regulates real-money gaming at the state level, and the rules genuinely differ from
-          one state to another and change over time. Nothing on this page is legal advice — confirm
-          your own state's current rules independently before wagering anything.
+          YonoArcade.com describes its games as &quot;Real Cash Games&quot;. Since 1 May 2026, the Promotion and Regulation of Online Gaming Act, 2025 prohibits offering, advertising and processing payments for online money games anywhere in India, whether the game is based on skill, chance or both. Slots are
+          games of chance, so no skill argument applies either. Nothing on this page is legal
+          advice.
         </p>
       </Callout>
 
@@ -147,7 +146,7 @@ export default function SlotsGuidePage() {
           {
             question: "Are Yono Arcade slots real money?",
             answer:
-              "We don't have this confirmed either way for every game. If real-money wagering is involved, treat it like any real-money app: check your state's current legal status and never wager more than you can afford to lose.",
+              "YonoArcade.com advertises its games as real-cash games with deposits and withdrawals. Since 1 May 2026, the Promotion and Regulation of Online Gaming Act, 2025 prohibits offering, advertising and processing payments for online money games anywhere in India, whether the game is based on skill, chance or both.",
           },
           {
             question: "Is there a demo or free-play mode?",

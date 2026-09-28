@@ -5,7 +5,10 @@ import PageHeader from "../components/sections/PageHeader";
 import { ArrowRightIcon } from "../components/icons/Icons";
 import RelatedLinks from "../components/sections/RelatedLinks";
 import VerificationBadge from "../components/sections/VerificationBadge";
-import { BLOG_PILLARS } from "../lib/site-data";
+import { livePillars } from "../lib/site-data";
+
+// Scheduled posts appear here from 07:00 IST on their date, so render per request.
+export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
   title: "Blog",
@@ -28,14 +31,14 @@ export default function BlogIndexPage() {
       <PageHeader
         eyebrow="Blog"
         title="Blog"
-        answer="Five pillar guides — game-type breakdowns, transactions, and an ongoing changelog. Each one is honest about what's confirmed about Yono Arcade specifically versus still unverified, even where the surrounding guide itself is complete."
+        answer="Guides to Yono Arcade's identity, APK, games, safety and India status, newest first. Each one says what we have verified and what is still unconfirmed."
       />
 
       <RelatedLinks />
 
       <section className="mx-auto max-w-[760px] px-4 sm:px-6 py-4">
         <div className="flex flex-col gap-3">
-          {BLOG_PILLARS.map((pillar) => (
+          {[...livePillars()].reverse().map((pillar) => (
             <Link
               key={pillar.slug}
               href={pillar.slug}

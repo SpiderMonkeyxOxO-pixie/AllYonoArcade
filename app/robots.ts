@@ -6,7 +6,8 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/api/", "/_next/"],
+        // /_next/ holds the CSS, JS and optimised images Google needs to render pages; don't block it.
+        disallow: ["/api/"],
       },
     ],
     sitemap: "https://allyonoarcade.com/sitemap.xml",

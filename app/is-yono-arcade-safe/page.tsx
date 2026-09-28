@@ -7,22 +7,28 @@ import Callout from "../components/sections/Callout";
 import FAQSection from "../components/sections/FAQSection";
 import RelatedLinks from "../components/sections/RelatedLinks";
 import GuideImage from "../components/sections/GuideImage";
+import ComparisonTable from "../components/sections/ComparisonTable";
+import ScheduledLink from "../components/sections/ScheduledLink";
+import { LAW_SENTENCE, LAW_STATES, LAW_PLAYERS, OPERATOR_CHECKED } from "../lib/legal";
+
+// Re-render hourly so links to scheduled posts switch on after they publish.
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: "Is Yono Arcade Safe? An Honest Look",
+  title: "Is Yono Arcade Safe? Operator Claims & 2026 Checks",
   description:
-    "We don't give Yono Arcade a one-line safe/unsafe verdict. Here's the actual framework we use — permissions, distribution source, and financial red flags — so you can check for yourself.",
+    "Is Yono Arcade safe? What YonoArcade.com says about its operator, games and data collection, where its claims conflict, and the checks to run before installing.",
   alternates: { canonical: "https://allyonoarcade.com/is-yono-arcade-safe" },
   openGraph: {
-    title: "Is Yono Arcade Safe? An Honest Look",
+    title: "Is Yono Arcade Safe? Operator Claims & 2026 Checks",
     description:
-      "We don't give Yono Arcade a one-line safe/unsafe verdict. Here's the actual framework we use — permissions, distribution source, and financial red flags — so you can check for yourself.",
+      "Is Yono Arcade safe? What YonoArcade.com says about its operator, games and data collection, where its claims conflict, and the checks to run before installing.",
     url: "https://allyonoarcade.com/is-yono-arcade-safe",
   },
   twitter: {
-    title: "Is Yono Arcade Safe? An Honest Look",
+    title: "Is Yono Arcade Safe? Operator Claims & 2026 Checks",
     description:
-      "We don't give Yono Arcade a one-line safe/unsafe verdict. Here's the actual framework we use — permissions, distribution source, and financial red flags — so you can check for yourself.",
+      "Is Yono Arcade safe? What YonoArcade.com says about its operator, games and data collection, where its claims conflict, and the checks to run before installing.",
   },
 };
 
@@ -73,7 +79,32 @@ export default function SafetyPage() {
           items={[
             "Guaranteed-win or guaranteed-return language is a hard red flag for any real-money game — legitimate skill/chance games don't promise outcomes.",
             "Withdrawal problems reported by other users (search the app name plus \"withdrawal\") are worth weighing before you deposit anything.",
-            "Real-money gaming legality varies by Indian state. Confirm your state's current rules independently — this isn't something any single site can certify for you.",
+            `${LAW_SENTENCE} ${LAW_STATES}`,
+          ]}
+        />
+      </ContentSection>
+
+      <ContentSection heading={`5. What YonoArcade.com says about itself (checked ${OPERATOR_CHECKED})`}>
+        <p>
+          The operator&apos;s own website is the best evidence of what the app is. Here is what it
+          states, and where its claims conflict with each other. For what the APK file itself
+          contains, see our{" "}
+          <ScheduledLink href="/blog/yono-arcade-apk-review" date="2026-09-30">Yono Arcade APK review</ScheduledLink>; for
+          the legal position, see{" "}
+          <ScheduledLink href="/blog/is-yono-arcade-banned-in-india" date="2026-09-29">Is Yono Arcade banned in India?</ScheduledLink>.
+        </p>
+        <ComparisonTable
+          headers={["Topic", "What YonoArcade.com says", "Why it matters"]}
+          rows={[
+            ["Operator", "Owned and operated by Yono Tech Private Limited", "The only company name it gives; no address or registration number is listed"],
+            ["Type of app", "\"Real Cash Games\", deposits (\"Add Cash\") and withdrawals to bank or UPI", "That makes it an online money game under the 2025 Act"],
+            ["Games", "Rummy, Ludo, Poker, Crash, Andar Bahar, Wingo Lottery, 7 Up Down, Dragon & Tiger, Jhandi Munda, Roulette", "Several of these are games of chance, not skill"],
+            ["Skill claim", "\"All games on YonoArcade are skill-based\"", "Contradicts its own game list; the Act does not exempt skill games anyway"],
+            ["Where it operates", "India except Telangana, Assam, Orissa, Gujarat, Maharashtra, Delhi, Andhra Pradesh, Tamil Nadu, Nagaland and Sikkim", "A pre-2025 state list; it does not mention the national Act"],
+            ["Experience", "Both \"10+ years\" and \"the last sixteen years\" on the same page", "Inconsistent claims about its own history"],
+            ["Data collected", "Bank and card details, PAN, date of birth, phone, and contacts for referral invites", "Sensitive financial data, which raises the stakes if the app is not what it claims"],
+            ["Website copy", "Homepage text includes paragraphs about \"Gamezy\", a different fantasy-cricket brand", "Copied marketing text is a weak sign of how carefully the site is maintained"],
+            ["Age", "18+ only", "Consistent with the rest of the category"],
           ]}
         />
       </ContentSection>
@@ -99,7 +130,7 @@ export default function SafetyPage() {
           {
             question: "Is Yono Arcade legal in India?",
             answer:
-              "Real-money gaming legality in India is set at the state level and changes over time. If the app involves real-money mechanics, confirm current rules for your specific state before playing — this page isn't legal advice.",
+              `YonoArcade.com describes Yono Arcade as a real-cash gaming platform. ${LAW_SENTENCE} ${LAW_PLAYERS} This page isn't legal advice.`,
           },
           {
             question: "What's the single biggest red flag to watch for?",

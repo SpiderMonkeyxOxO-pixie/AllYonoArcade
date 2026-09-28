@@ -92,10 +92,9 @@ export default function RummyGuidePage() {
           Rummy is also legally distinct from most other card and slot games in India in one
           important way: courts have generally classified rummy as a game of skill rather than
           pure chance, which has historically kept it in a different regulatory category than
-          pure-chance games. That classification doesn't mean it's automatically legal everywhere
-          or for everyone — several states still restrict or ban real-money rummy outright, and the
-          legal landscape keeps shifting, so this is a starting point for your own research, not a
-          green light.
+          pure-chance games. That distinction no longer matters for money play: the Online Gaming
+          Act, 2025, in force since 1 May 2026, prohibits online money games in India whether they
+          are based on skill, chance or both.
         </p>
       </ContentSection>
 
@@ -135,12 +134,10 @@ export default function RummyGuidePage() {
         </p>
       </ContentSection>
 
-      <Callout tone="warning" title="State-by-state legality still applies">
+      <Callout tone="warning" title="Skill status does not make money rummy legal">
         <p>
-          Even where rummy is treated as a game of skill, real-money mechanics attached to it are
-          still subject to state-level regulation in India, and a handful of states restrict it
-          regardless of the skill classification. Confirm your own state's current rules before
-          playing for money — this page isn't legal advice.
+          Since 1 May 2026, the Promotion and Regulation of Online Gaming Act, 2025 prohibits offering, advertising and processing payments for online money games anywhere in India, whether the game is based on skill, chance or both. Older state-by-state rules no longer decide the question. This page isn't
+          legal advice.
         </p>
       </Callout>
 
@@ -160,7 +157,7 @@ export default function RummyGuidePage() {
           {
             question: "Is rummy legal to play for real money in India?",
             answer:
-              "Rummy has generally been treated as a game of skill by Indian courts, which affects its regulatory treatment, but several states still restrict real-money rummy and rules change over time. Confirm your specific state's current law independently.",
+              "No. Courts have treated rummy as a game of skill, but since 1 May 2026, the Promotion and Regulation of Online Gaming Act, 2025 prohibits offering, advertising and processing payments for online money games anywhere in India, whether the game is based on skill, chance or both.",
           },
           {
             question: "How do I know if a rummy app referral is legitimate?",
