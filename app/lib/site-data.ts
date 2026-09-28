@@ -162,7 +162,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     description:
       "There is no separate Yono Aviator APK: Aviator is the Crash game inside Yono Arcade. Why predictor apps (v2.1, v4.0, v6.0) can't work.",
     icon: "gamepad",
-    image: "/images/guides/aviator-guide-featured.webp",
+    image: "/images/guides/yono-aviator-apk-predictor.webp",
     keyword: "yono arcade aviator",
     volume: "low, rising",
     verificationStatus: "verified",
@@ -173,7 +173,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     description:
       "Withdrawal pending or failed? What Yono Arcade's terms say about PAN, KYC and 30% TDS, why payments can fail since 2026, and common scams.",
     icon: "shield",
-    image: "/images/guides/withdrawal-deposit-guide-featured.webp",
+    image: "/images/guides/yono-arcade-withdrawal-kyc-tds.webp",
     keyword: "yono arcade withdrawal",
     volume: "low, transactional",
     verificationStatus: "verified",
@@ -262,7 +262,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     description:
       "We inspected the official Yono Arcade APK: package name, version 1.1.9, the \"lamislot\" signing certificate, its 9 permissions and the per-download tracking tag.",
     icon: "shield",
-    image: "/images/guides/play-store-vs-sideload.webp",
+    image: "/images/guides/yono-arcade-apk-review.webp",
     keyword: "yono arcade apk",
     volume: "autocomplete",
     verificationStatus: "verified",
@@ -286,11 +286,83 @@ export const BLOG_PILLARS: BlogPillar[] = [
     description:
       "Fixes for Yono Arcade \"App not installed\", parse errors, crashes on launch and endless loading, based on what the official APK actually requires.",
     icon: "gamepad",
-    image: "/images/guides/yono-arcade-install-flow.webp",
+    image: "/images/guides/yono-arcade-not-opening-not-installing.webp",
     keyword: "yono arcade not opening",
     volume: "autocomplete",
     verificationStatus: "verified",
     publishedAt: "2026-10-02",
+  },
+  {
+    slug: "/blog/yono-arcade-wingo-lottery",
+    title: "Wingo Lottery & \"Wingo Prediction Tool v5\"",
+    description:
+      "How the Wingo colour game in Yono Arcade works, and why Wingo prediction tools and result APKs can't predict the next draw.",
+    icon: "gamepad",
+    image: "/images/guides/yono-arcade-wingo-lottery-prediction.webp",
+    keyword: "wingo prediction tool v5 apk",
+    volume: "autocomplete",
+    verificationStatus: "verified",
+    publishedAt: "2026-10-03",
+  },
+  {
+    slug: "/blog/yono-arcade-7-up-down",
+    title: "7 Up Down: Rules, Odds & \"Winning Tricks\"",
+    description:
+      "The real odds of 7 Up, 7 Down and exactly 7 in Yono Arcade, and why 7 up down winning tricks can't beat the dice.",
+    icon: "gamepad",
+    image: "/images/guides/yono-arcade-7-up-down.webp",
+    keyword: "7 up down winning trick",
+    volume: "autocomplete",
+    verificationStatus: "verified",
+    publishedAt: "2026-10-04",
+  },
+  {
+    slug: "/blog/yono-arcade-dragon-tiger",
+    title: "Dragon Tiger: Rules, Odds & \"Predict GPT\" Claims",
+    description:
+      "How Dragon Tiger works in Yono Arcade, the odds of Dragon, Tiger and Tie, and why AI prediction tools can't know the next card.",
+    icon: "gamepad",
+    image: "/images/guides/yono-arcade-dragon-tiger.webp",
+    keyword: "dragon tiger predict gpt",
+    volume: "autocomplete",
+    verificationStatus: "verified",
+    publishedAt: "2026-10-05",
+  },
+  {
+    slug: "/blog/yono-arcade-andar-bahar",
+    title: "Andar Bahar: Meaning, Rules & Odds",
+    description:
+      "Andar Bahar meaning in English and Hindi, how the card game works in Yono Arcade, and the real odds of Andar vs Bahar.",
+    icon: "gamepad",
+    image: "/images/guides/yono-arcade-andar-bahar.webp",
+    keyword: "andar bahar meaning in english",
+    volume: "autocomplete",
+    verificationStatus: "verified",
+    publishedAt: "2026-10-06",
+  },
+  {
+    slug: "/blog/jaiho-arcade-vs-yono-arcade",
+    title: "Jaiho Arcade vs Yono Arcade: Same App?",
+    description:
+      "Different names and packages, but both APKs are signed with the same certificate and served from the same host. What we found.",
+    icon: "swap",
+    image: "/images/guides/jaiho-arcade-vs-yono-arcade.webp",
+    keyword: "jaiho arcade game all apk",
+    volume: "autocomplete",
+    verificationStatus: "verified",
+    publishedAt: "2026-10-07",
+  },
+  {
+    slug: "/blog/yono-arcade-jhandi-munda-roulette",
+    title: "Jhandi Munda & Roulette: Rules and Real Odds",
+    description:
+      "How Jhandi Munda's six symbol dice and Roulette work in Yono Arcade, the real odds of each bet, and why both are games of chance.",
+    icon: "gamepad",
+    image: "/images/guides/yono-arcade-jhandi-munda-roulette.webp",
+    keyword: "jhandi munda",
+    volume: "autocomplete",
+    verificationStatus: "verified",
+    publishedAt: "2026-10-08",
   },
 ];
 

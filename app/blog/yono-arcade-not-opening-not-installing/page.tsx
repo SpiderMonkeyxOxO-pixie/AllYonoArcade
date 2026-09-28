@@ -15,7 +15,7 @@ const META_TITLE = "Yono Arcade Not Opening or APK Not Installing? Fixes (2026)"
 const DESCRIPTION =
   "Fix Yono Arcade \"App not installed\", parse errors, Play Protect blocks, crashes on launch and endless loading, based on what the official APK actually requires.";
 const URL = "https://allyonoarcade.com/blog/yono-arcade-not-opening-not-installing";
-const IMAGE = "https://allyonoarcade.com/images/guides/yono-arcade-install-flow.webp";
+const IMAGE = "https://allyonoarcade.com/images/guides/yono-arcade-not-opening-not-installing.webp";
 const PUBLISHED = "2026-10-02";
 
 export const dynamic = "force-dynamic";
@@ -76,7 +76,7 @@ export default function YonoArcadeNotOpeningPage() {
       <RelatedLinks />
 
       <GuideImage
-        src="/images/guides/yono-arcade-install-flow.webp"
+        src="/images/guides/yono-arcade-not-opening-not-installing.webp"
         alt="Yono Arcade not opening or not installing: common errors and fixes"
         className="mx-auto max-w-[760px] px-4 sm:px-6 mt-2"
       />

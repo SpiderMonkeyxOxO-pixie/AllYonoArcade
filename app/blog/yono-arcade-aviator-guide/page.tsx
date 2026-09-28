@@ -15,7 +15,7 @@ import ScheduledLink from "../../components/sections/ScheduledLink";
 export const revalidate = 3600;
 
 const PATH = "/blog/yono-arcade-aviator-guide";
-const IMAGE = "/images/guides/aviator-guide-featured.webp";
+const IMAGE = "/images/guides/yono-aviator-apk-predictor.webp";
 const H1 = "Yono Arcade Aviator: The Crash Game, \"Yono Aviator APK\" and Predictor Apps";
 const TITLE = "Yono Aviator APK & Aviator Predictor: What's Real (2026)";
 const DESCRIPTION =

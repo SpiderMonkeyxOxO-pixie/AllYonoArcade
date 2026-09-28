@@ -15,7 +15,7 @@ const META_TITLE = "Yono Arcade APK Review: Package, Version 1.1.9 & Permissions
 const DESCRIPTION =
   "We inspected the official Yono Arcade APK: package com.arcade.games.yo, version 1.1.9, the \"lamislot\" signing certificate, 9 permissions and a per-download tracking tag.";
 const URL = "https://allyonoarcade.com/blog/yono-arcade-apk-review";
-const IMAGE = "https://allyonoarcade.com/images/guides/play-store-vs-sideload.webp";
+const IMAGE = "https://allyonoarcade.com/images/guides/yono-arcade-apk-review.webp";
 const PUBLISHED = "2026-09-30";
 const CERT_SHA256 = "5c:bb:22:5f:ff:2a:b9:db:2c:e0:18:bc:ba:db:d3:78:15:1f:7e:d8:fc:bd:3e:c9:db:ea:e6:cc:1c:a8:ee:ea";
 
@@ -77,7 +77,7 @@ export default function YonoArcadeApkReviewPage() {
       <RelatedLinks />
 
       <GuideImage
-        src="/images/guides/play-store-vs-sideload.webp"
+        src="/images/guides/yono-arcade-apk-review.webp"
         alt="Yono Arcade APK review: package name, version, signing certificate and permissions"
         className="mx-auto max-w-[760px] px-4 sm:px-6 mt-2"
       />

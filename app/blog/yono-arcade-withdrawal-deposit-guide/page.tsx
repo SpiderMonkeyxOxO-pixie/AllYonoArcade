@@ -15,7 +15,7 @@ import ScheduledLink from "../../components/sections/ScheduledLink";
 export const revalidate = 3600;
 
 const PATH = "/blog/yono-arcade-withdrawal-deposit-guide";
-const IMAGE = "/images/guides/withdrawal-deposit-guide-featured.webp";
+const IMAGE = "/images/guides/yono-arcade-withdrawal-kyc-tds.webp";
 const H1 = "Yono Arcade Withdrawal Problems, KYC and TDS";
 const TITLE = "Yono Arcade Withdrawal Problem, KYC & TDS Explained (2026)";
 const DESCRIPTION =
