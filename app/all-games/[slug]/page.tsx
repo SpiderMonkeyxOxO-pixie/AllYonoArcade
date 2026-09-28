@@ -7,9 +7,23 @@ import BulletList from "../../components/sections/BulletList";
 import Callout from "../../components/sections/Callout";
 import FAQSection from "../../components/sections/FAQSection";
 import { DownloadIcon, ExternalLinkIcon } from "../../components/icons/Icons";
-import { PLATFORMS, getPlatform, targetKeyword } from "../../lib/platforms";
+import { PLATFORMS, PLAY_CHECKED, getPlatform, targetKeyword } from "../../lib/platforms";
+import ComparisonTable from "../../components/sections/ComparisonTable";
+import { getPromoCodes, findPromoEntry } from "../../lib/promo-codes";
+import { LAW_SENTENCE } from "../../lib/legal";
 import RelatedLinks from "../../components/sections/RelatedLinks";
 import ComingSoonCard from "../../components/sections/ComingSoonCard";
+
+// Shows today's promo code status from promo-code.txt, which is edited during the day.
+export const dynamic = "force-dynamic";
+
+function hostOf(url?: string): string | null {
+  try {
+    return url ? new URL(url).hostname.replace(/^www\./, "") : null;
+  } catch {
+    return null;
+  }
+}
 
 export function generateStaticParams() {
   return PLATFORMS.map((p) => ({ slug: p.slug }));
@@ -48,6 +62,14 @@ export default async function PlatformPage({
   const { slug } = await params;
   const platform = getPlatform(slug);
   if (!platform) notFound();
+
+  const promo = findPromoEntry(getPromoCodes().entries, platform.name);
+  const periods: [string, string | null][] = [
+    ["Morning", promo?.morning ?? null],
+    ["Afternoon", promo?.afternoon ?? null],
+    ["Evening", promo?.evening ?? null],
+  ];
+  const host = hostOf(platform.downloadUrl);
 
   const others = PLATFORMS.filter((p) => p.category === platform.category && p.slug !== platform.slug).slice(0, 4);
 
@@ -95,6 +117,35 @@ export default async function PlatformPage({
 
       {!platform.comingSoon && (
         <>
+          <ContentSection heading={`${platform.name} quick facts`}>
+            <ComparisonTable
+              headers={["Question", "Answer", "Checked"]}
+              rows={[
+                ["Where is the APK from?", host ? `Its own download site (${host}), not an app store` : "No verified download site yet", "Download link on this page"],
+                ["Is it on Google Play?", platform.playCheck ?? "Not checked yet", PLAY_CHECKED],
+                ["Promo code today", periods.some(([, c]) => c) ? "A checked code is listed below" : "No checked code yet today", "Updated during the day"],
+                ["Is it a real-money app?", "Yono-network apps like this are presented as real-money games; online money games are prohibited in India since 1 May 2026", "Online Gaming Act, 2025"],
+              ]}
+            />
+          </ContentSection>
+
+          <ContentSection heading={`${platform.name} promo code today`}>
+            <p>
+              Codes for apps like {platform.name} are usually released up to three times a day. This is
+              today&apos;s status for each release period; a period shows &quot;Not released yet&quot; until
+              we have checked a code for it.
+            </p>
+            <ComparisonTable
+              headers={["Release period", "Code", "Status"]}
+              rows={periods.map(([label, code]) => [label, code ?? "—", code ? "Checked" : "Not released yet"])}
+            />
+            <p>
+              Enter a code only inside the {platform.name} app&apos;s own redeem field. A code never
+              needs your OTP, UPI PIN or a payment to &quot;unlock&quot; it. All apps in one place:{" "}
+              <Link href="/promo-codes">today&apos;s promo code status</Link>. 18+ only. {LAW_SENTENCE}
+            </p>
+          </ContentSection>
+
           <Callout
             tone="warning"
             title={`We haven't verified a relationship between ${platform.name} and Yono Arcade`}
@@ -178,6 +229,22 @@ export default async function PlatformPage({
                 {
                   question: `Is ${platform.name} safe to install?`,
                   answer: `We haven't reviewed this specific app. Use the same checklist as our Yono Arcade safety review — permissions requested, distribution source, and any real-money claims — before installing anything.`,
+                },
+                {
+                  question: `What is the ${platform.name} promo code today?`,
+                  answer: periods.some(([, c]) => c)
+                    ? `Today's checked ${platform.name} codes: ${periods.filter(([, c]) => c).map(([l, c]) => `${l} ${c}`).join(", ")}. Codes are time-limited; enter them only in the app's own redeem field.`
+                    : `No ${platform.name} code has been checked yet today. Codes are usually released in the morning, afternoon and evening; this page and our promo code page update when one is checked.`,
+                },
+                {
+                  question: `Where do I download the ${platform.name} APK?`,
+                  answer: host
+                    ? `${platform.name} is distributed as an APK from its own site (${host}), not from an app store. Download sites in this network change often, so check the package name after installing.`
+                    : `We haven't verified a download site for ${platform.name} yet.`,
+                },
+                {
+                  question: `Is ${platform.name} on Google Play?`,
+                  answer: `${platform.playCheck ?? "Not checked yet."} (Checked ${PLAY_CHECKED}.)`,
                 },
               ]
         }

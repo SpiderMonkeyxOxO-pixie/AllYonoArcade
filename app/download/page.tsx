@@ -4,26 +4,26 @@ import PageHeader from "../components/sections/PageHeader";
 import ContentSection from "../components/sections/ContentSection";
 import BulletList from "../components/sections/BulletList";
 import Callout from "../components/sections/Callout";
+import ComparisonTable from "../components/sections/ComparisonTable";
 import FAQSection from "../components/sections/FAQSection";
 import RelatedLinks from "../components/sections/RelatedLinks";
 import GuideImage from "../components/sections/GuideImage";
+import ScheduledLink from "../components/sections/ScheduledLink";
+import { LAW_SENTENCE, OPERATOR_CHECKED } from "../lib/legal";
+
+// Re-render hourly so links to scheduled posts switch on after they publish.
+export const revalidate = 3600;
+
+const TITLE = "Yono Arcade Download APK: Official Source & How It Works (2026)";
+const DESCRIPTION =
+  "Yono Arcade APK download explained: the only official source, what the download button actually does, how to confirm you got the real file, and the latest version.";
 
 export const metadata: Metadata = {
-  title: "How to Download Yono Arcade (APK & Install Guide)",
-  description:
-    "A step-by-step guide to downloading and installing Yono Arcade, plus how to tell the main app apart from Game APK, Pure APK, and Mall builds.",
+  title: { absolute: TITLE },
+  description: DESCRIPTION,
   alternates: { canonical: "https://allyonoarcade.com/download" },
-  openGraph: {
-    title: "How to Download Yono Arcade (APK & Install Guide)",
-    description:
-      "A step-by-step guide to downloading and installing Yono Arcade, plus how to tell the main app apart from Game APK, Pure APK, and Mall builds.",
-    url: "https://allyonoarcade.com/download",
-  },
-  twitter: {
-    title: "How to Download Yono Arcade (APK & Install Guide)",
-    description:
-      "A step-by-step guide to downloading and installing Yono Arcade, plus how to tell the main app apart from Game APK, Pure APK, and Mall builds.",
-  },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: "https://allyonoarcade.com/download" },
+  twitter: { title: TITLE, description: DESCRIPTION },
 };
 
 export default function DownloadPage() {
@@ -31,46 +31,40 @@ export default function DownloadPage() {
     <>
       <PageHeader
         eyebrow="Download"
-        title="How to Download Yono Arcade"
-        answer="Yono Arcade is distributed as an Android APK. Before you install anything, it helps to know which build you're looking at — searches for “Yono Arcade” turn up several differently named variants, and they aren't interchangeable."
+        title="Yono Arcade Download APK"
+        answer={`The official Yono Arcade APK comes only from YonoArcade.com. It is not on Google Play or the App Store. On ${OPERATOR_CHECKED} its download button served version 1.1.9 (package com.arcade.games.yo, about 34 MB). Apps named "Yono Arcade" on Google Play are other developers' apps.`}
       />
 
       <RelatedLinks />
 
-      <ContentSection heading="Which build are you looking for?">
+      <ContentSection heading="What happens when you tap Download on YonoArcade.com">
         <p>
-          If you searched for a specific variant, jump straight to its guide instead of guessing:
+          We traced the official download on 28 September 2026. It works differently from a normal
+          file link:
         </p>
-        <BulletList
-          items={[
-            <>
-              <strong>Game APK</strong> — the core installer file most people mean by
-              "yono arcade apk." See our <Link href="/game-apk">Game APK guide</Link>.
-            </>,
-            <>
-              <strong>Pure APK</strong> — a naming pattern usually associated with third-party
-              mirrors distributed outside official app stores. Read the safety notes first:{" "}
-              <Link href="/pure-apk">Pure APK guide</Link>.
-            </>,
-            <>
-              <strong>Mall</strong> — appears to be a section within the app rather than a
-              separate download. See <Link href="/mall">Arcade Mall</Link>.
-            </>,
+        <ComparisonTable
+          headers={["Step", "What happens", "What it means for you"]}
+          rows={[
+            ["1. Page loads", "A FingerprintJS script creates an ID for your device and browser", "The download is linked to your visit"],
+            ["2. Button waits", "\"Wait For Apk...\" while the site asks its download server for a file", "A slow or blocked script can leave the button stuck"],
+            ["3. File served", "A copy of the APK tagged with your visitor ID and a channel code", "Your file's checksum won't match anyone else's"],
+            ["4. Fallback", "If the script fails, a standard copy with a default channel code is served", "Same app, same version"],
           ]}
         />
+        <p>
+          The tag doesn&apos;t change the app itself: our two downloads were
+          identical apart from it. To confirm a file, check the package name and version rather
+          than the checksum.
+        </p>
       </ContentSection>
 
-      <ContentSection heading="General steps for installing an Android APK">
-        <p>
-          These are standard Android precautions that apply to any APK, not just this app:
-        </p>
+      <ContentSection heading="How to confirm you got the real file">
         <BulletList
           items={[
-            "Confirm the publisher name on the download page matches what you expect before installing anything.",
-            "Android will warn you when installing from outside the Play Store (\"unknown sources\") — read that warning, don't dismiss it automatically.",
-            "Check the permissions the app requests during install. An arcade/games app asking for contacts, SMS, or call logs is worth pausing on.",
-            "Keep Google Play Protect enabled — it scans sideloaded APKs for known malware signatures.",
-            "Update through the same source you installed from; mixing update sources is a common way people end up on fake mirrors.",
+            "After installing, open Settings → Apps → Yono Arcade → App details. The package name should be com.arcade.games.yo.",
+            "The version should be 1.1.9 or newer (1.1.9 was current on 28 September 2026).",
+            "The download should be about 34 MB. A file of 47 MB or 77 MB is a different build or a different app.",
+            "Future updates must install over it without uninstalling. A signature error means the update came from someone else.",
           ]}
         />
         <GuideImage
@@ -80,12 +74,37 @@ export default function DownloadPage() {
         />
       </ContentSection>
 
-      <Callout tone="warning" title="We don't host or link to APK files directly">
+      <ContentSection heading="Which build are you looking for?">
+        <BulletList
+          items={[
+            <>
+              <strong>&quot;Yono Arcade games all APK&quot;</strong>: the same single APK; every game
+              is inside it. See our <Link href="/game-apk">Game APK guide</Link>.
+            </>,
+            <>
+              <strong>&quot;Pure APK&quot;</strong>: usually the APKPure listing, which is a different
+              app. See the <Link href="/pure-apk">Pure APK guide</Link>.
+            </>,
+            <>
+              <strong>&quot;Old version&quot;</strong>: the operator offers no archive. See{" "}
+              <ScheduledLink href="/blog/yono-arcade-old-version-apk" date="2026-10-01">
+                Yono Arcade old version APK
+              </ScheduledLink>
+              .
+            </>,
+            <>
+              <strong>&quot;Mall APK&quot;</strong>: doesn&apos;t exist; the Mall is inside the app.
+              See <Link href="/mall">Yono Arcade Mall</Link>.
+            </>,
+          ]}
+        />
+      </ContentSection>
+
+      <Callout tone="warning" title="Before you download">
         <p>
-          AllYonoArcade.com is an information guide, not a download mirror. We're not able to
-          verify the integrity of any specific APK file circulating online, including files
-          calling themselves "official," "pure," or "latest version." Treat every sideloaded
-          APK with the same scrutiny, regardless of what it's named.
+          Yono Arcade describes itself as a real-cash gaming app. {LAW_SENTENCE} Only users aged 18+
+          are allowed by the operator. AllYonoArcade.com is an information guide: we don&apos;t host
+          or link to APK files, and we can&apos;t vouch for any copy circulating on other sites.
         </p>
       </Callout>
 
@@ -93,19 +112,29 @@ export default function DownloadPage() {
         heading="Download questions"
         items={[
           {
+            question: "Where is the Yono Arcade official APK download?",
+            answer:
+              "Only on YonoArcade.com. It is not on Google Play or the App Store; the Google Play apps named Yono Arcade come from other developers.",
+          },
+          {
+            question: "What is the latest Yono Arcade APK version?",
+            answer:
+              "Version 1.1.9 (code 119), about 34 MB, was served by YonoArcade.com on 28 September 2026.",
+          },
+          {
+            question: "Why does the Yono Arcade download button say Wait For Apk?",
+            answer:
+              "The page runs a script that requests a download link tied to your visit. If the script is slow or blocked, the button stays on Wait For Apk. The page has a fallback file for when the script fails.",
+          },
+          {
             question: "Is there an official iOS version of Yono Arcade?",
             answer:
-              "We're not aware of a verified official iOS release. Search volume for \"yono arcade ios download\" exists, but we'd treat any iOS-specific installer with extra caution until an official source confirms it.",
+              "No. On 28 September 2026 there was no Yono Arcade app on the App Store, and the official download is an Android APK only.",
           },
           {
-            question: "What does \"old version\" mean in these searches?",
+            question: "Why are there so many differently named Yono Arcade APKs?",
             answer:
-              "People often search for older APK builds after an update changes something they preferred, or when a device can't run the latest version. Older builds carry higher security risk since they miss subsequent fixes.",
-          },
-          {
-            question: "Why are there so many differently named APKs for one app?",
-            answer:
-              "This is common in the coin-op/rummy app category — multiple unofficial mirrors upload the same or similar files under different names. It doesn't necessarily mean any one of them is malicious, but it does mean the name alone isn't a reliable signal.",
+              "Third-party sites relabel the same file (\"Pure\", \"Plus\", \"2.0\") or use the name for different apps. The package name com.arcade.games.yo is the reliable check, not the file name.",
           },
         ]}
       />

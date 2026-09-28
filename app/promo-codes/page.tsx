@@ -134,6 +134,31 @@ export default function PromoCodesPage() {
             answer:
               "No. They're separately branded apps shown here for reference only — see our Alternatives guide for what we do and don't know about how they relate to Yono Arcade.",
           },
+          {
+            question: "What is the Yono Arcade promo code today?",
+            answer:
+              "Check the Yono Arcade card at the top of this page. It shows today's morning, afternoon and evening status; a period shows \"Not released yet\" until we have checked a code for it.",
+          },
+          {
+            question: "Is there one promo code for all Yono games?",
+            answer:
+              "No. Each Yono-family app (Yono Arcade, 101Z, Rummy 91, Yono 777 and others) releases its own codes, and a code works only in the app it was issued for. That's why this page has a separate card per app.",
+          },
+          {
+            question: "Yono game ka promo code kahan milega?",
+            answer:
+              "Har app ka apna promo code hota hai, aur din mein teen baar (morning, afternoon, evening) release ho sakta hai. Is page par har app ka card aaj ka status dikhata hai. Code sirf app ke andar redeem field mein daalein; OTP ya UPI PIN kabhi share na karein.",
+          },
+          {
+            question: "Where do I enter a Yono Arcade game promo code?",
+            answer:
+              "Inside the app, in the redeem or promo code field (usually under the wallet, rewards or account screen). Never enter a code on a website that asks for your login, OTP or payment details.",
+          },
+          {
+            question: "Why doesn't my Yono Arcade promo code work?",
+            answer:
+              "Codes are time-limited and often capped, so a code from an earlier period or one already used up will be rejected. Check that you're entering it in the right app and in the current release period.",
+          },
         ]}
       />
     </>

@@ -55,7 +55,12 @@ export type Platform = {
   releaseDate?: string;
   /** Optional link to a full blog write-up (bonus/promo code details, etc). */
   blogHref?: string;
+  /** What a Google Play search for the name showed (see PLAY_CHECKED). */
+  playCheck?: string;
 };
+
+/** Date of the Google Play checks recorded in `playCheck`. */
+export const PLAY_CHECKED = "28 September 2026";
 
 function categorize(name: string): PlatformCategory {
   const n = name.toLowerCase();
@@ -91,9 +96,11 @@ const RAW_PLATFORMS: {
   comingSoon?: boolean;
   releaseDate?: string;
   blogHref?: string;
+  playCheck?: string;
 }[] = [
   {
     name: "101z",
+    playCheck: "Not listed. Search results showed only unrelated apps.",
     image: "/images/platforms/101z.webp",
     description:
       "101z pairs a short, code-like name with the same green-diamond icon style as its network — this page covers the 101z APK download and what we've verified about its promo codes.",
@@ -101,6 +108,7 @@ const RAW_PLATFORMS: {
   },
   {
     name: "Club INR",
+    playCheck: "Not listed. Search results showed only unrelated apps.",
     image: "/images/platforms/club-inr.webp",
     description:
       "Club INR names its currency directly, pointing at a real-money games app rather than one specific title — see our Club INR download and promo code notes.",
@@ -108,6 +116,7 @@ const RAW_PLATFORMS: {
   },
   {
     name: "DhanGame",
+    playCheck: "Not listed. Two lookalikes use the name: AA Dhan Game (RAHAMAN FOOD WORKS PRIVATE LIMITED) and Dhan Game (muhammad Arshad).",
     image: "/images/platforms/dhangame.webp",
     description:
       "DhanGame pairs a crown-and-slot-reel icon with “Dhan” — Hindi for wealth — for its branding; here's the DhanGame APK download and what we've verified about its welcome bonus and promo codes.",
@@ -116,6 +125,7 @@ const RAW_PLATFORMS: {
   },
   {
     name: "Rummy 91",
+    playCheck: "Not listed by this operator. Four lookalikes named Rummy 91 come from DAYALA TECH ENTERPRISES, DROPTI EDUCATION ACADEMY, Ridhi siddhi enterprise and 3NEX GLOBAL INDIA PRIVATE LIMITED.",
     image: "/images/platforms/rummy-91.webp",
     description:
       "Rummy 91 pairs the rummy format with India's international dialing code — this guide covers its download and promo code activity.",
@@ -123,6 +133,7 @@ const RAW_PLATFORMS: {
   },
   {
     name: "Win Rummy",
+    playCheck: "Not listed. Search results showed only unrelated apps.",
     image: "/images/platforms/win-rummy.webp",
     description:
       "Win Rummy pairs an outcome-focused name with a crown-and-card-suit icon similar to others in this family — here's the Win Rummy APK download and what we've verified about its promo codes.",
@@ -130,6 +141,7 @@ const RAW_PLATFORMS: {
   },
   {
     name: "Yono 777",
+    playCheck: "Not listed. Searches return unrelated 777 casino apps.",
     image: "/images/platforms/yono-777.webp",
     description:
       "Yono 777 combines the Yono name with the classic slots jackpot number — this guide covers its APK download and promo code status.",
@@ -137,6 +149,7 @@ const RAW_PLATFORMS: {
   },
   {
     name: "Gold Rummy",
+    playCheck: "Not listed. Search results showed only unrelated apps.",
     image: "/images/platforms/gold-rummy.png",
     description:
       "Gold Rummy launched August 19, 2026 — here's the Gold Rummy APK download. No welcome bonus or promo code has been announced yet, and this page will update once that's confirmed.",
@@ -145,6 +158,7 @@ const RAW_PLATFORMS: {
   },
   {
     name: "Money Rummy",
+    playCheck: "Not listed. Search results showed only unrelated apps.",
     image: "/images/platforms/money-rummy.jpg",
     description:
       "Money Rummy launched September 9, 2026 — here's the Money Rummy APK download. Reported to be the 57th release on the Yono network. No welcome bonus or promo code has been announced yet, and this page will update once that's confirmed.",
@@ -176,6 +190,7 @@ export const PLATFORMS: Platform[] = RAW_PLATFORMS.map((p) => ({
   comingSoon: p.comingSoon,
   releaseDate: p.releaseDate,
   blogHref: p.blogHref,
+  playCheck: p.playCheck,
 })).sort((a, b) => {
   const ai = FEATURED_ORDER.indexOf(a.name);
   const bi = FEATURED_ORDER.indexOf(b.name);
