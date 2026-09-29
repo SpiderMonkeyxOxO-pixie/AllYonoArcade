@@ -164,6 +164,15 @@ const RAW_PLATFORMS: {
       "Money Rummy launched September 9, 2026 — here's the Money Rummy APK download. Reported to be the 57th release on the Yono network. No welcome bonus or promo code has been announced yet, and this page will update once that's confirmed.",
     downloadUrl: "https://moneyrummyff.com/?code=T1XR7S7YJ9T&t=1788922546",
   },
+  {
+    name: "Jeet Spin",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/jeet-spin.webp",
+    description:
+      "Jeet Spin pairs a victory-themed name with a spin-wheel icon in the same green-diamond style as others in this network — launching 30 September 2026. No download link or promo code is available yet; this page will update once the app goes live.",
+    comingSoon: true,
+    releaseDate: "2026-09-30T08:30:00+05:30",
+  },
 ];
 
 /**
@@ -175,7 +184,7 @@ const RAW_PLATFORMS: {
  * PHASE 3 WAVE 1: "Max Rummy", "Yono Rummy", and "Yono Games" were removed from
  * this list because those platforms were removed from RAW_PLATFORMS above.
  */
-const FEATURED_ORDER = ["Money Rummy", "Gold Rummy", "Win Rummy", "Yono 777", "DhanGame"];
+const FEATURED_ORDER = ["Jeet Spin", "Money Rummy", "Gold Rummy", "Win Rummy", "Yono 777", "DhanGame"];
 
 export const PLATFORMS: Platform[] = RAW_PLATFORMS.map((p) => ({
   slug: p.name
