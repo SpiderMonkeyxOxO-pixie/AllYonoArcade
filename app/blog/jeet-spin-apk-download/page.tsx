@@ -16,7 +16,7 @@ const DESCRIPTION =
   "Jeet Spin launches 30 Sep 2026 as the newest spin-and-win app on the Yono network. Download link, promo code status, app features and an honest first look.";
 const URL = "https://allyonoarcade.com/blog/jeet-spin-apk-download";
 const IMAGE = "https://allyonoarcade.com/images/guides/jeet-spin-apk-download.webp";
-const PUBLISHED = "2026-09-30";
+const PUBLISHED = "2026-09-29";
 
 export const dynamic = "force-dynamic";
 
@@ -70,7 +70,7 @@ export default function JeetSpinApkDownloadPage() {
       />
 
       <div className="mx-auto max-w-[760px] px-4 sm:px-6 -mt-2 mb-2 text-[12.5px] text-[var(--color-ink-400)]">
-        Published: September 30, 2026 · Pre-launch listing — details will be updated after the app goes live
+        Published: September 29, 2026 · Pre-launch listing — details will be updated after the app goes live
       </div>
 
       <RelatedLinks />

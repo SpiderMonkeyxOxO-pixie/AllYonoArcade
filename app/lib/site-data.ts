@@ -374,7 +374,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     keyword: "jeet spin apk download",
     volume: "new listing",
     verificationStatus: "verified",
-    publishedAt: "2026-09-30",
+    publishedAt: "2026-09-29",
   },
 ];
 
