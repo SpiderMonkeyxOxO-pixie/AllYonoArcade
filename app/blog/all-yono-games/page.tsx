@@ -167,8 +167,9 @@ export default function AllYonoGamesPage() {
         <p>Usually, no.</p>
         <p>
           What looks like one large catalogue can include many separately installed apps. Yono
-          Arcade, Yono 777, Money Rummy, Win Rummy, and other products may appear together while
-          still functioning independently.
+          Arcade, Yono 777, Money Rummy, Win Rummy,{" "}
+          <Link href="/blog/jeet-spin-apk-download">Jeet Spin</Link>, and other products may appear
+          together while still functioning independently.
         </p>
         <p>
           One app may focus mainly on rummy. Another may offer arcade-style play. A third may

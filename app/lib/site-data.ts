@@ -364,6 +364,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "verified",
     publishedAt: "2026-10-08",
   },
+  {
+    slug: "/blog/jeet-spin-apk-download",
+    title: "Jeet Spin APK Download, Promo Code & Launch Day Review",
+    description:
+      "Jeet Spin launches 30 Sep 2026 as the newest spin app on the Yono network. Download status, promo code, app features and an honest first look.",
+    icon: "gamepad",
+    image: "/images/guides/jeet-spin-apk-download.webp",
+    keyword: "jeet spin apk download",
+    volume: "new listing",
+    verificationStatus: "verified",
+    publishedAt: "2026-09-30",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
