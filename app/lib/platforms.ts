@@ -169,9 +169,8 @@ const RAW_PLATFORMS: {
     playCheck: "Not checked yet.",
     image: "/images/platforms/jeet-spin.webp",
     description:
-      "Jeet Spin pairs a victory-themed name with a spin-wheel icon in the same green-diamond style as others in this network — launching 30 September 2026. No download link or promo code is available yet; this page will update once the app goes live.",
-    comingSoon: true,
-    releaseDate: "2026-09-30T08:30:00+05:30",
+      "Jeet Spin pairs a victory-themed name with a spin-wheel icon in the same green-diamond style as others in this network — launched 30 September 2026. Here's the Jeet Spin APK download and promo code status.",
+    downloadUrl: "https://www.jeetspin12.com/?code=SYHPBD5M972&t=1790735445",
   },
 ];
 
