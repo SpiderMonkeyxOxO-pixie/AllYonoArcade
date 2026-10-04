@@ -1,6 +1,6 @@
 import PromoCard from "./PromoCard";
 import Reveal from "./Reveal";
-import { PLATFORMS, TOP_FEATURED_SLUG } from "../../lib/platforms";
+import { PLATFORMS, TOP_FEATURED_SLUG, YONO_ARCADE_REFERRAL_URL } from "../../lib/platforms";
 import { getPromoCodes, findPromoEntry } from "../../lib/promo-codes";
 
 export default function PromoCodeGrid() {
@@ -13,13 +13,19 @@ export default function PromoCodeGrid() {
         <PromoCard
           name="Yono Arcade"
           image="/images/yono-arcade-icon.webp"
-          href="/download"
+          href={YONO_ARCADE_REFERRAL_URL}
+          isExternal
           featured
           morning={yonoArcade?.morning}
           afternoon={yonoArcade?.afternoon}
           evening={yonoArcade?.evening}
         />
       </Reveal>
+
+      <p className="mx-auto max-w-2xl text-center text-[11px] leading-relaxed text-[var(--color-ink-400)]">
+        Download buttons are referral links that open an external site; we may earn a commission.{" "}
+        <a href="/disclaimer" className="underline">Affiliate disclosure</a>
+      </p>
 
       <p className="mt-6 mb-4 text-[12.5px] text-[var(--color-ink-400)]">
         Related apps from the same visual family — tap any card for what we know about it.

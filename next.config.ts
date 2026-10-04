@@ -63,6 +63,10 @@ const nextConfig: NextConfig = {
 
   experimental: {
     optimizeCss: true,
+    // The admin panel posts Server Actions from code.allyonoarcade.com.
+    serverActions: {
+      allowedOrigins: [process.env.ADMIN_HOST ?? "code.allyonoarcade.com"],
+    },
   },
 
   async redirects() {

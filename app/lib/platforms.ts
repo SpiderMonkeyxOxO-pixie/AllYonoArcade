@@ -216,3 +216,13 @@ export function getPlatform(slug: string): Platform | undefined {
  *  in the grid and on the promo codes page. Follows FEATURED_ORDER
  *  automatically, so it never needs updating by hand. */
 export const TOP_FEATURED_SLUG = PLATFORMS[0]?.slug;
+
+/**
+ * Yono Arcade's own referral/agent link, supplied by the site owner. External
+ * third-party destination: always opened in a new tab with rel="sponsored
+ * nofollow noopener noreferrer" and disclosed next to the button.
+ */
+export const YONO_ARCADE_REFERRAL_URL =
+  "https://uonoarcadeapp02.com/?code=96LU78NBU1W&t=1791090190";
+
+export const REFERRAL_REL = "sponsored nofollow noopener noreferrer";

@@ -1,9 +1,11 @@
 import Link from "next/link";
+import SiteChrome from "./components/layout/SiteChrome";
 import { ArrowRightIcon, GamepadIcon } from "./components/icons/Icons";
 import { CLUSTER_PAGES } from "./lib/site-data";
 
 export default function NotFound() {
   return (
+    <SiteChrome>
     <section className="relative overflow-hidden pt-28 pb-16 sm:pt-36 sm:pb-24">
       <div className="pointer-events-none absolute inset-0 arcade-grid-bg opacity-70" aria-hidden="true" />
       <div className="relative mx-auto max-w-[720px] px-4 sm:px-6 text-center">
@@ -38,5 +40,6 @@ export default function NotFound() {
         </Link>
       </div>
     </section>
+    </SiteChrome>
   );
 }

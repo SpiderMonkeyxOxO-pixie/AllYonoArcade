@@ -1,5 +1,5 @@
 import fs from "fs";
-import path from "path";
+import { getPromoFilePath } from "./promo-file";
 
 export type PromoEntry = {
   name: string;
@@ -35,7 +35,7 @@ function parsePromoCodes(raw: string): PromoEntry[] {
  * edits silently don't show up until the server restarts.
  */
 export function getPromoCodes(): { entries: Map<string, PromoEntry>; lastUpdated: Date | null } {
-  const filePath = path.join(process.cwd(), "promo-code.txt");
+  const filePath = getPromoFilePath();
   let raw: string;
   let lastUpdated: Date | null;
   try {

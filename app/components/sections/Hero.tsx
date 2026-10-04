@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion, useReducedMotion } from "framer-motion";
 import { DownloadIcon, ShieldCheckIcon, GamepadIcon, ArrowRightIcon } from "../icons/Icons";
+import { REFERRAL_REL, YONO_ARCADE_REFERRAL_URL } from "../../lib/platforms";
 
 const CHIPS = [
   { icon: ShieldCheckIcon, label: "Independent review" },
@@ -84,9 +85,11 @@ export default function Hero() {
               whether it's safe to install — checked and updated regularly.
             </motion.p>
 
-            <motion.div variants={item} className="mt-8 flex flex-col sm:flex-row gap-3 max-w-md sm:max-w-none">
-              <Link
-                href="/download"
+            <motion.div variants={item} className="mt-8 flex flex-col sm:flex-row sm:flex-wrap gap-3 max-w-md sm:max-w-none">
+              <a
+                href={YONO_ARCADE_REFERRAL_URL}
+                target="_blank"
+                rel={REFERRAL_REL}
                 className="btn-brand inline-flex items-center justify-center gap-2 rounded-full px-6 py-3.5 sm:py-3 text-[14px] font-semibold"
                 style={{
                   background: "linear-gradient(135deg, var(--color-cyan-400), var(--color-magenta-400))",
@@ -94,16 +97,27 @@ export default function Hero() {
                 }}
               >
                 <DownloadIcon size={16} />
-                Download Guide
-              </Link>
+                Download Yono Arcade
+              </a>
               <Link
-                href="/is-yono-arcade-safe"
+                href="/download"
                 className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3.5 sm:py-3 text-[14px] font-semibold text-[#f3f5ff] hover:border-[var(--color-cyan-400)]/60 transition-colors"
               >
-                Safety Review
+                Download Guide
+                <ArrowRightIcon size={15} />
+              </Link>
+              <Link
+                href="/promo-codes"
+                className="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 px-6 py-3.5 sm:py-3 text-[14px] font-semibold text-[#f3f5ff] hover:border-[var(--color-cyan-400)]/60 transition-colors"
+              >
+                Promo Codes
                 <ArrowRightIcon size={15} />
               </Link>
             </motion.div>
+            <motion.p variants={item} className="mt-3 max-w-md text-[11px] leading-relaxed text-[var(--color-ink-400)] sm:max-w-none">
+              &ldquo;Download Yono Arcade&rdquo; is a referral link — it opens an external site, and we may earn a
+              commission. See our <Link href="/disclaimer" className="underline">affiliate disclosure</Link>.
+            </motion.p>
 
             {/* Disclaimer strip — the trust/independence signal belongs in
                 the hero itself, not just the footer. */}

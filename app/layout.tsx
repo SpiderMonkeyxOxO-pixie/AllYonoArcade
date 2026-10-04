@@ -1,11 +1,6 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import { Space_Grotesk, Inter } from "next/font/google";
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
 import "./globals.css";
-
-const GA_MEASUREMENT_ID = "G-HBLWX8X6FG";
 
 const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
@@ -81,21 +76,7 @@ export default function RootLayout({
     <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable} scroll-smooth`}>
       <head />
       <body className="bg-[#05060c] text-[#f3f5ff] min-h-screen antialiased">
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="ga4-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${GA_MEASUREMENT_ID}');
-          `}
-        </Script>
-        <Navbar />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+        {children}
       </body>
     </html>
   );

@@ -385,7 +385,7 @@ export function livePillars(): BlogPillar[] {
   return BLOG_PILLARS.filter((p) => !p.publishedAt || now >= Date.parse(`${p.publishedAt}T01:30:00Z`));
 }
 
-export const TOP_NAV_SLUGS = ["/download", "/game-apk", "/is-yono-arcade-safe", "/login"];
+export const TOP_NAV_SLUGS = ["/download", "/game-apk", "/promo-codes", "/is-yono-arcade-safe", "/login"];
 
 export const FOOTER_LINKS = [
   { label: "About", href: "/about" },

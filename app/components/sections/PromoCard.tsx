@@ -169,13 +169,21 @@ export default function PromoCard({
         <a
           href={href}
           target="_blank"
-          rel="nofollow noopener noreferrer"
-          className="mt-2 flex w-full items-center justify-center gap-1.5 rounded-md px-2 py-1.5 text-center text-[11px] font-semibold transition"
-          style={{ background: "rgba(53,242,255,0.08)", color: "var(--color-cyan-400)" }}
+          rel="sponsored nofollow noopener noreferrer"
+          className={
+            featured
+              ? "btn-brand mt-3 flex w-full items-center justify-center gap-1.5 rounded-md px-3 py-2.5 text-center text-[13px] font-semibold"
+              : "mt-2 flex w-full items-center justify-center gap-1.5 rounded-md px-2 py-1.5 text-center text-[11px] font-semibold transition"
+          }
+          style={
+            featured
+              ? { background: "linear-gradient(135deg, var(--color-cyan-400), var(--color-magenta-400))", color: "#1a0e00" }
+              : { background: "rgba(53,242,255,0.08)", color: "var(--color-cyan-400)" }
+          }
         >
-          <DownloadIcon size={12} />
-          Download
-          <ExternalLinkIcon size={10} />
+          <DownloadIcon size={featured ? 14 : 12} />
+          {featured ? "Download Yono Arcade" : "Download"}
+          <ExternalLinkIcon size={featured ? 12 : 10} />
         </a>
       ) : (
         <Link

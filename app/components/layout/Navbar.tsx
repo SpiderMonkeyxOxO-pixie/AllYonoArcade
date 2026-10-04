@@ -19,6 +19,7 @@ import {
   SwapIcon,
 } from "../icons/Icons";
 import { CLUSTER_PAGES, TOP_NAV_SLUGS, type IconKey } from "../../lib/site-data";
+import { REFERRAL_REL, YONO_ARCADE_REFERRAL_URL } from "../../lib/platforms";
 
 const ICONS: Record<IconKey, (props: { size?: number; className?: string }) => React.ReactElement> = {
   download: DownloadIcon,
@@ -178,8 +179,10 @@ export default function Navbar() {
           </ul>
 
           {/* CTA (desktop) */}
-          <Link
-            href="/download"
+          <a
+            href={YONO_ARCADE_REFERRAL_URL}
+            target="_blank"
+            rel={REFERRAL_REL}
             className="btn-brand hidden lg:inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-[13px] font-semibold"
             style={{
               background: "linear-gradient(135deg, var(--color-cyan-400), var(--color-magenta-400))",
@@ -187,8 +190,8 @@ export default function Navbar() {
             }}
           >
             <DownloadIcon size={14} />
-            Download Guide
-          </Link>
+            Download Yono Arcade
+          </a>
 
           {/* Mobile hamburger — 44px min touch target */}
           <button
@@ -237,8 +240,10 @@ export default function Navbar() {
               transition={{ duration: 0.25, delay: 0.05 }}
               className="h-full overflow-y-auto px-4 pb-10 pt-4"
             >
-              <Link
-                href="/download"
+              <a
+                href={YONO_ARCADE_REFERRAL_URL}
+                target="_blank"
+                rel={REFERRAL_REL}
                 className="btn-brand mb-4 flex items-center justify-center gap-2 rounded-xl px-5 py-3.5 text-[15px] font-semibold"
                 style={{
                   background: "linear-gradient(135deg, var(--color-cyan-400), var(--color-magenta-400))",
@@ -246,8 +251,8 @@ export default function Navbar() {
                 }}
               >
                 <DownloadIcon size={17} />
-                Download Guide
-              </Link>
+                Download Yono Arcade
+              </a>
 
               <ul role="list" className="list-none m-0 p-0 space-y-1">
                 {CLUSTER_PAGES.map((link) => {
