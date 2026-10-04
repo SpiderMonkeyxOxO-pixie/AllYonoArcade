@@ -32,9 +32,6 @@ export type PromoRow = {
 };
 
 export const MAX_CODE_LENGTH = 40;
-// Domains and links are never published as "codes".
-export const LOOKS_LIKE_URL =
-  /^https?:\/\/|^www\.|\.(com|net|org|vip|top|cc|club|bet|fun|website|info|one|co)\b/i;
 
 const DEFAULT_HEADER = `# AllYonoArcade — Promo Codes
 # Managed by the admin panel (code.allyonoarcade.com); edits go live on the
@@ -91,7 +88,6 @@ export function codeProblem(value: string): string | null {
   if (value.length > MAX_CODE_LENGTH) return `longer than ${MAX_CODE_LENGTH} characters`;
   if (/[|\u0000-\u001f\u007f]/.test(value)) return 'contains a "|" or control character';
   if (value === "-") return 'is just "-" (leave the box empty instead)';
-  if (LOOKS_LIKE_URL.test(value)) return "looks like a link/domain, not a promo code";
   return null;
 }
 
