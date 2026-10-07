@@ -172,6 +172,15 @@ const RAW_PLATFORMS: {
       "Jeet Spin pairs a victory-themed name with a spin-wheel icon in the same green-diamond style as others in this network — launched 30 September 2026. Here's the Jeet Spin APK download and promo code status.",
     downloadUrl: "https://www.jeetspin12.com/?code=SYHPBD5M972&t=1790735445",
   },
+  {
+    name: "Jaiho Play",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/jaiho-play.webp",
+    description:
+      "Jaiho Play pairs the Jaiho name with a slot-reel “PLAY” banner and card-suit icons on a green-diamond background, and is scheduled to launch on 15 October 2026. Nothing about it is verified yet: no download link, welcome bonus or promo code has been announced, and this page will update once the app is live.",
+    comingSoon: true,
+    releaseDate: "2026-10-15T12:00:00+05:30",
+  },
 ];
 
 /**
