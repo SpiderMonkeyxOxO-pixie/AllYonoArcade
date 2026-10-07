@@ -179,7 +179,7 @@ const RAW_PLATFORMS: {
     description:
       "Jaiho Play pairs the Jaiho name with a slot-reel “PLAY” banner and card-suit icons on a green-diamond background, and is scheduled to launch on 15 October 2026. Nothing about it is verified yet: no download link, welcome bonus or promo code has been announced, and this page will update once the app is live.",
     comingSoon: true,
-    releaseDate: "2026-10-15T12:00:00+05:30",
+    releaseDate: "2026-10-15T08:00:00+05:30",
   },
 ];
 
