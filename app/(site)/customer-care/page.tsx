@@ -52,7 +52,7 @@ export default function CustomerCarePage() {
           app and how to tell it apart from lookalikes, see{" "}
           <Link href="/blog/who-operates-yono-arcade">Who Operates Yono Arcade?</Link> Searching for
           &quot;yonoarcadehelp&quot;? See{" "}
-          <ScheduledLink href="/blog/yonoarcadehelp-live-chat-telegram-fake-support" date="2026-10-12">
+          <ScheduledLink href="/blog/yonoarcadehelp-live-chat-telegram-fake-support" date="2026-10-11">
             YonoArcadeHelp: live chat, Telegram and fake support
           </ScheduledLink>
           .

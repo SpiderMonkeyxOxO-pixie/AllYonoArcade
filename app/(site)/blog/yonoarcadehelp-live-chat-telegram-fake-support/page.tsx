@@ -17,7 +17,7 @@ const DESCRIPTION =
 const SLUG = "yonoarcadehelp-live-chat-telegram-fake-support";
 const URL = `https://allyonoarcade.com/blog/${SLUG}`;
 const IMAGE = `https://allyonoarcade.com/images/guides/${SLUG}.webp`;
-const PUBLISHED = "2026-10-12";
+const PUBLISHED = "2026-10-11";
 
 export const dynamic = "force-dynamic";
 
@@ -73,7 +73,7 @@ export default function YonoArcadeHelpPage() {
       />
 
       <div className="mx-auto max-w-[760px] px-4 sm:px-6 -mt-2 mb-2 text-[12.5px] text-[var(--color-ink-400)]">
-        Published: October 12, 2026 · Checked on October 10, 2026
+        Published: October 11, 2026 · Checked on October 10, 2026
       </div>
 
       <RelatedLinks />

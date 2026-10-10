@@ -16,7 +16,7 @@ const DESCRIPTION =
 const SLUG = "rummy-91-promo-code-what-is-real";
 const URL = `https://allyonoarcade.com/blog/${SLUG}`;
 const IMAGE = `https://allyonoarcade.com/images/guides/${SLUG}.webp`;
-const PUBLISHED = "2026-10-13";
+const PUBLISHED = "2026-10-12";
 
 export const dynamic = "force-dynamic";
 
@@ -72,7 +72,7 @@ export default function Rummy91PromoCodePage() {
       />
 
       <div className="mx-auto max-w-[760px] px-4 sm:px-6 -mt-2 mb-2 text-[12.5px] text-[var(--color-ink-400)]">
-        Published: October 13, 2026 · Sites checked on October 10, 2026
+        Published: October 12, 2026 · Sites checked on October 10, 2026
       </div>
 
       <RelatedLinks />

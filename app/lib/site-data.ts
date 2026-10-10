@@ -386,7 +386,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     keyword: "allyono",
     volume: "27k impressions/28d",
     verificationStatus: "verified",
-    publishedAt: "2026-10-11",
+    publishedAt: "2026-10-10",
   },
   {
     slug: "/blog/yonoarcadehelp-live-chat-telegram-fake-support",
@@ -398,7 +398,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     keyword: "yonoarcadehelp",
     volume: "2.7k impressions/28d",
     verificationStatus: "verified",
-    publishedAt: "2026-10-12",
+    publishedAt: "2026-10-11",
   },
   {
     slug: "/blog/rummy-91-promo-code-what-is-real",
@@ -410,7 +410,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     keyword: "rummy 91 promo code",
     volume: "40 impressions/28d",
     verificationStatus: "verified",
-    publishedAt: "2026-10-13",
+    publishedAt: "2026-10-12",
   },
   {
     slug: "/blog/promo-codes-for-other-yono-apps-which-we-track",
@@ -422,7 +422,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     keyword: "yono 777 promo code",
     volume: "60 impressions/28d",
     verificationStatus: "verified",
-    publishedAt: "2026-10-14",
+    publishedAt: "2026-10-13",
   },
 ];
 

@@ -101,7 +101,7 @@ export default function AllGamesPage() {
           <Link href="/blog/all-yono-games">All Yono Games guide</Link> explains why different
           lists show different totals. Several unrelated sites also use names like AllYono and
           AllYonoGames; see{" "}
-          <ScheduledLink href="/blog/allyono-allyonogames-allyonogame-art-which-site" date="2026-10-11">
+          <ScheduledLink href="/blog/allyono-allyonogames-allyonogame-art-which-site" date="2026-10-10">
             which site is which
           </ScheduledLink>
           .

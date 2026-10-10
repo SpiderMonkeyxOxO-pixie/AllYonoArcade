@@ -77,7 +77,7 @@ export default function PromoCodesPage() {
         />
         <p className="mt-4">
           There is no single code for every Yono app; see{" "}
-          <ScheduledLink href="/blog/promo-codes-for-other-yono-apps-which-we-track" date="2026-10-14">
+          <ScheduledLink href="/blog/promo-codes-for-other-yono-apps-which-we-track" date="2026-10-12">
             which apps we track codes for
           </ScheduledLink>{" "}
           and{" "}

@@ -16,7 +16,7 @@ const DESCRIPTION =
 const SLUG = "promo-codes-for-other-yono-apps-which-we-track";
 const URL = `https://allyonoarcade.com/blog/${SLUG}`;
 const IMAGE = `https://allyonoarcade.com/images/guides/${SLUG}.webp`;
-const PUBLISHED = "2026-10-14";
+const PUBLISHED = "2026-10-13";
 
 export const dynamic = "force-dynamic";
 
@@ -85,7 +85,7 @@ export default function PromoCodesOtherAppsPage() {
       />
 
       <div className="mx-auto max-w-[760px] px-4 sm:px-6 -mt-2 mb-2 text-[12.5px] text-[var(--color-ink-400)]">
-        Published: October 14, 2026
+        Published: October 13, 2026
       </div>
 
       <RelatedLinks />
