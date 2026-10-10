@@ -8,6 +8,10 @@ import FAQSection from "../../components/sections/FAQSection";
 import RelatedLinks from "../../components/sections/RelatedLinks";
 import GuideImage from "../../components/sections/GuideImage";
 import { OPERATOR_CHECKED } from "../../lib/legal";
+import ScheduledLink from "../../components/sections/ScheduledLink";
+
+// Re-render hourly so the link to a scheduled post appears once it is live.
+export const revalidate = 3600;
 
 const TITLE = "Yono Arcade Customer Care: Official Contacts vs Fake Numbers";
 const DESCRIPTION =
@@ -46,7 +50,12 @@ export default function CustomerCarePage() {
         <p>
           In-app help, if the app shows one, should lead to the same email or chat. For who runs the
           app and how to tell it apart from lookalikes, see{" "}
-          <Link href="/blog/who-operates-yono-arcade">Who Operates Yono Arcade?</Link>
+          <Link href="/blog/who-operates-yono-arcade">Who Operates Yono Arcade?</Link> Searching for
+          &quot;yonoarcadehelp&quot;? See{" "}
+          <ScheduledLink href="/blog/yonoarcadehelp-live-chat-telegram-fake-support" date="2026-10-12">
+            YonoArcadeHelp: live chat, Telegram and fake support
+          </ScheduledLink>
+          .
         </p>
       </ContentSection>
 

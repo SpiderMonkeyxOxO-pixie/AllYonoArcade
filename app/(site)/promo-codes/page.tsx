@@ -11,6 +11,7 @@ import GuideImage from "../../components/sections/GuideImage";
 import { getPromoCodes } from "../../lib/promo-codes";
 import ComparisonTable from "../../components/sections/ComparisonTable";
 import { LAW_SENTENCE } from "../../lib/legal";
+import ScheduledLink from "../../components/sections/ScheduledLink";
 
 const TITLE = "Yono Arcade Promo Code Today: Morning, Afternoon & Evening";
 const DESCRIPTION =
@@ -74,6 +75,17 @@ export default function PromoCodesPage() {
             "Legitimate codes come from the app's own official channels — in-app notices, verified social accounts — not from random third-party pages.",
           ]}
         />
+        <p className="mt-4">
+          There is no single code for every Yono app; see{" "}
+          <ScheduledLink href="/blog/promo-codes-for-other-yono-apps-which-we-track" date="2026-10-14">
+            which apps we track codes for
+          </ScheduledLink>{" "}
+          and{" "}
+          <ScheduledLink href="/blog/rummy-91-promo-code-what-is-real" date="2026-10-13">
+            what is real for Rummy 91
+          </ScheduledLink>
+          .
+        </p>
         <GuideImage
           src="/images/guides/promo-code-redeem-field.webp"
           alt="How promo codes typically work: entered from a redeem field, time-limited, sourced from official channels"

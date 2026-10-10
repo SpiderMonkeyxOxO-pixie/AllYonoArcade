@@ -376,6 +376,54 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "verified",
     publishedAt: "2026-09-29",
   },
+  {
+    slug: "/blog/allyono-allyonogames-allyonogame-art-which-site",
+    title: "AllYono, AllYonoGames, AllYonoGame.art: Which Site Is Which?",
+    description:
+      "Several sites use names like AllYono, AllYonoGames and AllYonoGame. What each one showed on 10 October 2026, and how to tell them apart from AllYonoArcade.com.",
+    icon: "gamepad",
+    image: "/images/guides/allyono-allyonogames-allyonogame-art-which-site.webp",
+    keyword: "allyono",
+    volume: "27k impressions/28d",
+    verificationStatus: "verified",
+    publishedAt: "2026-10-11",
+  },
+  {
+    slug: "/blog/yonoarcadehelp-live-chat-telegram-fake-support",
+    title: "YonoArcadeHelp: Live Chat, Telegram and Fake Support (2026 Check)",
+    description:
+      "What \"yonoarcadehelp\" refers to: the live chat domain on the operator's site, a Telegram contact with the same name, and why a matching name proves little.",
+    icon: "gamepad",
+    image: "/images/guides/yonoarcadehelp-live-chat-telegram-fake-support.webp",
+    keyword: "yonoarcadehelp",
+    volume: "2.7k impressions/28d",
+    verificationStatus: "verified",
+    publishedAt: "2026-10-12",
+  },
+  {
+    slug: "/blog/rummy-91-promo-code-what-is-real",
+    title: "Rummy 91 Promo Code: What Is Real? (2026 Check)",
+    description:
+      "Looking for a Rummy 91 promo code? What a code can and can't do, where our code status is shown, and what we found on Rummy 91's download site and on Google Play.",
+    icon: "gamepad",
+    image: "/images/guides/rummy-91-promo-code-what-is-real.webp",
+    keyword: "rummy 91 promo code",
+    volume: "40 impressions/28d",
+    verificationStatus: "verified",
+    publishedAt: "2026-10-13",
+  },
+  {
+    slug: "/blog/promo-codes-for-other-yono-apps-which-we-track",
+    title: "Promo Codes for Other Yono Apps: Which Ones We Track",
+    description:
+      "Is there one promo code for all Yono games? No. Which apps this site tracks codes for, how the morning, afternoon and evening slots work, and why a code only works in its own app.",
+    icon: "gamepad",
+    image: "/images/guides/promo-codes-for-other-yono-apps-which-we-track.webp",
+    keyword: "yono 777 promo code",
+    volume: "60 impressions/28d",
+    verificationStatus: "verified",
+    publishedAt: "2026-10-14",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */

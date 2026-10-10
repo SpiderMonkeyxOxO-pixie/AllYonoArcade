@@ -10,7 +10,7 @@ import RelatedLinks from "../../components/sections/RelatedLinks";
 import GuideImage from "../../components/sections/GuideImage";
 import { OPERATOR_CHECKED } from "../../lib/legal";
 
-const TITLE = "Yono Arcade Mall: What It Is, Mall APK & App Checks";
+const TITLE = "Yono Arcade Mall: Is There a Mall APK? (Checked Oct 2026)";
 const DESCRIPTION =
   "What the Yono Arcade Mall is, whether a separate Yono Arcade Mall APK or app exists, and how a Mall listing differs from the main app and from individual game APKs.";
 

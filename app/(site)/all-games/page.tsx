@@ -99,7 +99,12 @@ export default function AllGamesPage() {
           The apps below are separately branded and separately downloaded; they are not games
           inside Yono Arcade. Our{" "}
           <Link href="/blog/all-yono-games">All Yono Games guide</Link> explains why different
-          lists show different totals.
+          lists show different totals. Several unrelated sites also use names like AllYono and
+          AllYonoGames; see{" "}
+          <ScheduledLink href="/blog/allyono-allyonogames-allyonogame-art-which-site" date="2026-10-11">
+            which site is which
+          </ScheduledLink>
+          .
         </p>
         <BulletList
           items={[
