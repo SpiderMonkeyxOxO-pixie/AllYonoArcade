@@ -57,6 +57,11 @@ export type Platform = {
   blogHref?: string;
   /** What a Google Play search for the name showed (see PLAY_CHECKED). */
   playCheck?: string;
+  /** Just went live — keeps a launch-spotlight card in the homepage's
+   *  coming-soon slot (no countdown, real download CTA) for a short window
+   *  after launch instead of disappearing straight into the grid. Owner
+   *  removes this flag by hand once the launch news is no longer novel. */
+  justLaunched?: boolean;
 };
 
 /** Date of the Google Play checks recorded in `playCheck`. */
@@ -97,6 +102,7 @@ const RAW_PLATFORMS: {
   releaseDate?: string;
   blogHref?: string;
   playCheck?: string;
+  justLaunched?: boolean;
 }[] = [
   {
     name: "101z",
@@ -177,9 +183,10 @@ const RAW_PLATFORMS: {
     playCheck: "Not checked yet.",
     image: "/images/platforms/jaiho-play.webp",
     description:
-      "Jaiho Play pairs the Jaiho name with a slot-reel “PLAY” banner and card-suit icons on a green-diamond background, and is scheduled to launch on 15 October 2026. Nothing about it is verified yet: no download link, welcome bonus or promo code has been announced, and this page will update once the app is live.",
-    comingSoon: true,
-    releaseDate: "2026-10-15T08:00:00+05:30",
+      "Jaiho Play pairs the Jaiho name with a slot-reel “PLAY” banner and card-suit icons on a green-diamond background — launched 15 October 2026 with rummy and Teen Patti. Here's the Jaiho Play APK download and promo code status.",
+    downloadUrl: "https://jaihogo.com/?code=E4VW58CDZFY&t=1792035058",
+    blogHref: "/blog/jaiho-play-vs-jaiho-arcade",
+    justLaunched: true,
   },
 ];
 
@@ -192,7 +199,7 @@ const RAW_PLATFORMS: {
  * PHASE 3 WAVE 1: "Max Rummy", "Yono Rummy", and "Yono Games" were removed from
  * this list because those platforms were removed from RAW_PLATFORMS above.
  */
-const FEATURED_ORDER = ["Jeet Spin", "Money Rummy", "Gold Rummy", "Win Rummy", "Yono 777", "DhanGame"];
+const FEATURED_ORDER = ["Jaiho Play", "Jeet Spin", "Money Rummy", "Gold Rummy", "Win Rummy", "Yono 777", "DhanGame"];
 
 export const PLATFORMS: Platform[] = RAW_PLATFORMS.map((p) => ({
   slug: p.name
@@ -208,6 +215,7 @@ export const PLATFORMS: Platform[] = RAW_PLATFORMS.map((p) => ({
   releaseDate: p.releaseDate,
   blogHref: p.blogHref,
   playCheck: p.playCheck,
+  justLaunched: p.justLaunched,
 })).sort((a, b) => {
   const ai = FEATURED_ORDER.indexOf(a.name);
   const bi = FEATURED_ORDER.indexOf(b.name);

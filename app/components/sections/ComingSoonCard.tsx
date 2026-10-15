@@ -36,21 +36,28 @@ export default function ComingSoonCard({
   description,
   catalogueLabel = "All Games",
   blogHref,
+  downloadUrl,
 }: {
   name: string;
   image: string;
-  /** ISO 8601 timestamp with offset, e.g. "2026-07-23T08:00:00+05:30" */
-  releaseDate: string;
+  /** ISO 8601 timestamp with offset, e.g. "2026-07-23T08:00:00+05:30". Not
+   *  needed once `downloadUrl` is set — the card drops the countdown entirely. */
+  releaseDate?: string;
   description: string;
   catalogueLabel?: string;
   /** Optional link to a full write-up (bonus/withdrawal/promo code details) */
   blogHref?: string;
+  /** Set once the app has actually launched — swaps the countdown and the
+   *  "Join Telegram" CTA for a real, working download button. */
+  downloadUrl?: string;
 }) {
-  const target = new Date(releaseDate).getTime();
+  const isLive = Boolean(downloadUrl);
+  const target = releaseDate ? new Date(releaseDate).getTime() : 0;
   const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(null);
   const [isReleaseWindow, setIsReleaseWindow] = useState(false);
 
   useEffect(() => {
+    if (isLive || !releaseDate) return;
     const tick = () => {
       setTimeLeft(getTimeLeft(target));
       setIsReleaseWindow(Date.now() >= target);
@@ -58,14 +65,16 @@ export default function ComingSoonCard({
     tick();
     const id = setInterval(tick, 1000);
     return () => clearInterval(id);
-  }, [target]);
+  }, [target, isLive, releaseDate]);
 
-  const releaseLabel = new Date(releaseDate).toLocaleDateString("en-IN", {
-    day: "numeric",
-    month: "short",
-    year: "numeric",
-    timeZone: "Asia/Kolkata",
-  });
+  const releaseLabel = releaseDate
+    ? new Date(releaseDate).toLocaleDateString("en-IN", {
+        day: "numeric",
+        month: "short",
+        year: "numeric",
+        timeZone: "Asia/Kolkata",
+      })
+    : "";
 
   return (
     <div className="cabinet glow-cyan relative flex flex-col gap-4 p-4 sm:p-5">
@@ -81,7 +90,7 @@ export default function ComingSoonCard({
           />
           <div className="min-w-0">
             <span className="block text-[11px] font-bold uppercase tracking-wide text-[var(--color-violet-400)]">
-              {isReleaseWindow ? "Launch Window Open" : "Coming Soon"}
+              {isLive ? "New" : isReleaseWindow ? "Launch Window Open" : "Coming Soon"}
             </span>
             <span className="block font-display text-[16px] sm:text-[18px] font-semibold text-[#f3f5ff]">
               {name}
@@ -89,7 +98,7 @@ export default function ComingSoonCard({
           </div>
         </div>
 
-        {timeLeft && !isReleaseWindow && (
+        {timeLeft && !isReleaseWindow && !isLive && (
           <div className="flex gap-1.5">
             <Unit value={timeLeft.days} label="Days" />
             <Unit value={timeLeft.hours} label="Hrs" />
@@ -106,42 +115,63 @@ export default function ComingSoonCard({
             style={{ background: "rgba(139,107,255,0.14)", color: "var(--color-violet-400)", border: "1px solid rgba(139,107,255,0.35)" }}
           >
             <span className="h-1.5 w-1.5 rounded-full" style={{ background: "var(--color-violet-400)" }} aria-hidden="true" />
-            {isReleaseWindow ? "Live Today" : "Scheduled"}
+            {isLive ? "Live" : isReleaseWindow ? "Live Today" : "Scheduled"}
           </span>
         </div>
         <h3 className="font-display text-[16px] sm:text-[18px] font-semibold text-[#f3f5ff]">
-          {name} is joining the {catalogueLabel} catalogue
+          {isLive ? `${name} just joined the ${catalogueLabel} catalogue` : `${name} is joining the ${catalogueLabel} catalogue`}
         </h3>
         <p className="mt-1.5 text-[13px] leading-relaxed text-[var(--color-ink-400)]">
-          {isReleaseWindow
-            ? `We're inside the announced launch window (8:00–9:00 AM IST, ${releaseLabel}). The verified APK link goes live here the moment we can confirm it — until then, ${description.charAt(0).toLowerCase()}${description.slice(1)}`
-            : `Expected between 8:00–9:00 AM IST on ${releaseLabel}. ${description}`}
+          {isLive
+            ? description
+            : isReleaseWindow
+              ? `We're inside the announced launch window (8:00–9:00 AM IST, ${releaseLabel}). The verified APK link goes live here the moment we can confirm it — until then, ${description.charAt(0).toLowerCase()}${description.slice(1)}`
+              : `Expected between 8:00–9:00 AM IST on ${releaseLabel}. ${description}`}
         </p>
       </div>
 
       <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-        {isReleaseWindow && (
-          <span
-            className="inline-flex w-full items-center justify-center gap-1.5 rounded-full border border-dashed border-white/15 px-5 py-2.5 text-[13px] font-semibold text-[var(--color-ink-400)] sm:w-auto"
-            title="Verified download link not published yet"
+        {isLive ? (
+          <a
+            href={downloadUrl}
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            className="btn-brand inline-flex w-full items-center justify-center gap-1.5 rounded-full px-5 py-2.5 text-[13px] font-semibold sm:w-auto"
+            style={{
+              background: "linear-gradient(135deg, var(--color-cyan-400), var(--color-magenta-400))",
+              color: "#1a0e00",
+            }}
           >
             <DownloadIcon size={14} />
-            APK link coming shortly
-          </span>
+            Download {name}
+            <ExternalLinkIcon size={12} />
+          </a>
+        ) : (
+          <>
+            {isReleaseWindow && (
+              <span
+                className="inline-flex w-full items-center justify-center gap-1.5 rounded-full border border-dashed border-white/15 px-5 py-2.5 text-[13px] font-semibold text-[var(--color-ink-400)] sm:w-auto"
+                title="Verified download link not published yet"
+              >
+                <DownloadIcon size={14} />
+                APK link coming shortly
+              </span>
+            )}
+            <a
+              href={TELEGRAM_URL}
+              target="_blank"
+              rel="nofollow noopener noreferrer"
+              className="btn-brand inline-flex w-full items-center justify-center gap-1.5 rounded-full px-5 py-2.5 text-[13px] font-semibold sm:w-auto"
+              style={{
+                background: "linear-gradient(135deg, var(--color-cyan-400), var(--color-magenta-400))",
+                color: "#1a0e00",
+              }}
+            >
+              Join Telegram for launch updates
+              <ExternalLinkIcon size={12} />
+            </a>
+          </>
         )}
-        <a
-          href={TELEGRAM_URL}
-          target="_blank"
-          rel="nofollow noopener noreferrer"
-          className="btn-brand inline-flex w-full items-center justify-center gap-1.5 rounded-full px-5 py-2.5 text-[13px] font-semibold sm:w-auto"
-          style={{
-            background: "linear-gradient(135deg, var(--color-cyan-400), var(--color-magenta-400))",
-            color: "#1a0e00",
-          }}
-        >
-          Join Telegram for launch updates
-          <ExternalLinkIcon size={12} />
-        </a>
         {blogHref && (
           <a href={blogHref} className="text-[12.5px] font-semibold text-[var(--color-cyan-400)] underline underline-offset-2">
             Bonus &amp; withdrawal details →

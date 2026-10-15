@@ -68,14 +68,15 @@ export default function HomePage() {
       />
       <Hero />
 
-      {PLATFORMS.filter((p) => p.comingSoon && p.releaseDate).map((p) => (
+      {PLATFORMS.filter((p) => (p.comingSoon && p.releaseDate) || p.justLaunched).map((p) => (
         <Reveal key={p.slug} className="mx-auto max-w-[1240px] px-4 sm:px-6 py-4">
           <ComingSoonCard
             name={p.name}
             image={p.image}
-            releaseDate={p.releaseDate!}
+            releaseDate={p.releaseDate}
             description={p.description}
             blogHref={p.blogHref}
+            downloadUrl={p.justLaunched ? p.downloadUrl : undefined}
           />
         </Reveal>
       ))}

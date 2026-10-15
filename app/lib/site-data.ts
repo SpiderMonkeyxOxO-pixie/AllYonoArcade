@@ -353,6 +353,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     publishedAt: "2026-10-07",
   },
   {
+    slug: "/blog/jaiho-play-vs-jaiho-arcade",
+    title: "Jaiho Play vs Jaiho Arcade: How to Tell Them Apart",
+    description:
+      "Jaiho Play (rummy and Teen Patti, Yonotech Pvt. Ltd.) and Jaiho Arcade share a first word, not a confirmed owner. See how to tell them apart.",
+    icon: "swap",
+    image: "/images/platforms/jaiho-play.webp",
+    keyword: "jaiho play vs jaiho arcade",
+    volume: "new",
+    verificationStatus: "unverified",
+    publishedAt: "2026-10-15",
+  },
+  {
     slug: "/blog/yono-arcade-jhandi-munda-roulette",
     title: "Jhandi Munda & Roulette: Rules and Real Odds",
     description:
