@@ -68,7 +68,9 @@ export default function HomePage() {
       />
       <Hero />
 
-      {PLATFORMS.filter((p) => (p.comingSoon && p.releaseDate) || p.justLaunched).map((p) => (
+      {PLATFORMS.filter((p) => (p.comingSoon && p.releaseDate) || p.justLaunched)
+        .sort((a, b) => Number(a.justLaunched ?? false) - Number(b.justLaunched ?? false))
+        .map((p) => (
         <Reveal key={p.slug} className="mx-auto max-w-[1240px] px-4 sm:px-6 py-4">
           <ComingSoonCard
             name={p.name}
