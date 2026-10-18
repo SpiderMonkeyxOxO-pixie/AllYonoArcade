@@ -188,6 +188,15 @@ const RAW_PLATFORMS: {
     blogHref: "/blog/jaiho-play-vs-jaiho-arcade",
     justLaunched: true,
   },
+  {
+    name: "VIP Rummy",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/vip-rummy.webp",
+    description:
+      "VIP Rummy pairs a crowned-rummy branding with a green-diamond background, and is scheduled to launch on 20 October 2026. Nothing about it is verified yet: no download link, welcome bonus or promo code has been announced, and this page will update once the app is live.",
+    comingSoon: true,
+    releaseDate: "2026-10-20T08:00:00+05:30",
+  },
 ];
 
 /**
