@@ -604,6 +604,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "unverified",
     publishedAt: "2026-10-31",
   },
+  {
+    slug: "/blog/vip-rummy-apk-download",
+    title: "VIP Rummy APK Download: Launch-Day Status",
+    description:
+      "VIP Rummy launches 20 October 2026. Here's what's confirmed about the APK, what isn't yet, and how to verify the real file once it's available.",
+    icon: "download",
+    image: "/images/platforms/vip-rummy.webp",
+    keyword: "vip rummy apk download",
+    volume: "new listing",
+    verificationStatus: "unverified",
+    publishedAt: "2026-10-20",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
