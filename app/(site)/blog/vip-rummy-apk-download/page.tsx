@@ -12,7 +12,7 @@ const META_TITLE = "VIP Rummy APK Download: Launch-Day Status";
 const DESCRIPTION =
   "VIP Rummy launches 20 October 2026. Here's what's confirmed about the APK, what isn't yet, and how to verify the real file once it's available.";
 const URL = "https://allyonoarcade.com/blog/vip-rummy-apk-download";
-const IMAGE = "https://allyonoarcade.com/images/platforms/vip-rummy.webp";
+const IMAGE = "https://allyonoarcade.com/images/guides/vip-rummy-apk-download.webp";
 const PUBLISHED = "2026-10-20";
 const LAST_REVIEWED = "2026-10-20";
 
@@ -78,7 +78,7 @@ export default function VipRummyApkDownloadPage() {
       <RelatedLinks />
 
       <GuideImage
-        src="/images/platforms/vip-rummy.webp"
+        src="/images/guides/vip-rummy-apk-download.webp"
         alt="VIP Rummy app logo, a new real-money rummy game launching 20 October 2026."
         className="mx-auto max-w-[760px] px-4 sm:px-6 mt-2"
       />

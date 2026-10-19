@@ -610,7 +610,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     description:
       "VIP Rummy launches 20 October 2026. Here's what's confirmed about the APK, what isn't yet, and how to verify the real file once it's available.",
     icon: "download",
-    image: "/images/platforms/vip-rummy.webp",
+    image: "/images/guides/vip-rummy-apk-download.webp",
     keyword: "vip rummy apk download",
     volume: "new listing",
     verificationStatus: "unverified",
