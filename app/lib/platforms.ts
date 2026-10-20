@@ -193,9 +193,10 @@ const RAW_PLATFORMS: {
     playCheck: "Not checked yet.",
     image: "/images/platforms/vip-rummy.webp",
     description:
-      "VIP Rummy pairs a crowned-rummy branding with a green-diamond background, and is scheduled to launch on 20 October 2026. Nothing about it is verified yet: no download link, welcome bonus or promo code has been announced, and this page will update once the app is live.",
-    comingSoon: true,
-    releaseDate: "2026-10-20T08:00:00+05:30",
+      "VIP Rummy pairs a crowned-rummy branding with a green-diamond background — launched 20 October 2026. Here's the VIP Rummy APK download and promo code status.",
+    downloadUrl: "https://viprummy6.com/?code=XSDWNSC153Q&t=1792476153",
+    blogHref: "/blog/vip-rummy-apk-download",
+    justLaunched: true,
   },
 ];
 
@@ -208,7 +209,7 @@ const RAW_PLATFORMS: {
  * PHASE 3 WAVE 1: "Max Rummy", "Yono Rummy", and "Yono Games" were removed from
  * this list because those platforms were removed from RAW_PLATFORMS above.
  */
-const FEATURED_ORDER = ["Jaiho Play", "Jeet Spin", "Money Rummy", "Gold Rummy", "Win Rummy", "Yono 777", "DhanGame"];
+const FEATURED_ORDER = ["VIP Rummy", "Jaiho Play", "Jeet Spin", "Money Rummy", "Gold Rummy", "Win Rummy", "Yono 777", "DhanGame"];
 
 export const PLATFORMS: Platform[] = RAW_PLATFORMS.map((p) => ({
   slug: p.name
