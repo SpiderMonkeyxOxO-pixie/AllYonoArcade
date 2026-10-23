@@ -15,9 +15,9 @@ import RelatedLinks from "../../components/sections/RelatedLinks";
 import { LAW_SENTENCE, OPERATOR_CHECKED } from "../../lib/legal";
 import ScheduledLink from "../../components/sections/ScheduledLink";
 
-const TITLE = "Yono Arcade Games List (2026) & All Yono Game Apps";
+const TITLE = "All Yono Games List (2026): Every App & Game, A-Z";
 const DESCRIPTION =
-  "The Yono Arcade games list as YonoArcade.com names it: Rummy, Ludo, Poker, Crash, Andar Bahar, Roulette and more, its 25+ games claim, and which are games of chance.";
+  "Looking for All Yono? This is the full All Yono games directory — Rummy, Ludo, Poker, Crash, Andar Bahar, Roulette and 25+ more, with honest notes on what's actually a game of chance.";
 
 // Re-render hourly so links to scheduled posts switch on after they publish.
 export const revalidate = 3600;
@@ -48,7 +48,7 @@ export default function AllGamesPage() {
     <>
       <PageHeader
         eyebrow="All Games"
-        title="Yono Arcade Games List"
+        title="All Yono Games List"
         answer={`YonoArcade.com says the app has "25+ games" and names ten of them on its homepage: Rummy, Ludo, Poker, Crash, Andar Bahar, Wingo Lottery, 7 Up Down, Dragon & Tiger, Jhandi Munda and Roulette. Seven of those ten are games of chance. Checked ${OPERATOR_CHECKED}.`}
       />
 
