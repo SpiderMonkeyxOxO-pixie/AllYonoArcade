@@ -36,11 +36,11 @@ export default function ContactPage() {
         </p>
       </ContentSection>
 
-      <Callout tone="info" title="This isn't Yono Arcade support">
+      <Callout tone="info" title="Need more help?">
         <p>
           We're an independent information site, not the app's developer. For account, login, or
-          payment issues with the app itself, see our{" "}
-          <a href="/customer-care">Customer Care guide</a> for where to actually get help.
+          payment issues with the app itself, see the{" "}
+          <a href="/customer-care">Yono Arcade Help Center</a> for where to actually get help.
         </p>
       </Callout>
     </>

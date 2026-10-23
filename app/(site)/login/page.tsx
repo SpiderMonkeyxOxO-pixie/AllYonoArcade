@@ -90,6 +90,14 @@ export default function LoginPage() {
         </p>
       </Callout>
 
+      <Callout tone="info" title="Need more help?">
+        <p>
+          Still stuck? The{" "}
+          <Link href="/customer-care">Yono Arcade Help Center</Link> covers login, download and
+          customer-care contacts in one place, including how to spot a fake support number.
+        </p>
+      </Callout>
+
       <FAQSection
         heading="Login questions"
         items={[

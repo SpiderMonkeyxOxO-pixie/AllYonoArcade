@@ -13,9 +13,9 @@ import ScheduledLink from "../../components/sections/ScheduledLink";
 // Re-render hourly so the link to a scheduled post appears once it is live.
 export const revalidate = 3600;
 
-const TITLE = "Yono Arcade Customer Care: Official Contacts vs Fake Numbers";
+const TITLE = "Yono Arcade Help Center: Login, Download, Customer Care & Common Issues (2026)";
 const DESCRIPTION =
-  "The support contacts YonoArcade.com itself publishes (email, live chat, social channels), why it lists no phone number, and how to spot a fake Yono Arcade customer care number.";
+  "Having trouble with Yono Arcade? Fix login and OTP issues, find the official download, verify customer care contacts, and spot fake numbers — all in one place.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -29,8 +29,8 @@ export default function CustomerCarePage() {
   return (
     <>
       <PageHeader
-        eyebrow="Customer Care"
-        title="Yono Arcade Customer Care"
+        eyebrow="Help Center"
+        title="Yono Arcade Help Center"
         answer={`YonoArcade.com lists two support routes: the email support@yonoarcade.com and a 24/7 live chat hosted on yonoarcadehelp.com. It publishes no customer care phone number, so any "Yono Arcade helpline number" you find elsewhere did not come from the operator. Checked ${OPERATOR_CHECKED}.`}
       />
 
