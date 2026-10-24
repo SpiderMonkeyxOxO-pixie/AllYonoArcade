@@ -616,6 +616,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "unverified",
     publishedAt: "2026-10-20",
   },
+  {
+    slug: "/blog/is-jaiho-play-a-yono-game",
+    title: "Is Jaiho Play a Yono Game? What We Found",
+    description:
+      "Jaiho Play launched 15 October 2026 with rummy and Teen Patti. Here's whether it's part of Yono Arcade or the wider \"Yono\" family, and how to tell apps apart.",
+    icon: "gamepad",
+    image: "/images/guides/is-jaiho-play-a-yono-game.webp",
+    keyword: "jaihoplay yono game",
+    volume: "new listing",
+    verificationStatus: "verified",
+    publishedAt: "2026-10-24",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
