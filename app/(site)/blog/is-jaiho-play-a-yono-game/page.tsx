@@ -119,7 +119,7 @@ export default function JaihoPlayYonoGamePage() {
         <p>
           For what we cover on Yono Arcade itself, see the{" "}
           <Link href="/all-games">Yono Arcade games list</Link> and{" "}
-          <Link href="/who-operates-yono-arcade">who operates Yono Arcade</Link>.
+          <Link href="/blog/who-operates-yono-arcade">who operates Yono Arcade</Link>.
         </p>
       </ContentSection>
 
