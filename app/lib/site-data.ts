@@ -628,6 +628,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "verified",
     publishedAt: "2026-10-24",
   },
+  {
+    slug: "/blog/money-rummy-apk-download",
+    title: "Money Rummy APK Download: What's Confirmed So Far",
+    description:
+      "Money Rummy launched 9 September 2026. Here's the download link, what's confirmed about the app, and what's still unverified before you install it.",
+    icon: "download",
+    image: "/images/platforms/money-rummy.jpg",
+    keyword: "money rummy apk",
+    volume: "new listing",
+    verificationStatus: "unverified",
+    publishedAt: "2026-10-25",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
