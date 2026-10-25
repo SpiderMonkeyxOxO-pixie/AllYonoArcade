@@ -634,7 +634,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     description:
       "Money Rummy launched 9 September 2026. Here's the download link, what's confirmed about the app, and what's still unverified before you install it.",
     icon: "download",
-    image: "/images/platforms/money-rummy.jpg",
+    image: "/images/guides/money-rummy-apk-download.webp",
     keyword: "money rummy apk",
     volume: "new listing",
     verificationStatus: "unverified",

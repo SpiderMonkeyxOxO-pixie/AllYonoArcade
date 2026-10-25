@@ -12,7 +12,7 @@ const META_TITLE = "Money Rummy APK Download: What's Confirmed So Far";
 const DESCRIPTION =
   "Money Rummy launched 9 September 2026. Here's the download link, what's confirmed about the app, and what's still unverified before you install it.";
 const URL = "https://allyonoarcade.com/blog/money-rummy-apk-download";
-const IMAGE = "https://allyonoarcade.com/images/platforms/money-rummy.jpg";
+const IMAGE = "https://allyonoarcade.com/images/guides/money-rummy-apk-download.webp";
 const PUBLISHED = "2026-10-25";
 const LAST_REVIEWED = "2026-10-25";
 const REFERRAL_LINK = "https://moneyrummyff.com/?code=T1XR7S7YJ9T&t=1788922546";
@@ -80,8 +80,8 @@ export default function MoneyRummyApkDownloadPage() {
       <RelatedLinks />
 
       <GuideImage
-        src="/images/platforms/money-rummy.jpg"
-        alt="Money Rummy app icon, a real-money rummy game that launched 9 September 2026."
+        src="/images/guides/money-rummy-apk-download.webp"
+        alt="Money Rummy app download screen on a smartphone, a real-money rummy game that launched 9 September 2026."
         className="mx-auto max-w-[760px] px-4 sm:px-6 mt-2"
       />
 
