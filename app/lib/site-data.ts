@@ -646,7 +646,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     description:
       "101z APK download link, what we've verified about the app, and today's promo code status — plus what's still unconfirmed before you install it.",
     icon: "download",
-    image: "/images/platforms/101z.webp",
+    image: "/images/guides/101z-apk-download.webp",
     keyword: "101z apk",
     volume: "low, rising",
     verificationStatus: "unverified",
