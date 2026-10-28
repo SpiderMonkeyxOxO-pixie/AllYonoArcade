@@ -640,6 +640,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "unverified",
     publishedAt: "2026-10-25",
   },
+  {
+    slug: "/blog/101z-apk-download",
+    title: "101z APK Download: What's Confirmed & Promo Code Status",
+    description:
+      "101z APK download link, what we've verified about the app, and today's promo code status — plus what's still unconfirmed before you install it.",
+    icon: "download",
+    image: "/images/platforms/101z.webp",
+    keyword: "101z apk",
+    volume: "low, rising",
+    verificationStatus: "unverified",
+    publishedAt: "2026-10-28",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
