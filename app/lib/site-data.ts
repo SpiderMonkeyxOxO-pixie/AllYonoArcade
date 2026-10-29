@@ -652,6 +652,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "unverified",
     publishedAt: "2026-10-28",
   },
+  {
+    slug: "/blog/club-inr-apk-download",
+    title: "Club INR APK Download & Promo Code: What's Confirmed So Far",
+    description:
+      "Club INR isn't on the Play Store — here's the direct download link, what the promo code actually unlocks, and what we could and couldn't confirm.",
+    icon: "download",
+    image: "/images/guides/club-inr-apk-download.webp",
+    keyword: "club inr apk download",
+    volume: "low, rising",
+    verificationStatus: "unverified",
+    publishedAt: "2026-10-29",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
