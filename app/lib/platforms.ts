@@ -203,9 +203,10 @@ const RAW_PLATFORMS: {
     playCheck: "Not checked yet.",
     image: "/images/platforms/spin-rummy.webp",
     description:
-      "Spin Rummy pairs a spin-wheel icon with the rummy format in the same green-diamond branding as others in this network, and is scheduled to launch on 30 October 2026. Nothing about it is verified yet: no download link, welcome bonus or promo code has been announced, and this page will update once the app is live.",
-    comingSoon: true,
-    releaseDate: "2026-10-30T08:00:00+05:30",
+      "Spin Rummy pairs a spin-wheel icon with the rummy format in the same green-diamond branding as others in this network — launched 30 October 2026. Here's the Spin Rummy APK download and promo code status.",
+    downloadUrl: "https://spinrummy.cx/?code=31X42Q6DH9P&t=1793332810",
+    blogHref: "/blog/spin-rummy-apk-download",
+    justLaunched: true,
   },
 ];
 

@@ -664,6 +664,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "unverified",
     publishedAt: "2026-10-29",
   },
+  {
+    slug: "/blog/spin-rummy-apk-download",
+    title: "Spin Rummy APK Download: Launch-Day Status",
+    description:
+      "Spin Rummy launched 30 October 2026. Here's the download link, what's confirmed about the APK, and what's still unverified.",
+    icon: "download",
+    image: "/images/guides/spin-rummy-apk-download.webp",
+    keyword: "spin rummy apk",
+    volume: "new listing",
+    verificationStatus: "unverified",
+    publishedAt: "2026-10-30",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
