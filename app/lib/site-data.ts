@@ -676,6 +676,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "unverified",
     publishedAt: "2026-10-30",
   },
+  {
+    slug: "/blog/rummy-ludo-name-meaning",
+    title: "Rummy Ludo: What the Name Means, and What We Could Confirm",
+    description:
+      "Rummy Ludo shows up in search but has no confirmed source or download link. Here's what the name actually means and what to check before you trust any link.",
+    icon: "gamepad",
+    image: "/images/guides/rummy-ludo-name-meaning.webp",
+    keyword: "rummy ludo",
+    volume: "low, rising",
+    verificationStatus: "unverified",
+    publishedAt: "2026-10-31",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
