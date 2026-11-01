@@ -3,7 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import { PLATFORMS, CATEGORY_COLORS, TOP_FEATURED_SLUG, type PlatformCategory } from "../../lib/platforms";
 import { SearchIcon, XIcon, DownloadIcon, GamepadIcon, ExternalLinkIcon } from "../icons/Icons";
 import Reveal from "./Reveal";
@@ -113,7 +113,7 @@ export default function PlatformGrid() {
       </div>
 
       <AnimatePresence mode="wait">
-        <motion.div
+        <m.div
           key={activeFilter + query}
           initial={{ opacity: 0, y: 6 }}
           animate={{ opacity: 1, y: 0 }}
@@ -198,7 +198,7 @@ export default function PlatformGrid() {
               })}
             </div>
           )}
-        </motion.div>
+        </m.div>
       </AnimatePresence>
     </section>
   );

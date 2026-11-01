@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -141,7 +141,7 @@ export default function Navbar() {
 
               <AnimatePresence>
                 {moreOpen && (
-                  <motion.div
+                  <m.div
                     initial={{ opacity: 0, y: -6 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -6 }}
@@ -172,7 +172,7 @@ export default function Navbar() {
                     >
                       Blog
                     </Link>
-                  </motion.div>
+                  </m.div>
                 )}
               </AnimatePresence>
             </li>
@@ -210,7 +210,7 @@ export default function Navbar() {
           shows through around it, regardless of scroll/header state. */}
       <AnimatePresence>
         {moreOpen && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -226,7 +226,7 @@ export default function Navbar() {
       {/* Mobile drawer */}
       <AnimatePresence>
         {isMobileOpen && (
-          <motion.div
+          <m.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -234,7 +234,7 @@ export default function Navbar() {
             className="fixed inset-0 z-[999] lg:hidden"
             style={{ background: "rgba(5,6,12,0.98)", paddingTop: "56px" }}
           >
-            <motion.div
+            <m.div
               initial={{ y: -12, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.25, delay: 0.05 }}
@@ -283,8 +283,8 @@ export default function Navbar() {
                   </Link>
                 </li>
               </ul>
-            </motion.div>
-          </motion.div>
+            </m.div>
+          </m.div>
         )}
       </AnimatePresence>
     </>

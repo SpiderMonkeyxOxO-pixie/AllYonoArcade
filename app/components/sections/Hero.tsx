@@ -1,8 +1,5 @@
-"use client";
-
 import Link from "next/link";
 import Image from "next/image";
-import { motion, useReducedMotion } from "framer-motion";
 import { DownloadIcon, ShieldCheckIcon, GamepadIcon, ArrowRightIcon } from "../icons/Icons";
 import { REFERRAL_REL, YONO_ARCADE_REFERRAL_URL } from "../../lib/platforms";
 
@@ -19,21 +16,7 @@ const STATS = [
   { value: "100%", label: "Independent" },
 ];
 
-const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
-
-const container = {
-  hidden: {},
-  show: { transition: { staggerChildren: 0.09, delayChildren: 0.05 } },
-};
-
-const item = {
-  hidden: { opacity: 0, y: 16 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: EASE } },
-};
-
 export default function Hero() {
-  const reducedMotion = useReducedMotion();
-
   return (
     <section className="relative overflow-hidden pt-24 pb-14 sm:pt-32 sm:pb-20">
       {/* Ambient glow + grid — signature arcade-marquee background, not a stock gradient */}
@@ -51,13 +34,8 @@ export default function Hero() {
 
       <div className="relative mx-auto max-w-[1240px] px-4 sm:px-6">
         <div className="flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-14">
-          <motion.div
-            initial="hidden"
-            animate="show"
-            variants={container}
-            className="flex-1 min-w-0"
-          >
-            <motion.div variants={item} className="flex flex-wrap items-center gap-2 mb-5">
+          <div className="flex-1 min-w-0">
+            <div className="hero-rise hero-rise-1 flex flex-wrap items-center gap-2 mb-5">
               {CHIPS.map(({ icon: Icon, label }) => (
                 <span
                   key={label}
@@ -67,25 +45,22 @@ export default function Hero() {
                   {label}
                 </span>
               ))}
-            </motion.div>
+            </div>
 
-            <motion.h1 variants={item} className="hero-headline font-display font-semibold tracking-tight max-w-3xl">
+            <h1 className="hero-rise hero-rise-2 hero-headline font-display font-semibold tracking-tight max-w-3xl">
               Everything about <span className="text-neon">Yono Arcade</span>,
               <br className="sm:hidden" /> in one place.
-            </motion.h1>
+            </h1>
 
             {/* Answer-first block — the 40-80 word direct answer AI Overviews / PAA quote */}
-            <motion.p
-              variants={item}
-              className="mt-5 max-w-2xl text-[15px] sm:text-[17px] leading-relaxed text-[var(--color-ink-200)]"
-            >
+            <p className="hero-rise hero-rise-2 mt-5 max-w-2xl text-[15px] sm:text-[17px] leading-relaxed text-[var(--color-ink-200)]">
               Yono Arcade is a mobile coin-op games app popular in India, covering slots, rummy, and
               arcade-style titles. AllYonoArcade.com is an independent guide covering how to download
               it, every game inside it, login help, current promo codes, and an honest look at
               whether it's safe to install — checked and updated regularly.
-            </motion.p>
+            </p>
 
-            <motion.div variants={item} className="mt-8 flex flex-col sm:flex-row sm:flex-wrap gap-3 max-w-md sm:max-w-none">
+            <div className="hero-rise hero-rise-3 mt-8 flex flex-col sm:flex-row sm:flex-wrap gap-3 max-w-md sm:max-w-none">
               <a
                 href={YONO_ARCADE_REFERRAL_URL}
                 target="_blank"
@@ -113,43 +88,32 @@ export default function Hero() {
                 Promo Codes
                 <ArrowRightIcon size={15} />
               </Link>
-            </motion.div>
-            <motion.p variants={item} className="mt-3 max-w-md text-[11px] leading-relaxed text-[var(--color-ink-400)] sm:max-w-none">
+            </div>
+            <p className="hero-rise hero-rise-4 mt-3 max-w-md text-[11px] leading-relaxed text-[var(--color-ink-400)] sm:max-w-none">
               &ldquo;Download Yono Arcade&rdquo; is a referral link — it opens an external site, and we may earn a
               commission. See our <Link href="/disclaimer" className="underline">affiliate disclosure</Link>.
-            </motion.p>
+            </p>
 
             {/* Disclaimer strip — the trust/independence signal belongs in
                 the hero itself, not just the footer. */}
-            <motion.div
-              variants={item}
-              className="mt-6 flex max-w-md items-start gap-2.5 rounded-xl border border-white/10 bg-white/[0.03] p-3.5 sm:max-w-none"
-            >
+            <div className="hero-rise hero-rise-5 mt-6 flex max-w-md items-start gap-2.5 rounded-xl border border-white/10 bg-white/[0.03] p-3.5 sm:max-w-none">
               <ShieldCheckIcon size={15} className="mt-0.5 shrink-0 text-[var(--color-cyan-400)]" />
               <p className="text-[11.5px] leading-relaxed text-[var(--color-ink-400)]">
                 AllYonoArcade.com is not affiliated with, endorsed by, or an official distributor
                 of Yono Arcade. <strong className="text-[var(--color-coin-400)]">18+</strong> · Some
                 apps may be restricted in certain states.
               </p>
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
 
           {/* Pre-composited splash screen — the phone mockup and the
               bonus/reward decoration are baked into one image now, so no
-              separate floating badge overlays are needed here anymore. */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.94 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.7, delay: 0.15, ease: EASE }}
-            className="mx-auto w-full max-w-[360px] sm:max-w-[440px] lg:mx-0 lg:w-[460px] shrink-0"
-          >
-            {/* Slow ambient bob, separate from the one-shot entrance above —
-                keeps the arcade energy going after the page settles. Skipped
-                entirely for prefers-reduced-motion. */}
-            <motion.div
-              animate={reducedMotion ? undefined : { y: [0, -12, 0] }}
-              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            >
+              separate floating badge overlays are needed here anymore.
+              Rendered at full opacity immediately (this is the LCP
+              element): only a transform-only ambient bob loops on top,
+              which never hides it while it animates. */}
+          <div className="mx-auto w-full max-w-[360px] sm:max-w-[440px] lg:mx-0 lg:w-[460px] shrink-0">
+            <div className="hero-phone-bob">
               <Image
                 src="/images/yono-arcade-home-screen.webp"
                 alt="Yono Arcade app home screen with bonus rewards"
@@ -159,18 +123,12 @@ export default function Hero() {
                 sizes="(max-width: 640px) 360px, (max-width: 1024px) 440px, 460px"
                 className="h-auto w-full"
               />
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
         </div>
 
         {/* Stats row */}
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-40px" }}
-          transition={{ duration: 0.55, ease: EASE }}
-          className="mt-12 sm:mt-16 flex flex-wrap justify-center gap-x-10 gap-y-6 border-t border-white/[0.06] pt-8 sm:gap-x-14"
-        >
+        <div className="hero-rise hero-rise-5 mt-12 sm:mt-16 flex flex-wrap justify-center gap-x-10 gap-y-6 border-t border-white/[0.06] pt-8 sm:gap-x-14">
           {STATS.map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-neon font-display text-[22px] sm:text-[28px] font-extrabold tracking-tight">
@@ -181,7 +139,7 @@ export default function Hero() {
               </div>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
     </section>
   );

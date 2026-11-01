@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
+import { m, type Variants } from "framer-motion";
 
 const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
@@ -28,14 +28,14 @@ export default function Reveal({
 
   if (mode === "mount") {
     return (
-      <motion.div initial="hidden" animate="show" variants={variants} className={className}>
+      <m.div initial="hidden" animate="show" variants={variants} className={className}>
         {children}
-      </motion.div>
+      </m.div>
     );
   }
 
   return (
-    <motion.div
+    <m.div
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, margin: "-60px" }}
@@ -43,6 +43,6 @@ export default function Reveal({
       className={className}
     >
       {children}
-    </motion.div>
+    </m.div>
   );
 }

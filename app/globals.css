@@ -280,6 +280,42 @@ details[open] > .accordion-content {
 .float-3 { animation-delay: 1.8s; }
 
 /* ============================================
+   HERO ENTRANCE — CSS only, on purpose.
+   The hero (incl. the LCP phone image) used to be a
+   client component animated with Framer Motion: SSR
+   emitted it at opacity:0 and it stayed invisible until
+   React hydrated, which was directly inflating LCP/FCP.
+   This version renders fully painted in the initial HTML;
+   the slide-up is a decorative CSS transform (translateY)
+   layered on top, never opacity, so it can't delay when
+   the browser considers the content "painted".
+   ============================================ */
+
+@keyframes hero-rise {
+  from { transform: translateY(14px); }
+  to { transform: translateY(0); }
+}
+
+.hero-rise {
+  animation: hero-rise 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.hero-rise-1 { animation-delay: 0.05s; }
+.hero-rise-2 { animation-delay: 0.14s; }
+.hero-rise-3 { animation-delay: 0.23s; }
+.hero-rise-4 { animation-delay: 0.32s; }
+.hero-rise-5 { animation-delay: 0.41s; }
+
+/* Ambient bob for the hero phone mockup — transform-only (no opacity),
+   so it never hides the LCP element while it loops. */
+@keyframes hero-phone-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.hero-phone-bob { animation: hero-phone-bob 5s ease-in-out infinite; }
+
+/* ============================================
    GRADIENT TEXT
    ============================================ */
 
