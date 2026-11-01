@@ -688,6 +688,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "unverified",
     publishedAt: "2026-10-31",
   },
+  {
+    slug: "/blog/yono-game-kya-hai",
+    title: "योनो गेम क्या है? (What Is Yono Game?) — पूरी जानकारी हिंदी में",
+    description:
+      "योनो गेम असल में एक पूरा ऐप परिवार है, एक अकेला ऐप नहीं। यहां बताया गया है कि यह नाम किसे कवर करता है, और AllYonoArcade.com इनमें से कौन सा ऐप कवर करती है।",
+    icon: "gamepad",
+    image: "/images/guides/yono-game-kya-hai.webp",
+    keyword: "योनो गेम",
+    volume: "236 impr/90d, pos 34.7 (GSC)",
+    verificationStatus: "verified",
+    publishedAt: "2026-11-01",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
