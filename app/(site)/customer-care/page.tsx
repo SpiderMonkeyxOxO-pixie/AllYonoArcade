@@ -13,9 +13,9 @@ import ScheduledLink from "../../components/sections/ScheduledLink";
 // Re-render hourly so the link to a scheduled post appears once it is live.
 export const revalidate = 3600;
 
-const TITLE = "Yono Arcade Help Center: Login, Download, Customer Care & Common Issues (2026)";
+const TITLE = "Yono Arcade Help Center (YonoArcadeHelp): Login, Download & Support (2026)";
 const DESCRIPTION =
-  "Having trouble with Yono Arcade? Fix login and OTP issues, find the official download, verify customer care contacts, and spot fake numbers — all in one place.";
+  "Looking for \"yonoarcadehelp\"? It's the official live-chat domain YonoArcade.com links to. Verify it here, plus login/OTP fixes, the official download, and how to spot fake support contacts.";
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
