@@ -13,10 +13,12 @@ import { requirePublished } from "../../../lib/schedule";
 const TITLE = "Jeet Spin APK Download, Promo Code & Launch Day Review";
 const META_TITLE = "Jeet Spin APK Download & Promo Code — Launch Day Review 2026";
 const DESCRIPTION =
-  "Jeet Spin launches 30 Sep 2026 as the newest spin-and-win app on the Yono network. Download link, promo code status, app features and an honest first look.";
+  "Jeet Spin launched 30 Sep 2026 and is live on the Yono network. Download link, promo code status, app features and an honest review.";
 const URL = "https://allyonoarcade.com/blog/jeet-spin-apk-download";
 const IMAGE = "https://allyonoarcade.com/images/guides/jeet-spin-apk-download.webp";
 const PUBLISHED = "2026-09-29";
+const LAST_REVIEWED = "2026-11-04";
+const DOWNLOAD_URL = "https://www.jeetspin12.com/?code=SYHPBD5M972&t=1790735445";
 
 export const dynamic = "force-dynamic";
 
@@ -42,7 +44,7 @@ const ARTICLE_SCHEMA = {
     logo: { "@type": "ImageObject", url: "https://allyonoarcade.com/logo.png" },
   },
   datePublished: PUBLISHED,
-  dateModified: PUBLISHED,
+  dateModified: LAST_REVIEWED,
   mainEntityOfPage: { "@type": "WebPage", "@id": URL },
 };
 
@@ -66,11 +68,11 @@ export default function JeetSpinApkDownloadPage() {
       <PageHeader
         eyebrow="Launch Review"
         title={TITLE}
-        answer="Jeet Spin is a spin-and-win app launching on 30 September 2026 as part of the Yono network. No APK download link or promo code has been confirmed yet — this page will update with verified details once the app goes live."
+        answer="Jeet Spin launched on 30 September 2026 as part of the Yono network. The APK download is live; no welcome bonus or promo code has been confirmed for it yet."
       />
 
       <div className="mx-auto max-w-[760px] px-4 sm:px-6 -mt-2 mb-2 text-[12.5px] text-[var(--color-ink-400)]">
-        Published: September 29, 2026 · Pre-launch listing — details will be updated after the app goes live
+        Published: September 29, 2026 · Last reviewed: November 4, 2026
       </div>
 
       <RelatedLinks />
@@ -83,15 +85,14 @@ export default function JeetSpinApkDownloadPage() {
 
       <ContentSection heading="What is Jeet Spin?">
         <p>
-          Jeet Spin is a spin-format gaming app scheduled to launch on 30 September 2026. Its branding
-          follows the green-diamond icon style used across other apps in the Yono network, and early
-          promotional material positions it as a &quot;victory-themed&quot; spin-and-win platform.
+          Jeet Spin is a spin-format gaming app that launched on 30 September 2026. Its branding
+          follows the green-diamond icon style used across other apps in the Yono network, and it's
+          positioned as a &quot;victory-themed&quot; spin-and-win platform.
         </p>
         <p>
           The name combines &quot;Jeet&quot; (Hindi for victory) with &quot;Spin&quot;, suggesting a
-          lucky-wheel or reel-spin mechanic. As a pre-launch listing, we have not yet installed or
-          tested the app — everything on this page comes from publicly available promotional material
-          and is subject to change.
+          lucky-wheel or reel-spin mechanic. We have not independently tested the app ourselves — the
+          details below come from the operator's own listing, not a hands-on review.
         </p>
         <p>
           For the full list of apps in the network, see the{" "}
@@ -104,26 +105,28 @@ export default function JeetSpinApkDownloadPage() {
           headers={["Field", "Status", "Note"]}
           rows={[
             ["App name", "Jeet Spin", "Victory-themed spin platform"],
-            ["APK download link", "Not yet available", "Will be added after launch"],
-            ["Google Play listing", "Not found", "As of 29 September 2026"],
-            ["Expected launch", "30 September 2026", "Date from promotional material"],
-            ["File size", "Not yet known", "Will be verified post-launch"],
-            ["Minimum Android", "Not yet confirmed", "Likely Android 5.0+"],
+            ["APK download link", "Live", "See the download link below"],
+            ["Google Play listing", "Not found", "As of this review"],
+            ["Launched", "30 September 2026", "Per the operator's own listing"],
+            ["File size", "Not confirmed", "Not stated by the operator"],
+            ["Minimum Android", "Not confirmed", "Not stated by the operator"],
             ["Category", "Spin / Slots", "Reel-and-spin format"],
           ]}
         />
         <p>
-          This table will be updated with verified details once the APK becomes available. Download
-          links on AllYonoArcade.com always point to the platform&apos;s own website — we do not host
-          APK files.
+          <a href={DOWNLOAD_URL} target="_blank" rel="sponsored nofollow noopener noreferrer">
+            Get Jeet Spin
+          </a>{" "}
+          goes directly to Jeet Spin&apos;s own site. AllYonoArcade.com does not host APK files, and
+          this is not an endorsement — verify the package name and permissions yourself before
+          installing.
         </p>
       </ContentSection>
 
       <ContentSection heading="Promo code status">
         <p>
-          No Jeet Spin promo code has been announced as of 29 September 2026. Many apps in the Yono
-          network offer a welcome bonus or first-deposit promo code at launch, but nothing has been
-          confirmed for Jeet Spin.
+          No welcome bonus or promo code has been confirmed for Jeet Spin as of this review. Many apps
+          in the Yono network offer one, but nothing has been announced for Jeet Spin specifically.
         </p>
         <p>
           Check our <Link href="/promo-codes">promo codes page</Link> for daily-updated codes across
@@ -166,14 +169,14 @@ export default function JeetSpinApkDownloadPage() {
         </p>
       </ContentSection>
 
-      <Callout tone="warning" title="Before you download" badge="pending">
+      <Callout tone="warning" title="Before you download" badge="verified">
         <ul className="list-disc pl-5 space-y-1">
           <li>
-            Wait for the official launch before downloading. Pre-launch APK links claiming to be Jeet
-            Spin are not from the official source.
+            Only download from the link on this page or Jeet Spin&apos;s own site. Any other site
+            claiming to offer the Jeet Spin APK is not an official source.
           </li>
           <li>
-            Once available, compare the package name and signer certificate to confirm authenticity —
+            Compare the package name and signer certificate to confirm authenticity before installing —
             see our <Link href="/blog/yono-arcade-apk-review">APK review guide</Link> for how.
           </li>
           <li>
@@ -194,24 +197,24 @@ export default function JeetSpinApkDownloadPage() {
         heading="Jeet Spin questions"
         items={[
           {
-            question: "When does Jeet Spin launch?",
+            question: "When did Jeet Spin launch?",
             answer:
-              "Jeet Spin is expected to launch on 30 September 2026. This page will be updated with a download link and full review once the app goes live.",
+              "Jeet Spin launched on 30 September 2026, per the operator's own listing.",
           },
           {
             question: "Is there a Jeet Spin promo code?",
             answer:
-              "No promo code has been announced yet. Check our promo codes page after launch for the latest codes across all platforms.",
+              "No welcome bonus or promo code has been confirmed as of this review. Check our promo codes page for the latest codes across all platforms.",
           },
           {
             question: "Where can I download the Jeet Spin APK?",
             answer:
-              "The download link is not yet available. Once live, the Download button on this page will link to Jeet Spin's own website. AllYonoArcade.com does not host APK files.",
+              "The download link on this page goes directly to Jeet Spin's own website. AllYonoArcade.com does not host APK files.",
           },
           {
             question: "Is Jeet Spin safe to download?",
             answer:
-              "We cannot assess app safety before launch. Once the APK is available, we will inspect its package name, signer certificate and permissions and update this page.",
+              "We have not independently tested the app. Compare the package name and signer certificate against what's shown on Jeet Spin's own site before installing, and review the permissions it requests.",
           },
           {
             question: "Is Jeet Spin the same as other Yono spin apps?",
