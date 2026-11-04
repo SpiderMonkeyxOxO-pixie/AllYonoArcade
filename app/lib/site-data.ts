@@ -700,6 +700,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "verified",
     publishedAt: "2026-11-01",
   },
+  {
+    slug: "/blog/cash-rummy-apk-download",
+    title: "Cash Rummy APK Download & Promo Code — Launching 5 November 2026",
+    description:
+      "Cash Rummy launches 5 Nov 2026, 8:00 AM IST, as the newest real-money rummy app on the Yono network. What's confirmed so far, and what to check once it goes live.",
+    icon: "gamepad",
+    image: "/images/platforms/cash-rummy.webp",
+    keyword: "cash rummy apk download",
+    volume: "new listing",
+    verificationStatus: "verified",
+    publishedAt: "2026-11-04",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */

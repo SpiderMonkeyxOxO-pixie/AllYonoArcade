@@ -199,6 +199,15 @@ const RAW_PLATFORMS: {
     justLaunched: true,
   },
   {
+    name: "Cash Rummy",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/cash-rummy.webp",
+    description:
+      "Cash Rummy is a real-money rummy app scheduled to join the Yono network — launching 5 November 2026. No download link, welcome bonus or promo code is available yet; this page will update once the app goes live.",
+    comingSoon: true,
+    releaseDate: "2026-11-05T08:00:00+05:30",
+  },
+  {
     name: "Spin Rummy",
     playCheck: "Not checked yet.",
     image: "/images/platforms/spin-rummy.webp",
@@ -219,7 +228,7 @@ const RAW_PLATFORMS: {
  * PHASE 3 WAVE 1: "Max Rummy", "Yono Rummy", and "Yono Games" were removed from
  * this list because those platforms were removed from RAW_PLATFORMS above.
  */
-const FEATURED_ORDER = ["Spin Rummy", "VIP Rummy", "Jaiho Play", "Jeet Spin", "Money Rummy", "Gold Rummy", "Win Rummy", "Yono 777", "DhanGame"];
+const FEATURED_ORDER = ["Cash Rummy", "Spin Rummy", "VIP Rummy", "Jaiho Play", "Jeet Spin", "Money Rummy", "Gold Rummy", "Win Rummy", "Yono 777", "DhanGame"];
 
 export const PLATFORMS: Platform[] = RAW_PLATFORMS.map((p) => ({
   slug: p.name
