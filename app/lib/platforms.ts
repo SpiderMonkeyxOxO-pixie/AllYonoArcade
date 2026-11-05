@@ -203,9 +203,10 @@ const RAW_PLATFORMS: {
     playCheck: "Not checked yet.",
     image: "/images/platforms/cash-rummy.webp",
     description:
-      "Cash Rummy is a real-money rummy app scheduled to join the Yono network — launching 5 November 2026. No download link, welcome bonus or promo code is available yet; this page will update once the app goes live.",
-    comingSoon: true,
-    releaseDate: "2026-11-05T08:00:00+05:30",
+      "Cash Rummy launched 5 November 2026 as a 10-game real-money platform on the Yono network, structurally similar to Yono Arcade's own multi-game model though independently operated — here's the Cash Rummy APK download and what we've verified about its welcome bonus and promo codes.",
+    downloadUrl: "https://www.cashrummy99.com/?code=RS9XV2AA&t=1793849345",
+    blogHref: "/blog/cash-rummy-apk-download",
+    justLaunched: true,
   },
   {
     name: "Spin Rummy",
