@@ -212,6 +212,17 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "pending",
   },
   {
+    slug: "/blog/cash-rummy-vs-yono-arcade",
+    title: "Cash Rummy vs Yono Arcade: Games & Key Differences",
+    description:
+      "Compare Cash Rummy vs Yono Arcade by game catalogue, app features, promo codes and verification status before using either platform.",
+    icon: "swap",
+    image: "/images/guides/cash-rummy-vs-yono-arcade-comparison.webp",
+    keyword: "cash rummy vs yono arcade",
+    volume: "new listing",
+    verificationStatus: "pending",
+  },
+  {
     slug: "/blog/yono-arcade-apps",
     title: "Yono Arcade Apps: Mall Listings & App Checks",
     description:
