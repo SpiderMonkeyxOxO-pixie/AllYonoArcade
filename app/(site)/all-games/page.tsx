@@ -15,9 +15,9 @@ import RelatedLinks from "../../components/sections/RelatedLinks";
 import { LAW_SENTENCE, OPERATOR_CHECKED } from "../../lib/legal";
 import ScheduledLink from "../../components/sections/ScheduledLink";
 
-const TITLE = "Yono Arcade Games List (2026) & All Yono Game Apps";
+const TITLE = "Yono Arcade Games List (2026) & All Yono Game Apps APK";
 const DESCRIPTION =
-  "The Yono Arcade games list as YonoArcade.com names it: Rummy, Ludo, Poker, Crash, Andar Bahar, Roulette and more, its 25+ games claim, and which are games of chance.";
+  "The Yono Arcade games list and APK info, as YonoArcade.com names it: Rummy, Ludo, Poker, Crash, Andar Bahar, Roulette and more, its 25+ games claim, and which are games of chance.";
 
 // Re-render hourly so links to scheduled posts switch on after they publish.
 export const revalidate = 3600;
