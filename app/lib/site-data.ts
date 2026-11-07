@@ -223,6 +223,17 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "pending",
   },
   {
+    slug: "/blog/maha-games-vs-yono-arcade",
+    title: "Maha Games vs Yono Arcade: Games, Features and Key Differences",
+    description:
+      "Compare Maha Games vs Yono Arcade by game category, reward mechanics, APK status and verification level before using either platform.",
+    icon: "swap",
+    image: "/images/guides/maha-games-vs-yono-arcade-comparison.webp",
+    keyword: "maha games vs yono arcade",
+    volume: "new listing",
+    verificationStatus: "pending",
+  },
+  {
     slug: "/blog/yono-arcade-apps",
     title: "Yono Arcade Apps: Mall Listings & App Checks",
     description:
