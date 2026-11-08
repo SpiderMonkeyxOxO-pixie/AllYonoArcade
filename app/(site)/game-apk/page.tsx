@@ -9,7 +9,10 @@ import FAQSection from "../../components/sections/FAQSection";
 import RelatedLinks from "../../components/sections/RelatedLinks";
 import GuideImage from "../../components/sections/GuideImage";
 import ScheduledLink from "../../components/sections/ScheduledLink";
+import Reveal from "../../components/sections/Reveal";
+import { DownloadIcon, ExternalLinkIcon } from "../../components/icons/Icons";
 import { OPERATOR_CHECKED } from "../../lib/legal";
+import { YONO_ARCADE_REFERRAL_URL, REFERRAL_REL } from "../../lib/platforms";
 
 // Re-render hourly so links to scheduled posts switch on after they publish.
 export const revalidate = 3600;
@@ -36,6 +39,23 @@ export default function GameApkPage() {
       />
 
       <RelatedLinks />
+
+      <Reveal mode="mount" className="mx-auto max-w-[760px] px-4 sm:px-6 py-2 flex justify-center">
+        <a
+          href={YONO_ARCADE_REFERRAL_URL}
+          target="_blank"
+          rel={REFERRAL_REL}
+          className="btn-brand inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-[13px] font-semibold text-center"
+          style={{
+            background: "linear-gradient(135deg, var(--color-cyan-400), var(--color-magenta-400))",
+            color: "#1a0e00",
+          }}
+        >
+          <DownloadIcon size={15} />
+          Go to the Official YonoArcade.com Download
+          <ExternalLinkIcon size={12} />
+        </a>
+      </Reveal>
 
       <ContentSection heading="One APK, all games">
         <p>
