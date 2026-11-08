@@ -14,6 +14,7 @@ import FAQSection from "../../components/sections/FAQSection";
 import RelatedLinks from "../../components/sections/RelatedLinks";
 import { LAW_SENTENCE, OPERATOR_CHECKED } from "../../lib/legal";
 import ScheduledLink from "../../components/sections/ScheduledLink";
+import { DownloadIcon } from "../../components/icons/Icons";
 
 const TITLE = "Yono Arcade Games List (2026) & All Yono Game Apps APK";
 const DESCRIPTION =
@@ -51,6 +52,20 @@ export default function AllGamesPage() {
         title="Yono Arcade Games List"
         answer={`YonoArcade.com says the app has "25+ games" and names ten of them on its homepage: Rummy, Ludo, Poker, Crash, Andar Bahar, Wingo Lottery, 7 Up Down, Dragon & Tiger, Jhandi Munda and Roulette. Seven of those ten are games of chance. Checked ${OPERATOR_CHECKED}.`}
       />
+
+      <Reveal mode="mount" className="mx-auto max-w-[760px] px-4 sm:px-6 py-2 flex justify-center">
+        <Link
+          href="/download"
+          className="btn-brand inline-flex items-center justify-center gap-2 rounded-full px-5 py-2.5 text-[13px] font-semibold"
+          style={{
+            background: "linear-gradient(135deg, var(--color-cyan-400), var(--color-magenta-400))",
+            color: "#1a0e00",
+          }}
+        >
+          <DownloadIcon size={15} />
+          Get the Yono Arcade APK
+        </Link>
+      </Reveal>
 
       <RelatedLinks exclude="all-games" />
 
