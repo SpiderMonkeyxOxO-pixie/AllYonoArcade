@@ -19,7 +19,7 @@ const REFERRAL_LINK = "https://viprummy6.com/?code=XSDWNSC153Q&t=1792476153";
 const EXTERNAL = { target: "_blank", rel: "nofollow noopener noreferrer" } as const;
 
 const ANSWER =
-  "VIP Rummy launched today, 20 October 2026 at 8:00 AM IST. Our sponsored download link is below. Beyond that, the APK itself hasn't been independently inspected yet — package name, permissions, and signing certificate are still unverified, and no welcome bonus or promo code has been confirmed.";
+  "VIP Rummy launched today, 20 October 2026 at 8:00 AM IST, one of the newer names on the all Yono games list. Our sponsored download link is below. Beyond that, the APK itself hasn't been independently inspected yet — package name, permissions, and signing certificate are still unverified, and no welcome bonus or promo code has been confirmed.";
 
 export const metadata: Metadata = {
   title: { absolute: META_TITLE },
@@ -132,6 +132,25 @@ export default function VipRummyApkDownloadPage() {
         </p>
       </ContentSection>
 
+      <ContentSection heading="Logging into VIP Rummy">
+        <p>
+          Apps in this family typically use a phone-number-plus-OTP sign-in rather than a username
+          and password: you enter your number, receive a one-time code by SMS, and that logs you
+          in. We haven&apos;t independently confirmed VIP Rummy follows the exact same flow, since
+          the app itself is still unverified (see above), but every similarly branded app
+          we&apos;ve checked in this category uses this pattern.
+        </p>
+        <p>
+          If the OTP doesn&apos;t arrive, the usual causes are weak signal, a carrier SMS filter, or
+          requesting it more than once in quick succession &mdash; wait a couple of minutes before
+          resending rather than tapping repeatedly. Never enter your VIP Rummy credentials, OTP, or
+          UPI PIN on any page other than the app itself; login searches are a common target for
+          phishing pages that imitate a real sign-in screen. Our{" "}
+          <Link href="/login">Yono Arcade login troubleshooting guide</Link> covers the same
+          failure patterns in more depth if you hit one.
+        </p>
+      </ContentSection>
+
       <Callout tone="info" title="18+ responsible gaming">
         <p>
           This is 18+ real-money gaming content. Set a spending limit before you play anything, regardless of how
@@ -160,6 +179,11 @@ export default function VipRummyApkDownloadPage() {
             question: "Is there a promo code at launch?",
             answer:
               "None has been confirmed yet. We'll update this page once (and if) one is verified.",
+          },
+          {
+            question: "How do you log into VIP Rummy?",
+            answer:
+              "Apps in this family typically use a phone number plus an SMS one-time code rather than a password. We haven't independently confirmed this for VIP Rummy specifically, but it matches the pattern every similar app in this category uses.",
           },
         ]}
       />

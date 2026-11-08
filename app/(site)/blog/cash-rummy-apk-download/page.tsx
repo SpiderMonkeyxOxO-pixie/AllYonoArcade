@@ -19,7 +19,7 @@ const REFERRAL_LINK = "https://www.cashrummy99.com/?code=RS9XV2AA&t=1793849345";
 const EXTERNAL = { target: "_blank", rel: "nofollow noopener noreferrer" } as const;
 
 const ANSWER =
-  "Cash Rummy launched 5 November 2026 at 8:00 AM IST — structurally similar to Yono Arcade's own multi-game model, though independently operated with no connection to it. The app's own listing states a ₹50–500 welcome bonus and ₹100 minimum withdrawal, neither independently verified.";
+  "Cash Rummy launched 5 November 2026 at 8:00 AM IST, one of the newer names on the all Yono games list — structurally similar to Yono Arcade's own multi-game model, though independently operated with no connection to it. The app's own listing states a ₹50–500 welcome bonus and ₹100 minimum withdrawal, neither independently verified.";
 
 export const metadata: Metadata = {
   title: { absolute: META_TITLE },
@@ -164,6 +164,24 @@ export default function CashRummyApkDownloadPage() {
         </div>
       </ContentSection>
 
+      <ContentSection heading="Logging into Cash Rummy">
+        <p>
+          Like the other real-money apps in this family, Cash Rummy&apos;s listing points to a
+          phone-number-plus-OTP sign-in rather than a username and password: enter your number,
+          receive a one-time code by SMS, and that logs you in. We haven&apos;t independently
+          tested this flow yet &mdash; see &quot;What We Can and Can&apos;t Verify&quot; above
+          &mdash; but it matches the pattern every other app in this category uses.
+        </p>
+        <p>
+          If a code doesn&apos;t arrive, the usual causes are weak signal, a carrier SMS filter, or
+          requesting it several times in a row rather than waiting; resending too quickly can make
+          it worse. Only ever enter your Cash Rummy credentials, OTP, or UPI PIN inside the app
+          itself, never on a page or form that claims to help with login from outside it. Our{" "}
+          <Link href="/login">Yono Arcade login troubleshooting guide</Link> covers the same
+          failure patterns across this app family in more depth.
+        </p>
+      </ContentSection>
+
       <Callout tone="info" title="Pre-launch listing no longer applies">
         <p>
           AllYonoArcade.com does not develop, host, or operate Cash Rummy or any other app in this directory.
@@ -191,6 +209,11 @@ export default function CashRummyApkDownloadPage() {
           {
             question: "Is there a fixed promo code?",
             answer: "No — released up to three times daily per the operator's own stated pattern.",
+          },
+          {
+            question: "How do you log into Cash Rummy?",
+            answer:
+              "Its listing points to a phone number plus an SMS one-time code rather than a password, matching the pattern used across this app family — not yet independently tested for Cash Rummy specifically.",
           },
         ]}
       />
