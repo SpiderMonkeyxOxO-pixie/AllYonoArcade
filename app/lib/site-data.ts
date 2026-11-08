@@ -234,6 +234,17 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "pending",
   },
   {
+    slug: "/blog/jaiho-play-vs-yono-arcade",
+    title: "Jaiho Play vs Yono Arcade: Games, Features and Key Differences",
+    description:
+      "Compare Jaiho Play vs Yono Arcade by game category, reward figures, APK status and verification level before using either platform.",
+    icon: "swap",
+    image: "/images/platforms/jaiho-play.webp",
+    keyword: "jaiho play vs yono arcade",
+    volume: "new listing",
+    verificationStatus: "pending",
+  },
+  {
     slug: "/blog/yono-arcade-apps",
     title: "Yono Arcade Apps: Mall Listings & App Checks",
     description:
