@@ -115,6 +115,19 @@ export default function AllGamesPage() {
         />
       </ContentSection>
 
+      <ContentSection heading="Looking for VIP Rummy or Cash Rummy specifically?">
+        <p>
+          Two names from the grid below get searched for on their own often enough to point to
+          directly. See the{" "}
+          <Link href="/blog/vip-rummy-apk-download">VIP Rummy APK download and promo code guide</Link>{" "}
+          or its{" "}
+          <Link href="/all-games/vip-rummy">dedicated VIP Rummy page</Link>, and the{" "}
+          <Link href="/blog/cash-rummy-apk-download">Cash Rummy APK download and promo code guide</Link>{" "}
+          or its{" "}
+          <Link href="/all-games/cash-rummy">dedicated Cash Rummy page</Link>.
+        </p>
+      </ContentSection>
+
       {PLATFORMS.filter((p) => p.comingSoon && p.releaseDate).map((p) => (
         <Reveal key={p.slug} mode="mount" className="mx-auto max-w-[1240px] px-4 sm:px-6 mb-6">
           <ComingSoonCard
