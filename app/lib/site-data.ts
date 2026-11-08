@@ -245,6 +245,17 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "pending",
   },
   {
+    slug: "/blog/vip-rummy-vs-yono-arcade",
+    title: "VIP Rummy vs Yono Arcade: Games, Features and Key Differences",
+    description:
+      "Compare VIP Rummy vs Yono Arcade by game category, reward transparency, APK status and verification level before using either platform.",
+    icon: "swap",
+    image: "/images/guides/vip-rummy-vs-yono-arcade-comparison.webp",
+    keyword: "vip rummy vs yono arcade",
+    volume: "new listing",
+    verificationStatus: "pending",
+  },
+  {
     slug: "/blog/yono-arcade-apps",
     title: "Yono Arcade Apps: Mall Listings & App Checks",
     description:
