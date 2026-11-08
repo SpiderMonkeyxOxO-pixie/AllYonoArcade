@@ -13,7 +13,7 @@ const TITLE = "Jaiho Play vs Yono Arcade: Games, Features and Key Differences";
 const DESCRIPTION =
   "Compare Jaiho Play vs Yono Arcade by game category, reward figures, APK status and verification level before using either platform.";
 const URL = "https://allyonoarcade.com/blog/jaiho-play-vs-yono-arcade";
-const IMAGE = "https://allyonoarcade.com/images/platforms/jaiho-play.webp";
+const IMAGE = "https://allyonoarcade.com/images/guides/jaiho-play-vs-yono-arcade-comparison.webp";
 const PUBLISHED = "2026-11-08";
 const LAST_REVIEWED = "2026-11-08";
 
@@ -72,8 +72,8 @@ export default function JaihoPlayVsYonoArcadePage() {
       <RelatedLinks />
 
       <GuideImage
-        src="/images/platforms/jaiho-play.webp"
-        alt="Jaiho Play app icon next to Yono Arcade, the two platforms compared on this page"
+        src="/images/guides/jaiho-play-vs-yono-arcade-comparison.webp"
+        alt="Jaiho Play vs Yono Arcade comparison graphic"
         className="mx-auto max-w-[760px] px-4 sm:px-6 mt-2"
       />
 
