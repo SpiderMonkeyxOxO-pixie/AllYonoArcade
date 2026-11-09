@@ -14,8 +14,8 @@ const DESCRIPTION =
   "Compare VIP Rummy vs Yono Arcade by game category, reward transparency, APK status and verification level before using either platform.";
 const URL = "https://allyonoarcade.com/blog/vip-rummy-vs-yono-arcade";
 const IMAGE = "https://allyonoarcade.com/images/guides/vip-rummy-vs-yono-arcade-comparison.webp";
-const PUBLISHED = "2026-11-08";
-const LAST_REVIEWED = "2026-11-08";
+const PUBLISHED = "2026-11-09";
+const LAST_REVIEWED = "2026-11-09";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -66,7 +66,7 @@ export default function VipRummyVsYonoArcadePage() {
       />
 
       <div className="mx-auto max-w-[760px] px-4 sm:px-6 -mt-2 mb-2 text-[12.5px] text-[var(--color-ink-400)]">
-        Published: November 8, 2026 · Last reviewed: November 8, 2026
+        Published: November 9, 2026 · Last reviewed: November 9, 2026
       </div>
 
       <RelatedLinks />
