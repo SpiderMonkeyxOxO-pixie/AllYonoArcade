@@ -1,17 +1,20 @@
 #!/bin/bash
-# Daily rebuild for the date-gated 14-day content series (18-31 Oct 2026).
+# Daily rebuild for the staggered-release "X vs Yono Arcade" comparison
+# posts (Bingo 101 published 10 Nov, one more per day through 17 Nov).
 #
-# BLOG_PILLARS entries in app/lib/site-data.ts are gated at REQUEST time via
-# livePillars() (the blog index and sitemap are dynamic routes, so they
-# already reflect "today" with no rebuild needed). This script is NOT
-# required for that gating to work. It exists only so Arcade follows the
-# same daily-cron operational pattern as the sibling sites and sitemap/
-# cache stay freshly rebuilt. Safe to run by hand too:
+# The /blog listing and /sitemap.xml are DYNAMIC routes (ƒ) using
+# livePillars() (app/lib/site-data.ts) — they re-check "today" on every
+# request, no rebuild needed for those. BUT each individual post page is
+# STATIC (○) and now checks isPublished() (app/lib/publish-gate.ts) at
+# build time via notFound() — and the /all-games hub's "more comparisons"
+# list is also static. Both of those need a rebuild to actually flip from
+# hidden/404 to live on each post's scheduled date. Cron runs this once a
+# day; it is safe to run by hand too:
 #
 #   bash scripts/scheduled-publish.sh
 #
-# Safety: the previous build is kept as .next.prev and restored if the new
-# build fails, so a bad build can never leave the site without pages.
+# Safety: the previous build is kept as .next.prev and restored if the
+# new build fails, so a bad build can never leave the site without pages.
 set -uo pipefail
 
 cd "$(dirname "$0")/.."

@@ -265,6 +265,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     keyword: "spin gold vs yono arcade",
     volume: "new listing",
     verificationStatus: "pending",
+    publishedAt: "2026-11-12",
   },
   {
     slug: "/blog/jaiho-spin-vs-yono-arcade",
@@ -276,6 +277,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     keyword: "jaiho spin vs yono arcade",
     volume: "new listing",
     verificationStatus: "pending",
+    publishedAt: "2026-11-14",
   },
   {
     slug: "/blog/mbm-bet-vs-yono-arcade",
@@ -287,6 +289,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     keyword: "mbm bet vs yono arcade",
     volume: "new listing",
     verificationStatus: "pending",
+    publishedAt: "2026-11-17",
   },
   {
     slug: "/blog/bingo-101-vs-yono-arcade",
@@ -298,6 +301,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     keyword: "bingo 101 vs yono arcade",
     volume: "new listing",
     verificationStatus: "pending",
+    publishedAt: "2026-11-10",
   },
   {
     slug: "/blog/spin-winner-vs-yono-arcade",
@@ -309,6 +313,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     keyword: "spin winner vs yono arcade",
     volume: "new listing",
     verificationStatus: "pending",
+    publishedAt: "2026-11-13",
   },
   {
     slug: "/blog/boss-rummy-vs-yono-arcade",
@@ -320,6 +325,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     keyword: "boss rummy vs yono arcade",
     volume: "new listing",
     verificationStatus: "pending",
+    publishedAt: "2026-11-11",
   },
   {
     slug: "/blog/joy-rummy-vs-yono-arcade",
@@ -331,6 +337,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     keyword: "joy rummy vs yono arcade",
     volume: "new listing",
     verificationStatus: "pending",
+    publishedAt: "2026-11-16",
   },
   {
     slug: "/blog/yn-777-vs-yono-arcade",
@@ -342,6 +349,7 @@ export const BLOG_PILLARS: BlogPillar[] = [
     keyword: "yn 777 vs yono arcade",
     volume: "new listing",
     verificationStatus: "pending",
+    publishedAt: "2026-11-15",
   },
   {
     slug: "/blog/yono-arcade-apps",

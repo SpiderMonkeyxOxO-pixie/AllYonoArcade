@@ -8,14 +8,16 @@ import FAQSection from "../../../components/sections/FAQSection";
 import RelatedLinks from "../../../components/sections/RelatedLinks";
 import GuideImage from "../../../components/sections/GuideImage";
 import ComparisonTable from "../../../components/sections/ComparisonTable";
+import { notFound } from "next/navigation";
+import { isPublished } from "../../../lib/publish-gate";
 
 const TITLE = "Jaiho Spin vs Yono Arcade: Games, Features and Key Differences";
 const DESCRIPTION =
   "Compare Jaiho Spin vs Yono Arcade by game category, reward transparency, APK status and verification level before using either platform.";
 const URL = "https://allyonoarcade.com/blog/jaiho-spin-vs-yono-arcade";
 const IMAGE = "https://allyonoarcade.com/images/guides/jaiho-spin-vs-yono-arcade-comparison.webp";
-const PUBLISHED = "2026-11-10";
-const LAST_REVIEWED = "2026-11-10";
+const PUBLISHED = "2026-11-14";
+const LAST_REVIEWED = "2026-11-14";
 
 export const metadata: Metadata = {
   title: TITLE,
@@ -54,6 +56,10 @@ const BREADCRUMB_SCHEMA = {
 };
 
 export default function JaihoSpinVsYonoArcadePage() {
+  if (!isPublished(PUBLISHED)) {
+    notFound();
+  }
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ARTICLE_SCHEMA) }} />
@@ -66,7 +72,7 @@ export default function JaihoSpinVsYonoArcadePage() {
       />
 
       <div className="mx-auto max-w-[760px] px-4 sm:px-6 -mt-2 mb-2 text-[12.5px] text-[var(--color-ink-400)]">
-        Published: November 10, 2026 · Last reviewed: November 10, 2026
+        Published: November 14, 2026 · Last reviewed: November 14, 2026
       </div>
 
       <RelatedLinks />

@@ -13,6 +13,7 @@ import ComparisonTable from "../../components/sections/ComparisonTable";
 import FAQSection from "../../components/sections/FAQSection";
 import RelatedLinks from "../../components/sections/RelatedLinks";
 import { LAW_SENTENCE, OPERATOR_CHECKED } from "../../lib/legal";
+import { isPublished } from "../../lib/publish-gate";
 import ScheduledLink from "../../components/sections/ScheduledLink";
 import { DownloadIcon } from "../../components/icons/Icons";
 
@@ -155,14 +156,22 @@ export default function AllGamesPage() {
           Yono Arcade directly in its own guide:
         </p>
         <ul className="list-disc space-y-1.5 pl-5">
-          <li><Link href="/blog/spin-gold-vs-yono-arcade">Spin Gold vs Yono Arcade</Link></li>
-          <li><Link href="/blog/jaiho-spin-vs-yono-arcade">Jaiho Spin vs Yono Arcade</Link></li>
-          <li><Link href="/blog/mbm-bet-vs-yono-arcade">MBM Bet vs Yono Arcade</Link></li>
-          <li><Link href="/blog/bingo-101-vs-yono-arcade">Bingo 101 vs Yono Arcade</Link></li>
-          <li><Link href="/blog/spin-winner-vs-yono-arcade">Spin Winner vs Yono Arcade</Link></li>
-          <li><Link href="/blog/boss-rummy-vs-yono-arcade">Boss Rummy vs Yono Arcade</Link></li>
-          <li><Link href="/blog/joy-rummy-vs-yono-arcade">Joy Rummy vs Yono Arcade</Link></li>
-          <li><Link href="/blog/yn-777-vs-yono-arcade">Yn 777 vs Yono Arcade</Link></li>
+          {[
+            { slug: "bingo-101-vs-yono-arcade", label: "Bingo 101 vs Yono Arcade", date: "2026-11-10" },
+            { slug: "boss-rummy-vs-yono-arcade", label: "Boss Rummy vs Yono Arcade", date: "2026-11-11" },
+            { slug: "spin-gold-vs-yono-arcade", label: "Spin Gold vs Yono Arcade", date: "2026-11-12" },
+            { slug: "spin-winner-vs-yono-arcade", label: "Spin Winner vs Yono Arcade", date: "2026-11-13" },
+            { slug: "jaiho-spin-vs-yono-arcade", label: "Jaiho Spin vs Yono Arcade", date: "2026-11-14" },
+            { slug: "yn-777-vs-yono-arcade", label: "Yn 777 vs Yono Arcade", date: "2026-11-15" },
+            { slug: "joy-rummy-vs-yono-arcade", label: "Joy Rummy vs Yono Arcade", date: "2026-11-16" },
+            { slug: "mbm-bet-vs-yono-arcade", label: "MBM Bet vs Yono Arcade", date: "2026-11-17" },
+          ]
+            .filter((item) => isPublished(item.date))
+            .map((item) => (
+              <li key={item.slug}>
+                <Link href={`/blog/${item.slug}`}>{item.label}</Link>
+              </li>
+            ))}
         </ul>
       </ContentSection>
 
