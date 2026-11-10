@@ -68,7 +68,7 @@ export default function MbmBetVsYonoArcadePage() {
       <PageHeader
         eyebrow="App Comparisons"
         title="MBM Bet vs Yono Arcade: Games, Features and Key Differences"
-        answer="MBM Bet is a card-game app distributed from mbmbet21.com. Its promo code has been recorded elsewhere in this network as Expired, last reviewed 17 June 2026 — no current welcome bonus, deposit range or operator name is confirmed. Yono Arcade has a documented Mall section, APK guide and promo-code tracker on this site."
+        answer="MBM Bet is a card-game app distributed from mbmbet21.com. Its promo code has been recorded elsewhere in this network as Expired, last reviewed 17 June 2026, alongside a tracked welcome bonus of ₹195 and ₹100 minimum withdrawal from the same review — no deposit range or operator name is confirmed. Yono Arcade has a documented Mall section, APK guide and promo-code tracker on this site."
       />
 
       <div className="mx-auto max-w-[760px] px-4 sm:px-6 -mt-2 mb-2 text-[12.5px] text-[var(--color-ink-400)]">
@@ -87,7 +87,8 @@ export default function MbmBetVsYonoArcadePage() {
         <p>
           MBM Bet is a card-game app in the wider Yono-network directory, currently distributed from
           mbmbet21.com. A promo-code tracker elsewhere in this network last recorded its code as
-          Expired, reviewed 17 June 2026 — the most recent status check this site is aware of. Yono
+          Expired, alongside a tracked welcome bonus of ₹195 and a ₹100 minimum withdrawal, both
+          reviewed 17 June 2026 — the most recent status check this site is aware of. Yono
           Arcade, the subject of this site, is documented in more depth: a broader arcade-style app
           covering rummy, slots and spin-style games, built around an in-app Mall section.
         </p>
@@ -101,7 +102,8 @@ export default function MbmBetVsYonoArcadePage() {
         <p>
           This comparison reflects what&apos;s publicly available as of November 10, 2026. MBM
           Bet&apos;s APK (package name, permissions, signing certificate) hasn&apos;t been
-          independently inspected, and no current welcome bonus has been confirmed for it.
+          independently inspected. A ₹195 welcome bonus is on record elsewhere in this network, but
+          that review is dated 17 June 2026 and hasn&apos;t been rechecked since.
         </p>
       </Callout>
 
@@ -113,7 +115,7 @@ export default function MbmBetVsYonoArcadePage() {
             ["Operator named in app", "Not stated", "Not stated in these terms"],
             ["Current download domain", "mbmbet21.com", "Tracked separately on this site"],
             ["Promo code status", "Expired, last reviewed 17 Jun 2026 (per network tracking)", "Checked regularly, published even when \"not released\""],
-            ["Welcome bonus", "Not currently confirmed", "Not currently listed, checked regularly"],
+            ["Welcome bonus", "₹195, per the same 17 Jun 2026 review", "Not currently listed, checked regularly"],
             ["In-app Mall", "Not documented", "Documented as an in-app section"],
             ["Game categories", "Card games", "Rummy, slots, spin, arcade"],
             ["APK verification", "Not independently completed", "Guide published, naming variants documented"],
@@ -150,9 +152,10 @@ export default function MbmBetVsYonoArcadePage() {
 
       <ContentSection heading="Reward figures: what's actually confirmed">
         <p>
-          The only reward-related fact this network has on record for MBM Bet is a promo code
-          marked Expired as of its last review, 17 June 2026 — not a current, usable code. No welcome
-          bonus figure has been confirmed for it.
+          The reward-related facts this network has on record for MBM Bet both come from the same
+          17 June 2026 review: a promo code marked Expired — not a current, usable code — and a
+          tracked welcome bonus of ₹195 with a ₹100 minimum withdrawal. Neither has been rechecked
+          since that date, so treat both as dated rather than current.
         </p>
         <p>
           Yono Arcade&apos;s rewards are tracked differently — through a{" "}
@@ -171,11 +174,11 @@ export default function MbmBetVsYonoArcadePage() {
         <div className="space-y-4">
           <div>
             <p className="mb-1 font-semibold text-[#f3f5ff]">1. Depth of documentation</p>
-            <p>Yono Arcade has a Mall guide, an APK guide and a promo-code tracker. MBM Bet currently has a status listing elsewhere in this network but no operator name, deposit figure, current bonus figure or Mall-equivalent guide.</p>
+            <p>Yono Arcade has a Mall guide, an APK guide and a promo-code tracker. MBM Bet currently has a status listing elsewhere in this network, including a dated bonus figure, but no operator name, deposit figure or Mall-equivalent guide.</p>
           </div>
           <div>
             <p className="mb-1 font-semibold text-[#f3f5ff]">2. Reward status</p>
-            <p>MBM Bet&apos;s only recorded promo code is expired. Yono Arcade&apos;s promo-code status is checked and published on a schedule, even when the answer is &quot;not released.&quot;</p>
+            <p>MBM Bet&apos;s only recorded promo code is expired, and its ₹195 bonus figure is from that same dated review. Yono Arcade&apos;s promo-code status is checked and published on a schedule, even when the answer is &quot;not released.&quot;</p>
           </div>
           <div>
             <p className="mb-1 font-semibold text-[#f3f5ff]">3. Game-category breadth</p>
@@ -203,10 +206,11 @@ export default function MbmBetVsYonoArcadePage() {
       <ContentSection heading="Final verdict">
         <p>
           MBM Bet and Yono Arcade should be treated as separate platforms until proven otherwise.
-          MBM Bet is documented elsewhere in this network with its own download domain, but its only
-          recorded promo code is expired and no operator name, deposit range or current welcome bonus
-          has been confirmed. Yono Arcade currently has the more complete public documentation on this
-          site — a Mall guide, APK guide and active promo-code tracking.
+          MBM Bet is documented elsewhere in this network with its own download domain, a dated ₹195
+          welcome bonus and an expired promo code, but no operator name or deposit range has been
+          confirmed, and none of it has been rechecked since 17 June 2026. Yono Arcade currently has
+          the more complete public documentation on this site — a Mall guide, APK guide and active
+          promo-code tracking.
         </p>
         <p>
           That&apos;s a difference in how much has been verified, not a judgment on which app is
