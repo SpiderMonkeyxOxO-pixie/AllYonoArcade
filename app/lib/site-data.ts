@@ -256,6 +256,94 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "pending",
   },
   {
+    slug: "/blog/spin-gold-vs-yono-arcade",
+    title: "Spin Gold vs Yono Arcade: Games, Features and Key Differences",
+    description:
+      "Compare Spin Gold vs Yono Arcade by game category, reward transparency, APK status and verification level before using either platform.",
+    icon: "swap",
+    image: "/images/guides/spin-gold-vs-yono-arcade-comparison.webp",
+    keyword: "spin gold vs yono arcade",
+    volume: "new listing",
+    verificationStatus: "pending",
+  },
+  {
+    slug: "/blog/jaiho-spin-vs-yono-arcade",
+    title: "Jaiho Spin vs Yono Arcade: Games, Features and Key Differences",
+    description:
+      "Compare Jaiho Spin vs Yono Arcade by game category, reward transparency, APK status and verification level before using either platform.",
+    icon: "swap",
+    image: "/images/guides/jaiho-spin-vs-yono-arcade-comparison.webp",
+    keyword: "jaiho spin vs yono arcade",
+    volume: "new listing",
+    verificationStatus: "pending",
+  },
+  {
+    slug: "/blog/mbm-bet-vs-yono-arcade",
+    title: "MBM Bet vs Yono Arcade: Games, Features and Key Differences",
+    description:
+      "Compare MBM Bet vs Yono Arcade by game category, reward transparency, APK status and verification level before using either platform.",
+    icon: "swap",
+    image: "/images/guides/mbm-bet-vs-yono-arcade-comparison.webp",
+    keyword: "mbm bet vs yono arcade",
+    volume: "new listing",
+    verificationStatus: "pending",
+  },
+  {
+    slug: "/blog/bingo-101-vs-yono-arcade",
+    title: "Bingo 101 vs Yono Arcade: Games, Features and Key Differences",
+    description:
+      "Compare Bingo 101 vs Yono Arcade by game category, reward transparency, APK status and verification level before using either platform.",
+    icon: "swap",
+    image: "/images/guides/bingo-101-vs-yono-arcade-comparison.webp",
+    keyword: "bingo 101 vs yono arcade",
+    volume: "new listing",
+    verificationStatus: "pending",
+  },
+  {
+    slug: "/blog/spin-winner-vs-yono-arcade",
+    title: "Spin Winner vs Yono Arcade: Games, Features and Key Differences",
+    description:
+      "Compare Spin Winner vs Yono Arcade by game category, reward transparency, APK status and verification level before using either platform.",
+    icon: "swap",
+    image: "/images/guides/spin-winner-vs-yono-arcade-comparison.webp",
+    keyword: "spin winner vs yono arcade",
+    volume: "new listing",
+    verificationStatus: "pending",
+  },
+  {
+    slug: "/blog/boss-rummy-vs-yono-arcade",
+    title: "Boss Rummy vs Yono Arcade: Games, Features and Key Differences",
+    description:
+      "Compare Boss Rummy vs Yono Arcade by game category, reward transparency, APK status and verification level before using either platform.",
+    icon: "swap",
+    image: "/images/guides/boss-rummy-vs-yono-arcade-comparison.webp",
+    keyword: "boss rummy vs yono arcade",
+    volume: "new listing",
+    verificationStatus: "pending",
+  },
+  {
+    slug: "/blog/joy-rummy-vs-yono-arcade",
+    title: "Joy Rummy vs Yono Arcade: Games, Features and Key Differences",
+    description:
+      "Compare Joy Rummy vs Yono Arcade by game category, reward transparency, APK status and verification level before using either platform.",
+    icon: "swap",
+    image: "/images/guides/joy-rummy-vs-yono-arcade-comparison.webp",
+    keyword: "joy rummy vs yono arcade",
+    volume: "new listing",
+    verificationStatus: "pending",
+  },
+  {
+    slug: "/blog/yn-777-vs-yono-arcade",
+    title: "Yn 777 vs Yono Arcade: Games, Features and Key Differences",
+    description:
+      "Compare Yn 777 vs Yono Arcade by game category, reward transparency, APK status and verification level before using either platform.",
+    icon: "swap",
+    image: "/images/guides/yn-777-vs-yono-arcade-comparison.webp",
+    keyword: "yn 777 vs yono arcade",
+    volume: "new listing",
+    verificationStatus: "pending",
+  },
+  {
     slug: "/blog/yono-arcade-apps",
     title: "Yono Arcade Apps: Mall Listings & App Checks",
     description:

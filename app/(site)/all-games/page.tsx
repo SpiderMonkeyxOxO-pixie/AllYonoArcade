@@ -130,17 +130,40 @@ export default function AllGamesPage() {
         />
       </ContentSection>
 
-      <ContentSection heading="Looking for VIP Rummy or Cash Rummy specifically?">
+      <ContentSection heading="Looking for VIP Rummy, Cash Rummy, Rummy 91 or Club INR specifically?">
         <p>
-          Two names from the grid below get searched for on their own often enough to point to
+          A few names from the grid below get searched for on their own often enough to point to
           directly. See the{" "}
           <Link href="/blog/vip-rummy-apk-download">VIP Rummy APK download and promo code guide</Link>{" "}
           or its{" "}
-          <Link href="/all-games/vip-rummy">dedicated VIP Rummy page</Link>, and the{" "}
+          <Link href="/all-games/vip-rummy">dedicated VIP Rummy page</Link>, the{" "}
           <Link href="/blog/cash-rummy-apk-download">Cash Rummy APK download and promo code guide</Link>{" "}
           or its{" "}
-          <Link href="/all-games/cash-rummy">dedicated Cash Rummy page</Link>.
+          <Link href="/all-games/cash-rummy">dedicated Cash Rummy page</Link>, the{" "}
+          <Link href="/blog/rummy-91-promo-code-what-is-real">Rummy 91 promo code reality check</Link>{" "}
+          or its{" "}
+          <Link href="/all-games/rummy-91">dedicated Rummy 91 page</Link>, and the{" "}
+          <Link href="/blog/club-inr-apk-download">Club INR APK download and promo code guide</Link>{" "}
+          or its{" "}
+          <Link href="/all-games/club-inr">dedicated Club INR page</Link>.
         </p>
+      </ContentSection>
+
+      <ContentSection heading="More comparisons: other names searched alongside Yono Arcade">
+        <p>
+          These names don&apos;t have a dedicated page on this site yet, but each gets compared to
+          Yono Arcade directly in its own guide:
+        </p>
+        <ul className="list-disc space-y-1.5 pl-5">
+          <li><Link href="/blog/spin-gold-vs-yono-arcade">Spin Gold vs Yono Arcade</Link></li>
+          <li><Link href="/blog/jaiho-spin-vs-yono-arcade">Jaiho Spin vs Yono Arcade</Link></li>
+          <li><Link href="/blog/mbm-bet-vs-yono-arcade">MBM Bet vs Yono Arcade</Link></li>
+          <li><Link href="/blog/bingo-101-vs-yono-arcade">Bingo 101 vs Yono Arcade</Link></li>
+          <li><Link href="/blog/spin-winner-vs-yono-arcade">Spin Winner vs Yono Arcade</Link></li>
+          <li><Link href="/blog/boss-rummy-vs-yono-arcade">Boss Rummy vs Yono Arcade</Link></li>
+          <li><Link href="/blog/joy-rummy-vs-yono-arcade">Joy Rummy vs Yono Arcade</Link></li>
+          <li><Link href="/blog/yn-777-vs-yono-arcade">Yn 777 vs Yono Arcade</Link></li>
+        </ul>
       </ContentSection>
 
       {PLATFORMS.filter((p) => p.comingSoon && p.releaseDate).map((p) => (
