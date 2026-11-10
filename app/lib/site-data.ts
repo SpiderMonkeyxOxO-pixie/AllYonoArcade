@@ -756,6 +756,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "verified",
     publishedAt: "2026-11-05",
   },
+  {
+    slug: "/blog/123-rummy-apk-download",
+    title: "123 Rummy APK Download & Promo Code — Launching 16 November 2026",
+    description:
+      "123 Rummy launches 16 Nov 2026, 8:00 AM IST, as the newest real-money rummy app on the Yono network. What's confirmed so far, and what to check once it goes live.",
+    icon: "gamepad",
+    image: "/images/platforms/123-rummy.webp",
+    keyword: "123 rummy apk download",
+    volume: "new listing",
+    verificationStatus: "verified",
+    publishedAt: "2026-11-10",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
