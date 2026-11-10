@@ -93,16 +93,18 @@ export default function BossRummyVsYonoArcadePage() {
           around an in-app Mall section.
         </p>
         <p>
-          Both sit in the same wider Yono-network directory, which is why they get compared. That
-          doesn&apos;t mean they&apos;re connected — there&apos;s currently no evidence either way.
+          The comparison exists because both names show up in the same directory, not because of
+          anything stronger than that — no shared ownership, infrastructure or branding has been
+          established between them.
         </p>
       </ContentSection>
 
       <Callout tone="warning" title="Some details remain provisional" badge="pending">
         <p>
-          This comparison reflects what&apos;s publicly available as of November 10, 2026. Boss
-          Rummy&apos;s APK (package name, permissions, signing certificate) hasn&apos;t been
-          independently inspected, and no welcome bonus or promo code has been confirmed for it.
+          Figures below are current as of November 10, 2026. Nobody on this site has pulled apart
+          Boss Rummy&apos;s APK yet — package name, requested permissions, signing certificate are
+          all still open questions — and neither a bonus amount nor a promo code has surfaced for it
+          anywhere this directory checks.
         </p>
       </Callout>
 
@@ -127,14 +129,15 @@ export default function BossRummyVsYonoArcadePage() {
       </ContentSection>
 
       <ContentSection heading="Is Boss Rummy the same as Yono Arcade?">
-        <p>No verified evidence currently shows that they are. They use separate names, separate branding and separate websites.</p>
+        <p>Short answer: nothing on record links them. Separate names, separate branding, separate websites, and that&apos;s where the evidence currently stops.</p>
         <p>
-          Sharing a Yono-network listing isn&apos;t proof of common ownership — plenty of apps in
-          this space look alike while coming from different publishers. Readers can check the
-          maintained <Link href="/all-games">Yono Arcade games list</Link> for what&apos;s currently
-          documented on this site.
+          A shared spot in the same network directory means they get listed near each other, not
+          that they share an owner. Plenty of apps in this category look similar or launch under
+          similar naming patterns while coming from entirely different publishers — the{" "}
+          <Link href="/all-games">Yono Arcade games list</Link> on this site is the place to check
+          what&apos;s actually been documented rather than assumed.
         </p>
-        <p>Before assuming any connection, compare:</p>
+        <p>Before treating the two as related, the fields worth lining up are:</p>
         <BulletList
           items={[
             "Package ID",
@@ -145,72 +148,73 @@ export default function BossRummyVsYonoArcadePage() {
             "Download domain",
           ]}
         />
-        <p>Until those fields match, treat them as separate platforms.</p>
+        <p>Treat them as unrelated platforms until those actually line up.</p>
       </ContentSection>
 
       <ContentSection heading="Reward figures: what's actually confirmed">
         <p>
-          Boss Rummy has not published a welcome bonus figure or promo code anywhere this site has
-          independently checked. There is currently nothing to compare on reward terms because
-          nothing has been confirmed.
+          There&apos;s nothing to put in a comparison column for Boss Rummy on rewards — no bonus
+          amount, no promo code, nothing this site has been able to independently check anywhere.
         </p>
         <p>
-          Yono Arcade&apos;s rewards are tracked differently — through a{" "}
-          <Link href="/promo-codes">promo-code status page</Link> checked across morning, afternoon
-          and evening periods, which publishes &quot;Not released yet&quot; rather than guessing when
-          nothing is verified.
+          Yono Arcade handles this differently: its{" "}
+          <Link href="/promo-codes">promo-code status page</Link> gets checked morning, afternoon and
+          evening and will say &quot;Not released yet&quot; outright rather than leaving the question
+          open.
         </p>
         <p>
-          Whenever a reward figure does appear for either app, what matters is eligibility, minimum
-          deposit, validity period, wagering conditions and whether the reward is withdrawable cash
-          or a restricted in-app balance — none of which is public for Boss Rummy yet.
+          If a real figure for Boss Rummy ever surfaces, the details that would actually matter are
+          eligibility rules, minimum deposit, how long the offer runs, any wagering conditions, and
+          whether it pays out as withdrawable cash or gets stuck as in-app credit. None of that
+          exists to evaluate yet.
         </p>
       </ContentSection>
 
       <ContentSection heading="Key differences">
         <div className="space-y-4">
           <div>
-            <p className="mb-1 font-semibold text-[#f3f5ff]">1. Depth of documentation</p>
-            <p>Yono Arcade has a Mall guide, an APK guide and a promo-code tracker. Boss Rummy currently has a status listing elsewhere in this network but no operator name, deposit figure, bonus figure or Mall-equivalent guide.</p>
+            <p className="mb-1 font-semibold text-[#f3f5ff]">1. How much is actually documented</p>
+            <p>This site runs a Mall guide, an APK guide and a live promo-code tracker for Yono Arcade. Boss Rummy, by contrast, is just a status entry elsewhere in the network — no operator, no deposit figure, no bonus figure, nothing resembling a Mall guide.</p>
           </div>
           <div>
-            <p className="mb-1 font-semibold text-[#f3f5ff]">2. Reward transparency</p>
-            <p>Boss Rummy hasn&apos;t published any welcome-bonus figure. Yono Arcade&apos;s promo-code status is checked and published on a schedule, even when the answer is &quot;not released.&quot;</p>
+            <p className="mb-1 font-semibold text-[#f3f5ff]">2. Whether rewards get checked on a schedule</p>
+            <p>Nobody&apos;s confirmed a welcome bonus for Boss Rummy at all. Yono Arcade&apos;s side gets rechecked on a schedule, so even a &quot;nothing released&quot; answer is a current one rather than a guess.</p>
           </div>
           <div>
-            <p className="mb-1 font-semibold text-[#f3f5ff]">3. Game-category breadth</p>
-            <p>Boss Rummy is documented under rummy and card games. Yono Arcade spans rummy, slots, spin and arcade-style titles.</p>
+            <p className="mb-1 font-semibold text-[#f3f5ff]">3. How many game types each one covers</p>
+            <p>Boss Rummy stays in its lane — rummy and card games. Yono Arcade stretches across rummy, slots, spin and arcade titles.</p>
           </div>
         </div>
       </ContentSection>
 
       <ContentSection heading="Checks before accessing either app">
+        <p>A short list worth running through before installing either one:</p>
         <BulletList
           items={[
-            "Confirm the final download domain before installing.",
-            "Check the package ID and publisher name inside the APK.",
-            "Review requested permissions before granting them.",
-            "Treat any unpublished bonus condition as unconfirmed, not guaranteed.",
-            "Never share an OTP, password or payment PIN.",
+            "Double-check the download domain you actually land on.",
+            "Look inside the APK for the package ID and publisher name.",
+            "Read through the permissions it asks for before accepting any.",
+            "If no bonus has been confirmed, don't treat a claimed one as real.",
+            "OTPs, passwords and payment PINs never belong outside the app itself.",
           ]}
         />
         <p>
-          For a wider review of this site&apos;s own subject, read{" "}
+          AllYonoArcade.com&apos;s own safety write-up goes into more depth:{" "}
           <Link href="/is-yono-arcade-safe">Is Yono Arcade safe?</Link>
         </p>
       </ContentSection>
 
       <ContentSection heading="Final verdict">
         <p>
-          Boss Rummy and Yono Arcade should be treated as separate platforms until proven otherwise.
-          Boss Rummy is documented elsewhere in this network with its own download domain, but as of
-          this review it hasn&apos;t published an operator name, deposit range or welcome bonus. Yono
-          Arcade currently has the more complete public documentation on this site — a Mall guide,
-          APK guide and active promo-code tracking.
+          Nothing ties these two together beyond sitting in the same network directory, so they
+          should be read as separate platforms. Boss Rummy has its own download domain on record
+          elsewhere, but no operator name, deposit range or bonus figure has made it this far. Yono
+          Arcade is simply the better-documented of the two on this particular site, with a Mall
+          guide, an APK guide and promo-code tracking already built out.
         </p>
         <p>
-          That&apos;s a difference in how much has been verified, not a judgment on which app is
-          better or safer to use.
+          That gap is about documentation, not a claim that one app is safer or better than the
+          other — it isn&apos;t.
         </p>
       </ContentSection>
 
@@ -227,7 +231,7 @@ export default function BossRummyVsYonoArcadePage() {
         items={[
           {
             question: "Is Boss Rummy the same as Yono Arcade?",
-            answer: "No verified evidence currently shows that they are the same app. They use separate names, branding and websites, and no shared package ID, publisher or signing certificate has been confirmed.",
+            answer: "Nothing points to that. Different names, different branding, different websites, and no package ID, publisher name or signing certificate has ever matched between them.",
           },
           {
             question: "Is Boss Rummy the same as Rummy Boss?",
@@ -239,11 +243,11 @@ export default function BossRummyVsYonoArcadePage() {
           },
           {
             question: "Does Yono Arcade have more documentation than Boss Rummy?",
-            answer: "Yes, currently. AllYonoArcade.com has a published Mall guide, APK guide and promo-code tracker for Yono Arcade; equivalent documentation for Boss Rummy doesn't yet exist here.",
+            answer: "For now, yes — this site has already built out a Mall guide, an APK guide and a promo-code tracker for Yono Arcade. Nothing comparable exists here for Boss Rummy.",
           },
           {
             question: "Does AllYonoArcade.com operate either platform?",
-            answer: "No. AllYonoArcade.com is an independent, unofficial information guide. It does not operate Boss Rummy or Yono Arcade and does not process accounts, payments or withdrawals.",
+            answer: "No to both. This is an independent, unofficial guide — it doesn't run Boss Rummy or Yono Arcade, and it never touches accounts, deposits or withdrawals for either.",
           },
         ]}
       />

@@ -95,16 +95,17 @@ export default function JaihoSpinVsYonoArcadePage() {
           section.
         </p>
         <p>
-          Both sit in the same wider Yono-network directory, which is why they get compared. That
-          doesn&apos;t mean they&apos;re connected — there&apos;s currently no evidence either way.
+          Showing up in the same directory listing is what put these two side by side here — it
+          doesn&apos;t establish anything beyond that.
         </p>
       </ContentSection>
 
       <Callout tone="warning" title="Some details remain provisional" badge="pending">
         <p>
-          This comparison reflects what&apos;s publicly available as of November 10, 2026. Jaiho
-          Spin&apos;s APK (package name, permissions, signing certificate) hasn&apos;t been
-          independently inspected, and no welcome bonus or promo code has been confirmed for it yet.
+          What follows holds as of November 10, 2026. The shared domain with Jaiho91 raises more
+          questions than it answers, and until someone actually inspects the APK — package name,
+          permissions, signing certificate — those questions stay open. No welcome bonus or promo
+          code has turned up for Jaiho Spin either.
         </p>
       </Callout>
 
@@ -130,17 +131,19 @@ export default function JaihoSpinVsYonoArcadePage() {
       </ContentSection>
 
       <ContentSection heading="Is Jaiho Spin the same as Yono Arcade?">
-        <p>No verified evidence currently shows that they are. They use separate names, separate branding and separate websites.</p>
+        <p>No — not by anything that&apos;s actually been verified. Different name, different branding, different website.</p>
         <p>
-          Sharing a Yono-network listing isn&apos;t proof of common ownership — plenty of apps in
-          this space look alike while coming from different publishers. Readers can check the
-          maintained <Link href="/all-games">Yono Arcade games list</Link> for what&apos;s currently
-          documented on this site. Worth flagging separately: the Jaiho family includes several other
-          apps (Jaiho Play, Jaiho Arcade, Jaiho Rummy, and a similarly-numbered &quot;Jaiho91&quot;
-          listing elsewhere that shares the same download domain shown above) — this guide covers
-          Jaiho Spin specifically and does not assume those other names refer to the same product.
+          A listing in the same network isn&apos;t evidence of shared ownership; this is a crowded
+          space where unrelated publishers end up looking alike. The{" "}
+          <Link href="/all-games">Yono Arcade games list</Link> on this site is the place to check
+          what&apos;s confirmed rather than guess. The more relevant mix-up here is actually within
+          the Jaiho family itself: Jaiho Play, Jaiho Arcade and Jaiho Rummy are all separate apps
+          under the same umbrella name, and a listing elsewhere called &quot;Jaiho91&quot; shares the
+          exact download domain given above for Jaiho Spin. This guide sticks to Jaiho Spin alone and
+          doesn&apos;t assume those other names are the same product just because they share a prefix
+          or a domain.
         </p>
-        <p>Before assuming any connection between any of these names, compare:</p>
+        <p>Before treating any of these Jaiho-branded names as connected, check:</p>
         <BulletList
           items={[
             "Package ID",
@@ -156,67 +159,67 @@ export default function JaihoSpinVsYonoArcadePage() {
 
       <ContentSection heading="Reward figures: what's actually confirmed">
         <p>
-          Jaiho Spin has not published a welcome bonus figure or promo code anywhere this site has
-          independently checked. There is currently nothing to compare on reward terms because
-          nothing has been confirmed.
+          Shared domain aside, Jaiho Spin stands apart from Jaiho91 on one thing: neither has a
+          reward figure to show. No bonus, no promo code, nothing independently checked for Jaiho
+          Spin specifically.
         </p>
         <p>
-          Yono Arcade&apos;s rewards are tracked differently — through a{" "}
-          <Link href="/promo-codes">promo-code status page</Link> checked across morning, afternoon
-          and evening periods, which publishes &quot;Not released yet&quot; rather than guessing when
-          nothing is verified.
+          Yono Arcade takes a different approach — a{" "}
+          <Link href="/promo-codes">promo-code status page</Link> gets rechecked morning, afternoon
+          and evening, and states &quot;Not released yet&quot; outright instead of leaving the
+          question hanging.
         </p>
         <p>
-          Whenever a reward figure does appear for either app, what matters is eligibility, minimum
-          deposit, validity period, wagering conditions and whether the reward is withdrawable cash
-          or a restricted in-app balance — none of which is public for Jaiho Spin yet.
+          If Jaiho Spin does eventually publish terms, the things worth scrutinizing are eligibility,
+          minimum deposit, how long the offer lasts, wagering conditions, and whether it&apos;s
+          withdrawable cash or stuck as in-app balance. None of that exists yet to check.
         </p>
       </ContentSection>
 
       <ContentSection heading="Key differences">
         <div className="space-y-4">
           <div>
-            <p className="mb-1 font-semibold text-[#f3f5ff]">1. Depth of documentation</p>
-            <p>Yono Arcade has a Mall guide, an APK guide and a promo-code tracker. Jaiho Spin currently has a status listing elsewhere in this network but no operator name, deposit figure, bonus figure or Mall-equivalent guide.</p>
+            <p className="mb-1 font-semibold text-[#f3f5ff]">1. Documentation depth</p>
+            <p>This site has built out a Mall guide, an APK guide and live promo-code tracking for Yono Arcade. Jaiho Spin has a status entry elsewhere in the network and a noted domain overlap with Jaiho91 — not much else.</p>
           </div>
           <div>
             <p className="mb-1 font-semibold text-[#f3f5ff]">2. Reward transparency</p>
-            <p>Jaiho Spin hasn&apos;t published any welcome-bonus figure. Yono Arcade&apos;s promo-code status is checked and published on a schedule, even when the answer is &quot;not released.&quot;</p>
+            <p>No welcome-bonus figure has ever surfaced for Jaiho Spin. Yono Arcade&apos;s promo-code status gets checked on a schedule, so &quot;not released&quot; still counts as a verified answer.</p>
           </div>
           <div>
             <p className="mb-1 font-semibold text-[#f3f5ff]">3. Game-category breadth</p>
-            <p>Jaiho Spin is documented under the spin category only. Yono Arcade spans rummy, slots, spin and arcade-style titles.</p>
+            <p>Jaiho Spin stays within the spin category. Yono Arcade spans rummy, slots, spin and arcade titles.</p>
           </div>
         </div>
       </ContentSection>
 
       <ContentSection heading="Checks before accessing either app">
+        <p>Before installing anything in the Jaiho family or elsewhere, it&apos;s worth:</p>
         <BulletList
           items={[
-            "Confirm the final download domain before installing.",
-            "Check the package ID and publisher name inside the APK.",
-            "Review requested permissions before granting them.",
-            "Treat any unpublished bonus condition as unconfirmed, not guaranteed.",
-            "Never share an OTP, password or payment PIN.",
+            "Verifying the download domain matches what's current, not an old mirror.",
+            "Pulling the package ID and publisher name from inside the APK.",
+            "Reading through requested permissions before accepting them.",
+            "Not assuming a Jaiho91 offer automatically applies to Jaiho Spin, or vice versa.",
+            "Never sharing an OTP, password or payment PIN outside the app.",
           ]}
         />
         <p>
-          For a wider review of this site&apos;s own subject, read{" "}
+          AllYonoArcade.com&apos;s own safety write-up covers this in more depth:{" "}
           <Link href="/is-yono-arcade-safe">Is Yono Arcade safe?</Link>
         </p>
       </ContentSection>
 
       <ContentSection heading="Final verdict">
         <p>
-          Jaiho Spin and Yono Arcade should be treated as separate platforms until proven otherwise.
-          Jaiho Spin is documented elsewhere in this network with its own download domain and login
-          flow, but as of this review it hasn&apos;t published an operator name, deposit range or
-          welcome bonus. Yono Arcade currently has the more complete public documentation on this
-          site — a Mall guide, APK guide and active promo-code tracking.
+          Jaiho Spin and Yono Arcade remain unconnected platforms as far as anything verified goes.
+          Jaiho Spin has its own download domain and login flow on record, plus that unresolved
+          overlap with Jaiho91 worth keeping an eye on, but still no operator name, deposit range or
+          bonus figure. Yono Arcade is simply further along on documentation here — a Mall guide, an
+          APK guide and promo-code tracking that's actually maintained.
         </p>
         <p>
-          That&apos;s a difference in how much has been verified, not a judgment on which app is
-          better or safer to use.
+          That&apos;s about how much has been verified for each, not which one is the safer pick.
         </p>
       </ContentSection>
 
@@ -233,7 +236,7 @@ export default function JaihoSpinVsYonoArcadePage() {
         items={[
           {
             question: "Is Jaiho Spin the same as Yono Arcade?",
-            answer: "No verified evidence currently shows that they are the same app. They use separate names, branding and websites, and no shared package ID, publisher or signing certificate has been confirmed.",
+            answer: "No. The two use different names and branding on different websites, and no package ID, publisher or signing certificate has ever matched between them.",
           },
           {
             question: "Is Jaiho Spin the same as other Jaiho-branded apps?",
@@ -249,11 +252,11 @@ export default function JaihoSpinVsYonoArcadePage() {
           },
           {
             question: "Does Yono Arcade have more documentation than Jaiho Spin?",
-            answer: "Yes, currently. AllYonoArcade.com has a published Mall guide, APK guide and promo-code tracker for Yono Arcade; equivalent documentation for Jaiho Spin doesn't yet exist here.",
+            answer: "At the moment, yes — this site already has a Mall guide, an APK guide and promo-code tracking for Yono Arcade, with nothing comparable yet written for Jaiho Spin.",
           },
           {
             question: "Does AllYonoArcade.com operate either platform?",
-            answer: "No. AllYonoArcade.com is an independent, unofficial information guide. It does not operate Jaiho Spin or Yono Arcade and does not process accounts, payments or withdrawals.",
+            answer: "No, neither. This is an independent, unofficial guide — it doesn't run Jaiho Spin or Yono Arcade and has no part in either one's accounts, payments or withdrawals.",
           },
         ]}
       />

@@ -93,16 +93,16 @@ export default function Yn777VsYonoArcadePage() {
           around an in-app Mall section.
         </p>
         <p>
-          Both sit in the same wider Yono-network directory, which is why they get compared. That
-          doesn&apos;t mean they&apos;re connected — there&apos;s currently no evidence either way.
+          Both names turning up in the same directory is what prompted this comparison — it&apos;s
+          not evidence of any closer tie between them.
         </p>
       </ContentSection>
 
       <Callout tone="warning" title="Some details remain provisional" badge="pending">
         <p>
-          This comparison reflects what&apos;s publicly available as of November 10, 2026. Yn
-          777&apos;s APK (package name, permissions, signing certificate) hasn&apos;t been
-          independently inspected, and no welcome bonus has been confirmed for it.
+          Everything here holds as of November 10, 2026. &quot;Reported&quot; is doing a lot of work
+          in that promo-code line below — nobody has independently confirmed it — and Yn 777&apos;s
+          APK (package name, permissions, signing certificate) hasn&apos;t been inspected at all.
         </p>
       </Callout>
 
@@ -128,15 +128,14 @@ export default function Yn777VsYonoArcadePage() {
       </ContentSection>
 
       <ContentSection heading="Is Yn 777 the same as Yono Arcade?">
-        <p>No verified evidence currently shows that they are. They use separate names, separate branding and separate websites.</p>
+        <p>No, not based on anything confirmed. Two separate names, two separate brand identities, two separate websites.</p>
         <p>
-          Sharing a Yono-network listing or a &quot;777&quot; numbering pattern isn&apos;t proof of
-          common ownership — plenty of apps in this space look alike while coming from different
-          publishers. Readers can check the maintained{" "}
-          <Link href="/all-games">Yono Arcade games list</Link> for what&apos;s currently documented
-          on this site.
+          A &quot;777&quot; in the name or a spot in the same network directory doesn&apos;t mean
+          common ownership — this corner of the app space is full of similarly-numbered products from
+          entirely different publishers. What this site has actually documented and checked lives on
+          the <Link href="/all-games">Yono Arcade games list</Link>.
         </p>
-        <p>Before assuming any connection, compare:</p>
+        <p>Fields worth checking before assuming any link:</p>
         <BulletList
           items={[
             "Package ID",
@@ -147,73 +146,71 @@ export default function Yn777VsYonoArcadePage() {
             "Download domain",
           ]}
         />
-        <p>Until those fields match, treat them as separate platforms.</p>
+        <p>No match, no reason to connect the two.</p>
       </ContentSection>
 
       <ContentSection heading="Reward figures: what's actually confirmed">
         <p>
-          A promo code for Yn 777 has been reported elsewhere in this network, but its status is
-          recorded as reported rather than independently confirmed — this site treats that as
-          unverified rather than a usable offer. No welcome bonus figure has been confirmed for it.
+          &quot;Reported&quot; is the key word for Yn 777&apos;s promo code — it shows up elsewhere in
+          this network, but nobody has independently confirmed it works, so this site treats it as
+          unverified rather than a real offer. No bonus figure exists for it at all.
         </p>
         <p>
-          Yono Arcade&apos;s rewards are tracked differently — through a{" "}
-          <Link href="/promo-codes">promo-code status page</Link> checked across morning, afternoon
-          and evening periods, which publishes &quot;Not released yet&quot; rather than guessing when
-          nothing is verified.
+          Yono Arcade handles this differently, through a{" "}
+          <Link href="/promo-codes">promo-code status page</Link> checked morning, afternoon and
+          evening that will openly say &quot;Not released yet&quot; rather than leave things vague.
         </p>
         <p>
-          Whenever a confirmed reward figure does appear for either app, what matters is eligibility,
-          minimum deposit, validity period, wagering conditions and whether the reward is withdrawable
-          cash or a restricted in-app balance — none of which is independently verified for Yn 777
-          yet.
+          Once something confirmed does exist for Yn 777, the details worth checking are eligibility,
+          minimum deposit, how long it runs, wagering conditions, and whether it&apos;s real
+          withdrawable cash or just in-app balance — none of which can be verified right now.
         </p>
       </ContentSection>
 
       <ContentSection heading="Key differences">
         <div className="space-y-4">
           <div>
-            <p className="mb-1 font-semibold text-[#f3f5ff]">1. Depth of documentation</p>
-            <p>Yono Arcade has a Mall guide, an APK guide and a promo-code tracker. Yn 777 currently has a status listing elsewhere in this network but no operator name, deposit figure, confirmed bonus figure or Mall-equivalent guide.</p>
+            <p className="mb-1 font-semibold text-[#f3f5ff]">1. How much has actually been verified</p>
+            <p>Yono Arcade comes with a Mall guide, an APK guide and live promo-code tracking here. Yn 777 has a status entry elsewhere with an unconfirmed reported code, but no operator name or deposit figure to go with it.</p>
           </div>
           <div>
-            <p className="mb-1 font-semibold text-[#f3f5ff]">2. Reward verification</p>
-            <p>Yn 777&apos;s only promo-code mention is reported, not confirmed. Yono Arcade&apos;s promo-code status is checked and published on a schedule, even when the answer is &quot;not released.&quot;</p>
+            <p className="mb-1 font-semibold text-[#f3f5ff]">2. Reported vs. confirmed</p>
+            <p>Yn 777&apos;s only reward lead is a reported, unverified code. Yono Arcade&apos;s promo status gets rechecked on a schedule, so &quot;not released&quot; is still a confirmed answer rather than a guess.</p>
           </div>
           <div>
             <p className="mb-1 font-semibold text-[#f3f5ff]">3. Game-category breadth</p>
-            <p>Yn 777 is documented under slots only. Yono Arcade spans rummy, slots, spin and arcade-style titles.</p>
+            <p>Yn 777 stays within slots. Yono Arcade spans rummy, slots, spin and arcade titles.</p>
           </div>
         </div>
       </ContentSection>
 
       <ContentSection heading="Checks before accessing either app">
+        <p>Steps worth taking before trusting either app:</p>
         <BulletList
           items={[
-            "Confirm the final download domain before installing.",
-            "Check the package ID and publisher name inside the APK.",
-            "Review requested permissions before granting them.",
-            "Treat a \"reported\" promo code as unconfirmed, not a guaranteed offer.",
-            "Never share an OTP, password or payment PIN.",
+            "Make sure the download domain is the current one, not an outdated mirror.",
+            "Check the package ID and publisher name from inside the APK.",
+            "Go through every permission it asks for before granting it.",
+            "A \"reported\" code is not the same as a confirmed, working one — treat it that way.",
+            "Never hand over an OTP, password or payment PIN outside the app.",
           ]}
         />
         <p>
-          For a wider review of this site&apos;s own subject, read{" "}
+          This site&apos;s own safety write-up covers Yono Arcade in more depth:{" "}
           <Link href="/is-yono-arcade-safe">Is Yono Arcade safe?</Link>
         </p>
       </ContentSection>
 
       <ContentSection heading="Final verdict">
         <p>
-          Yn 777 and Yono Arcade should be treated as separate platforms until proven otherwise. Yn
-          777 is documented elsewhere in this network with its own download domain and a reported,
-          unconfirmed promo code, but no operator name, deposit range or welcome bonus has been
-          verified. Yono Arcade currently has the more complete public documentation on this site — a
-          Mall guide, APK guide and active promo-code tracking.
+          Yn 777 and Yono Arcade stay separate platforms by every available measure. Yn 777 has its
+          own download domain and a promo code floating around that&apos;s only ever been reported,
+          never confirmed — no operator, deposit range or bonus has been verified beyond that. Yono
+          Arcade simply has the deeper public record on this site: a Mall guide, an APK guide and
+          promo-code tracking that gets maintained.
         </p>
         <p>
-          That&apos;s a difference in how much has been verified, not a judgment on which app is
-          better or safer to use.
+          That comes down to documentation, not which app is the safer or better one to use.
         </p>
       </ContentSection>
 
@@ -230,7 +227,7 @@ export default function Yn777VsYonoArcadePage() {
         items={[
           {
             question: "Is Yn 777 the same as Yono Arcade?",
-            answer: "No verified evidence currently shows that they are the same app. They use separate names, branding and websites, and no shared package ID, publisher or signing certificate has been confirmed.",
+            answer: "No — separate names, separate branding, separate websites, with no package ID, publisher or signing certificate that's ever matched between the two.",
           },
           {
             question: "Does Yn 777 have a confirmed promo code?",
@@ -242,11 +239,11 @@ export default function Yn777VsYonoArcadePage() {
           },
           {
             question: "Does Yono Arcade have more documentation than Yn 777?",
-            answer: "Yes, currently. AllYonoArcade.com has a published Mall guide, APK guide and promo-code tracker for Yono Arcade; equivalent documentation for Yn 777 doesn't yet exist here.",
+            answer: "Right now, yes — this site already runs a Mall guide, an APK guide and promo-code tracking for Yono Arcade, with no equivalent yet written for Yn 777.",
           },
           {
             question: "Does AllYonoArcade.com operate either platform?",
-            answer: "No. AllYonoArcade.com is an independent, unofficial information guide. It does not operate Yn 777 or Yono Arcade and does not process accounts, payments or withdrawals.",
+            answer: "No to both. This is an independent, unofficial guide — it has no role in running Yn 777 or Yono Arcade, and doesn't touch either one's accounts, payments or withdrawals.",
           },
         ]}
       />

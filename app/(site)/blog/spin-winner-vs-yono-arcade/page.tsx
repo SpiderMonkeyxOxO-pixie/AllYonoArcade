@@ -93,16 +93,17 @@ export default function SpinWinnerVsYonoArcadePage() {
           an in-app Mall section.
         </p>
         <p>
-          Both sit in the same wider Yono-network directory, which is why they get compared. That
-          doesn&apos;t mean they&apos;re connected — there&apos;s currently no evidence either way.
+          Appearing in the same network listing is the extent of what connects them today — nothing
+          confirms a closer relationship than that.
         </p>
       </ContentSection>
 
       <Callout tone="warning" title="Some details remain provisional" badge="pending">
         <p>
-          This comparison reflects what&apos;s publicly available as of November 10, 2026. Spin
-          Winner&apos;s APK (package name, permissions, signing certificate) hasn&apos;t been
-          independently inspected, and no welcome bonus or promo code has been confirmed for it.
+          Everything below reflects the state of things on November 10, 2026. An &quot;Active&quot;
+          status and a &quot;Not Yet Verified&quot; classification aren&apos;t the same as an
+          inspected APK — package name, permissions and signing certificate for Spin Winner remain
+          unchecked, and no welcome bonus or promo code has turned up for it anywhere.
         </p>
       </Callout>
 
@@ -129,17 +130,17 @@ export default function SpinWinnerVsYonoArcadePage() {
       </ContentSection>
 
       <ContentSection heading="Is Spin Winner the same as Yono Arcade?">
-        <p>No verified evidence currently shows that they are. They use separate names, separate branding and separate websites.</p>
+        <p>Nothing verified supports that. Different names, different branding, different websites — that holds regardless of the Active status.</p>
         <p>
-          Sharing a Yono-network listing isn&apos;t proof of common ownership — plenty of apps in
-          this space look alike while coming from different publishers. Readers can check the
-          maintained <Link href="/all-games">Yono Arcade games list</Link> for what&apos;s currently
-          documented on this site. Also worth noting: a similarly-named &quot;Spin Crush&quot; has
-          been searched for alongside Spin Winner, but no catalogue record of a distinct Spin Crush
-          app has been confirmed anywhere in this network — treat any claim pairing the two names as
-          unverified.
+          A listing in the same directory doesn&apos;t establish who actually owns or operates
+          anything; this corner of the app ecosystem has plenty of lookalikes from unrelated
+          publishers. The <Link href="/all-games">Yono Arcade games list</Link> is where this site
+          keeps what&apos;s actually confirmed. One more thing worth flagging here specifically: Spin
+          Winner often gets searched alongside a similarly-named &quot;Spin Crush,&quot; but no
+          catalogue entry for a distinct Spin Crush app exists anywhere in this network — don&apos;t
+          treat the two names as interchangeable or connected.
         </p>
-        <p>Before assuming any connection, compare:</p>
+        <p>Fields that would need to line up before assuming a connection:</p>
         <BulletList
           items={[
             "Package ID",
@@ -150,53 +151,53 @@ export default function SpinWinnerVsYonoArcadePage() {
             "Download domain",
           ]}
         />
-        <p>Until those fields match, treat them as separate platforms.</p>
+        <p>No match, no connection worth assuming.</p>
       </ContentSection>
 
       <ContentSection heading="Reward figures: what's actually confirmed">
         <p>
-          No public promo code is on record for Spin Winner anywhere this site has checked, and its
-          classification elsewhere in this network is Not Yet Verified. There is currently nothing to
-          compare on reward terms because nothing has been confirmed.
+          Being listed Active doesn&apos;t extend to rewards — Spin Winner has no public promo code
+          on file anywhere this site checks, and its Not Yet Verified classification elsewhere in the
+          network reflects exactly that gap.
         </p>
         <p>
-          Yono Arcade&apos;s rewards are tracked differently — through a{" "}
-          <Link href="/promo-codes">promo-code status page</Link> checked across morning, afternoon
-          and evening periods, which publishes &quot;Not released yet&quot; rather than guessing when
-          nothing is verified.
+          Yono Arcade takes a different approach: a{" "}
+          <Link href="/promo-codes">promo-code status page</Link> gets checked three times daily and
+          states &quot;Not released yet&quot; plainly instead of leaving visitors guessing.
         </p>
         <p>
-          Whenever a reward figure does appear for either app, what matters is eligibility, minimum
-          deposit, validity period, wagering conditions and whether the reward is withdrawable cash
-          or a restricted in-app balance — none of which is public for Spin Winner yet.
+          If Spin Winner ever does publish a figure, what would actually matter is eligibility,
+          minimum deposit, how long it&apos;s valid, any wagering strings attached, and whether it
+          pays out as real cash or stays locked as in-app balance — none of it exists to check yet.
         </p>
       </ContentSection>
 
       <ContentSection heading="Key differences">
         <div className="space-y-4">
           <div>
-            <p className="mb-1 font-semibold text-[#f3f5ff]">1. Depth of documentation</p>
-            <p>Yono Arcade has a Mall guide, an APK guide and a promo-code tracker. Spin Winner currently has a status listing elsewhere in this network but no operator name, deposit figure, bonus figure or Mall-equivalent guide.</p>
+            <p className="mb-1 font-semibold text-[#f3f5ff]">1. How much is actually on record</p>
+            <p>This site has a Mall guide, an APK guide and live promo-code tracking for Yono Arcade. Spin Winner has an Active/Not-Yet-Verified status elsewhere, but no operator, deposit figure or bonus amount to go with it.</p>
           </div>
           <div>
-            <p className="mb-1 font-semibold text-[#f3f5ff]">2. Reward transparency</p>
-            <p>Spin Winner has no public promo code on record. Yono Arcade&apos;s promo-code status is checked and published on a schedule, even when the answer is &quot;not released.&quot;</p>
+            <p className="mb-1 font-semibold text-[#f3f5ff]">2. Whether rewards get checked regularly</p>
+            <p>No promo code has ever surfaced for Spin Winner. Yono Arcade&apos;s gets rechecked on a schedule, so even &quot;nothing released&quot; is an answer that's actually been verified.</p>
           </div>
           <div>
-            <p className="mb-1 font-semibold text-[#f3f5ff]">3. Game-category breadth</p>
-            <p>Spin Winner is documented under the spin category only. Yono Arcade spans rummy, slots, spin and arcade-style titles.</p>
+            <p className="mb-1 font-semibold text-[#f3f5ff]">3. Range of games covered</p>
+            <p>Spin Winner stays within the spin category. Yono Arcade covers rummy, slots, spin and arcade titles together.</p>
           </div>
         </div>
       </ContentSection>
 
       <ContentSection heading="Checks before accessing either app">
+        <p>Steps worth taking before installing either app:</p>
         <BulletList
           items={[
-            "Confirm the final download domain before installing.",
-            "Check the package ID and publisher name inside the APK.",
-            "Review requested permissions before granting them.",
-            "Don't assume a \"Spin Crush\" offer refers to Spin Winner — no link between the two names is confirmed.",
-            "Never share an OTP, password or payment PIN.",
+            "Verify you're on the current download domain, not an old or mirrored one.",
+            "Pull the package ID and publisher name from the APK itself.",
+            "Go through every requested permission before accepting it.",
+            "Don't assume a \"Spin Crush\" offer has anything to do with Spin Winner — that link isn't confirmed anywhere.",
+            "Keep OTPs, passwords and payment PINs out of any screen outside the app.",
           ]}
         />
         <p>
@@ -207,15 +208,14 @@ export default function SpinWinnerVsYonoArcadePage() {
 
       <ContentSection heading="Final verdict">
         <p>
-          Spin Winner and Yono Arcade should be treated as separate platforms until proven otherwise.
-          Spin Winner is documented elsewhere in this network as an Active listing with its own
-          download domain, but it carries a Not Yet Verified classification and no public promo code
-          has been confirmed. Yono Arcade currently has the more complete public documentation on
-          this site — a Mall guide, APK guide and active promo-code tracking.
+          Spin Winner and Yono Arcade stay separate platforms by every measure currently available.
+          Spin Winner carries an Active listing and its own download domain, but the Not Yet Verified
+          tag attached to it and the absence of any public promo code say a lot about how far that
+          documentation actually goes. Yono Arcade simply has more built out here — a Mall guide, an
+          APK guide and promo-code tracking that gets maintained.
         </p>
         <p>
-          That&apos;s a difference in how much has been verified, not a judgment on which app is
-          better or safer to use.
+          Read that as a gap in verification, not a ranking of which app is the safer bet.
         </p>
       </ContentSection>
 
@@ -232,7 +232,7 @@ export default function SpinWinnerVsYonoArcadePage() {
         items={[
           {
             question: "Is Spin Winner the same as Yono Arcade?",
-            answer: "No verified evidence currently shows that they are the same app. They use separate names, branding and websites, and no shared package ID, publisher or signing certificate has been confirmed.",
+            answer: "No — different name, different branding, different website, and no instance of a matching package ID, publisher or signing certificate between the two.",
           },
           {
             question: "Is Spin Winner the same as Spin Crush?",
@@ -244,11 +244,11 @@ export default function SpinWinnerVsYonoArcadePage() {
           },
           {
             question: "Does Yono Arcade have more documentation than Spin Winner?",
-            answer: "Yes, currently. AllYonoArcade.com has a published Mall guide, APK guide and promo-code tracker for Yono Arcade; equivalent documentation for Spin Winner doesn't yet exist here.",
+            answer: "Right now, yes — Yono Arcade has a Mall guide, an APK guide and promo-code tracking already live on this site, while Spin Winner has no matching write-up here yet.",
           },
           {
             question: "Does AllYonoArcade.com operate either platform?",
-            answer: "No. AllYonoArcade.com is an independent, unofficial information guide. It does not operate Spin Winner or Yono Arcade and does not process accounts, payments or withdrawals.",
+            answer: "No — this is an unofficial, independent guide. It doesn't run Spin Winner or Yono Arcade, and it has no hand in either one's accounts, deposits or withdrawals.",
           },
         ]}
       />

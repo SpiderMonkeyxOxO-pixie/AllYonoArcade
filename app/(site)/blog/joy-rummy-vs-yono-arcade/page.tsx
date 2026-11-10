@@ -85,22 +85,22 @@ export default function JoyRummyVsYonoArcadePage() {
 
       <ContentSection heading="Overview">
         <p>
-          Joy Rummy is a rummy-and-card-game app in the wider Yono-network directory, currently
-          distributed from joyrummyapp.com. Yono Arcade, the subject of this site, is documented in
-          more depth: a broader arcade-style app covering rummy, slots and spin-style games, built
-          around an in-app Mall section.
+          joyrummyapp.com is currently where Joy Rummy gets distributed from — a card-game app
+          sitting in the rummy corner of the wider Yono-network directory. This site&apos;s own
+          subject, Yono Arcade, spreads wider: rummy, slots and spin-style games together, anchored
+          by an in-app Mall section that gets its own dedicated guide here.
         </p>
         <p>
-          Both sit in the same wider Yono-network directory, which is why they get compared. That
-          doesn&apos;t mean they&apos;re connected — there&apos;s currently no evidence either way.
+          The two get compared here simply because both names appear in the same directory — that
+          proximity isn&apos;t evidence of any actual relationship between them.
         </p>
       </ContentSection>
 
       <Callout tone="warning" title="Some details remain provisional" badge="pending">
         <p>
-          This comparison reflects what&apos;s publicly available as of November 10, 2026. Joy
-          Rummy&apos;s APK (package name, permissions, signing certificate) hasn&apos;t been
-          independently inspected, and no welcome bonus or promo code has been confirmed for it.
+          Current as of November 10, 2026: nobody has pulled apart Joy Rummy&apos;s APK yet (package
+          name, permissions, signing certificate all remain unchecked), and neither a bonus figure
+          nor a promo code has shown up for it anywhere this site tracks.
         </p>
       </Callout>
 
@@ -119,20 +119,21 @@ export default function JoyRummyVsYonoArcadePage() {
           ]}
         />
         <p>
-          Read this as a snapshot of what&apos;s public, not a safety approval or a claim that every
-          advertised feature exists in the current build of either app.
+          Treat this table as a snapshot of the public record, nothing more — it&apos;s not a safety
+          sign-off, and it doesn&apos;t guarantee every feature listed actually works in either
+          app&apos;s current build.
         </p>
       </ContentSection>
 
       <ContentSection heading="Is Joy Rummy the same as Yono Arcade?">
-        <p>No verified evidence currently shows that they are. They use separate names, separate branding and separate websites.</p>
+        <p>Nothing says they are. Separate names, separate branding, separate websites — a cheerful app name doesn&apos;t change that.</p>
         <p>
-          Sharing a Yono-network listing isn&apos;t proof of common ownership — plenty of apps in
-          this space look alike while coming from different publishers. Readers can check the
-          maintained <Link href="/all-games">Yono Arcade games list</Link> for what&apos;s currently
-          documented on this site.
+          Being listed in the same network directory isn&apos;t proof of a shared owner; plenty of
+          apps here look similar while actually coming from unrelated publishers. What this site has
+          actually confirmed lives on the <Link href="/all-games">Yono Arcade games list</Link>,
+          worth checking before assuming anything.
         </p>
-        <p>Before assuming any connection, compare:</p>
+        <p>The fields that would actually need to match:</p>
         <BulletList
           items={[
             "Package ID",
@@ -143,72 +144,70 @@ export default function JoyRummyVsYonoArcadePage() {
             "Download domain",
           ]}
         />
-        <p>Until those fields match, treat them as separate platforms.</p>
+        <p>No match there, no basis for treating them as connected.</p>
       </ContentSection>
 
       <ContentSection heading="Reward figures: what's actually confirmed">
         <p>
-          Joy Rummy has not published a welcome bonus figure or promo code anywhere this site has
-          independently checked. There is currently nothing to compare on reward terms because
-          nothing has been confirmed.
+          Nobody&apos;s found a bonus amount or a promo code attached to Joy Rummy anywhere this
+          directory checks — that column simply stays blank for now.
         </p>
         <p>
-          Yono Arcade&apos;s rewards are tracked differently — through a{" "}
-          <Link href="/promo-codes">promo-code status page</Link> checked across morning, afternoon
-          and evening periods, which publishes &quot;Not released yet&quot; rather than guessing when
-          nothing is verified.
+          Yono Arcade works differently: its{" "}
+          <Link href="/promo-codes">promo-code status page</Link> gets checked three times a day and
+          will say &quot;Not released yet&quot; outright instead of staying silent.
         </p>
         <p>
-          Whenever a reward figure does appear for either app, what matters is eligibility, minimum
-          deposit, validity period, wagering conditions and whether the reward is withdrawable cash
-          or a restricted in-app balance — none of which is public for Joy Rummy yet.
+          If Joy Rummy does eventually confirm something, what would actually matter is eligibility,
+          minimum deposit, how long the offer lasts, wagering conditions, and whether it pays out as
+          real cash or stays locked inside the app — none of it is answerable today.
         </p>
       </ContentSection>
 
       <ContentSection heading="Key differences">
         <div className="space-y-4">
           <div>
-            <p className="mb-1 font-semibold text-[#f3f5ff]">1. Depth of documentation</p>
-            <p>Yono Arcade has a Mall guide, an APK guide and a promo-code tracker. Joy Rummy currently has a status listing elsewhere in this network but no operator name, deposit figure, bonus figure or Mall-equivalent guide.</p>
+            <p className="mb-1 font-semibold text-[#f3f5ff]">1. What's actually on record</p>
+            <p>A Mall guide, an APK guide and live promo-code tracking all exist for Yono Arcade on this site. Joy Rummy, meanwhile, amounts to a single status line elsewhere — operator, deposit size and bonus terms are all blank.</p>
           </div>
           <div>
             <p className="mb-1 font-semibold text-[#f3f5ff]">2. Reward transparency</p>
-            <p>Joy Rummy hasn&apos;t published any welcome-bonus figure. Yono Arcade&apos;s promo-code status is checked and published on a schedule, even when the answer is &quot;not released.&quot;</p>
+            <p>No bonus figure has ever been published for Joy Rummy. Yono Arcade&apos;s promo status is rechecked on a schedule, so even &quot;not released&quot; is a verified, current answer.</p>
           </div>
           <div>
-            <p className="mb-1 font-semibold text-[#f3f5ff]">3. Game-category breadth</p>
-            <p>Joy Rummy is documented under rummy and card games. Yono Arcade spans rummy, slots, spin and arcade-style titles.</p>
+            <p className="mb-1 font-semibold text-[#f3f5ff]">3. Range of games on offer</p>
+            <p>Rummy and card games are where Joy Rummy's own listing stops. Yono Arcade's lineup runs wider — rummy, slots, spin and arcade-style titles all under one app.</p>
           </div>
         </div>
       </ContentSection>
 
       <ContentSection heading="Checks before accessing either app">
+        <p>A few things worth doing before installing either app:</p>
         <BulletList
           items={[
-            "Confirm the final download domain before installing.",
-            "Check the package ID and publisher name inside the APK.",
-            "Review requested permissions before granting them.",
-            "Treat any unpublished bonus condition as unconfirmed, not guaranteed.",
-            "Never share an OTP, password or payment PIN.",
+            "Confirm you're actually on the current download domain.",
+            "Pull the package ID and publisher name out of the APK first.",
+            "Go through each requested permission rather than accepting them blindly.",
+            "Don't treat an unconfirmed bonus claim as a guaranteed offer.",
+            "Keep OTPs, passwords and payment PINs inside the app only.",
           ]}
         />
         <p>
-          For a wider review of this site&apos;s own subject, read{" "}
+          This site&apos;s own safety guide covers Yono Arcade specifically:{" "}
           <Link href="/is-yono-arcade-safe">Is Yono Arcade safe?</Link>
         </p>
       </ContentSection>
 
       <ContentSection heading="Final verdict">
         <p>
-          Joy Rummy and Yono Arcade should be treated as separate platforms until proven otherwise.
-          Joy Rummy is documented elsewhere in this network with its own download domain, but as of
-          this review it hasn&apos;t published an operator name, deposit range or welcome bonus. Yono
-          Arcade currently has the more complete public documentation on this site — a Mall guide,
-          APK guide and active promo-code tracking.
+          Short of anything new surfacing, Joy Rummy and Yono Arcade are two unrelated platforms.
+          Joy Rummy&apos;s download domain is the one concrete thing on file for it — operator name,
+          deposit range and bonus figure are all still missing. On this site specifically, Yono
+          Arcade just has a bigger head start: Mall guide, APK guide, promo-code tracking, all
+          already built.
         </p>
         <p>
-          That&apos;s a difference in how much has been verified, not a judgment on which app is
-          better or safer to use.
+          Read that gap as documentation catching up, not as either app being the riskier pick.
         </p>
       </ContentSection>
 
@@ -225,7 +224,7 @@ export default function JoyRummyVsYonoArcadePage() {
         items={[
           {
             question: "Is Joy Rummy the same as Yono Arcade?",
-            answer: "No verified evidence currently shows that they are the same app. They use separate names, branding and websites, and no shared package ID, publisher or signing certificate has been confirmed.",
+            answer: "No — different names, different branding, different websites, and no case of a matching package ID, publisher or signing certificate between them.",
           },
           {
             question: "Does Joy Rummy have a published welcome bonus amount?",
@@ -237,11 +236,11 @@ export default function JoyRummyVsYonoArcadePage() {
           },
           {
             question: "Does Yono Arcade have more documentation than Joy Rummy?",
-            answer: "Yes, currently. AllYonoArcade.com has a published Mall guide, APK guide and promo-code tracker for Yono Arcade; equivalent documentation for Joy Rummy doesn't yet exist here.",
+            answer: "For now, yes — this site already has a Mall guide, an APK guide and promo-code tracking for Yono Arcade. Joy Rummy doesn't have anything comparable here yet.",
           },
           {
             question: "Does AllYonoArcade.com operate either platform?",
-            answer: "No. AllYonoArcade.com is an independent, unofficial information guide. It does not operate Joy Rummy or Yono Arcade and does not process accounts, payments or withdrawals.",
+            answer: "No. This is an independent, unofficial guide only — it doesn't operate Joy Rummy or Yono Arcade and has no involvement in either one's accounts, payments or withdrawals.",
           },
         ]}
       />

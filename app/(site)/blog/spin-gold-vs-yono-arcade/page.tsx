@@ -93,16 +93,17 @@ export default function SpinGoldVsYonoArcadePage() {
           and spin-style games, built around an in-app Mall section.
         </p>
         <p>
-          Both sit in the same wider Yono-network directory, which is why they get compared. That
-          doesn&apos;t mean they&apos;re connected — there&apos;s currently no evidence either way.
+          Being tracked in the same directory is the only real connection between them right now —
+          it puts both names on this site, nothing more.
         </p>
       </ContentSection>
 
       <Callout tone="warning" title="Some details remain provisional" badge="pending">
         <p>
-          This comparison reflects what&apos;s publicly available as of November 10, 2026. Spin
-          Gold&apos;s APK (package name, permissions, signing certificate) hasn&apos;t been
-          independently inspected, and no welcome bonus or promo code has been confirmed for it yet.
+          Everything here reflects the public record as of November 10, 2026. The APK itself —
+          package name, permissions, signing certificate — hasn&apos;t had an independent look yet,
+          and despite the separate-account claim, Spin Gold still hasn&apos;t published a bonus
+          figure or a working promo code anywhere this directory tracks.
         </p>
       </Callout>
 
@@ -128,17 +129,17 @@ export default function SpinGoldVsYonoArcadePage() {
       </ContentSection>
 
       <ContentSection heading="Is Spin Gold the same as Yono Arcade?">
-        <p>No verified evidence currently shows that they are. They use separate names, separate branding and separate websites.</p>
+        <p>No. Everything about the two — name, branding, the site each is distributed from — points in different directions, and nothing on record links them.</p>
         <p>
-          A shared network listing isn&apos;t proof of common ownership — plenty of apps in this
-          space look alike or launch under similar naming patterns while coming from different
-          publishers. Readers can check the maintained{" "}
-          <Link href="/all-games">Yono Arcade games list</Link> for what&apos;s currently documented
-          on this site. Also worth noting: the reversed word order, &quot;Gold Spin,&quot; and the
-          app&apos;s own listing both point to the same product, not two separate ones — this guide
-          treats it as one app under either phrasing.
+          One clarification worth making first, since it&apos;s a more common mix-up than the Yono
+          Arcade question: &quot;Gold Spin&quot; and &quot;Spin Gold&quot; are the same app with the
+          word order flipped, not two different products — this guide treats both spellings as one
+          listing. As for Yono Arcade specifically, a shared network directory doesn&apos;t establish
+          common ownership on its own; plenty of similarly-styled apps here come from entirely
+          different publishers. The <Link href="/all-games">Yono Arcade games list</Link> is the
+          place to check what this site has actually confirmed rather than assumed.
         </p>
-        <p>Before assuming any connection to another platform, compare:</p>
+        <p>Fields that would need to match before any connection is worth taking seriously:</p>
         <BulletList
           items={[
             "Package ID",
@@ -149,73 +150,72 @@ export default function SpinGoldVsYonoArcadePage() {
             "Download domain",
           ]}
         />
-        <p>Until those fields match, treat them as separate platforms.</p>
+        <p>No match on those, no reason to treat them as related.</p>
       </ContentSection>
 
       <ContentSection heading="Reward figures: what's actually confirmed">
         <p>
-          Spin Gold has not published a welcome bonus figure or promo code anywhere this site has
-          independently checked. There is currently nothing to compare on reward terms because
-          nothing has been confirmed.
+          Despite the separate-account setup, Spin Gold hasn&apos;t put a number behind any reward —
+          no bonus figure, no promo code, nothing this site has managed to independently verify.
         </p>
         <p>
-          Yono Arcade&apos;s rewards are tracked differently — through a{" "}
-          <Link href="/promo-codes">promo-code status page</Link> checked across morning, afternoon
-          and evening periods, which publishes &quot;Not released yet&quot; rather than guessing when
-          nothing is verified.
+          Yono Arcade works differently on this front: a{" "}
+          <Link href="/promo-codes">promo-code status page</Link> gets rechecked three times a day
+          and will openly say &quot;Not released yet&quot; instead of leaving the status ambiguous.
         </p>
         <p>
-          Whenever a reward figure does appear for either app, what matters is eligibility, minimum
-          deposit, validity period, wagering conditions and whether the reward is withdrawable cash
-          or a restricted in-app balance — none of which is public for Spin Gold yet.
+          Should Spin Gold eventually publish something concrete, the questions worth asking are
+          eligibility, minimum deposit, how long it runs, wagering requirements, and whether it pays
+          out as real withdrawable money or gets locked inside the app as credit — none of which can
+          be answered yet.
         </p>
       </ContentSection>
 
       <ContentSection heading="Key differences">
         <div className="space-y-4">
           <div>
-            <p className="mb-1 font-semibold text-[#f3f5ff]">1. Depth of documentation</p>
-            <p>Yono Arcade has a Mall guide, an APK guide and a promo-code tracker. Spin Gold currently has a status listing elsewhere in this network but no operator name, deposit figure, bonus figure or Mall-equivalent guide.</p>
+            <p className="mb-1 font-semibold text-[#f3f5ff]">1. What's actually documented</p>
+            <p>Yono Arcade comes with a Mall guide, an APK guide and live promo-code tracking on this site. Spin Gold has a status entry elsewhere in the network and its separate-account disclosure, but nothing on operator identity, deposit size or bonus terms.</p>
           </div>
           <div>
             <p className="mb-1 font-semibold text-[#f3f5ff]">2. Reward transparency</p>
-            <p>Spin Gold hasn&apos;t published any welcome-bonus figure. Yono Arcade&apos;s promo-code status is checked and published on a schedule, even when the answer is &quot;not released.&quot;</p>
+            <p>No bonus figure exists for Spin Gold anywhere. Yono Arcade&apos;s rewards get checked on a set schedule, so &quot;not released&quot; is still a verified answer rather than silence.</p>
           </div>
           <div>
             <p className="mb-1 font-semibold text-[#f3f5ff]">3. Game-category breadth</p>
-            <p>Spin Gold is documented under the spin category only. Yono Arcade spans rummy, slots, spin and arcade-style titles.</p>
+            <p>Spin Gold sticks to the spin category. Yono Arcade covers rummy, slots, spin and arcade titles under one roof.</p>
           </div>
         </div>
       </ContentSection>
 
       <ContentSection heading="Checks before accessing either app">
+        <p>Worth running through, whichever app you&apos;re looking at:</p>
         <BulletList
           items={[
-            "Confirm the final download domain before installing.",
-            "Check the package ID and publisher name inside the APK.",
-            "Review requested permissions before granting them.",
-            "Treat any unpublished bonus condition as unconfirmed, not guaranteed.",
-            "Never share an OTP, password or payment PIN.",
+            "Make sure the domain you end up on is actually the current one.",
+            "Pull the package ID and publisher name out of the APK before trusting it.",
+            "Go through the permission requests one by one.",
+            "A bonus nobody's confirmed shouldn't be treated as a real offer.",
+            "No app should ever ask for your OTP, password or payment PIN outside itself.",
           ]}
         />
         <p>
-          For a wider review of this site&apos;s own subject, read{" "}
+          This site&apos;s broader safety guide covers Yono Arcade specifically:{" "}
           <Link href="/is-yono-arcade-safe">Is Yono Arcade safe?</Link>
         </p>
       </ContentSection>
 
       <ContentSection heading="Final verdict">
         <p>
-          Spin Gold and Yono Arcade should be treated as separate platforms until proven otherwise.
-          Spin Gold is documented elsewhere in this network with its own download domain and an
-          explicit claim of a separate developer and account system, but as of this review it
-          hasn&apos;t published an operator name, deposit range or welcome bonus. Yono Arcade
-          currently has the more complete public documentation on this site — a Mall guide, APK
-          guide and active promo-code tracking.
+          Treat Spin Gold and Yono Arcade as unconnected platforms — nothing currently says
+          otherwise. Spin Gold explicitly runs its own developer and account infrastructure
+          separately from the rest of the apps it&apos;s listed alongside, but still hasn&apos;t
+          disclosed an operator name, a deposit range or a bonus amount. Yono Arcade, meanwhile,
+          already has the fuller public record here: a Mall guide, an APK guide, and promo-code
+          tracking that actually gets updated.
         </p>
         <p>
-          That&apos;s a difference in how much has been verified, not a judgment on which app is
-          better or safer to use.
+          It&apos;s a documentation gap, not a verdict on which one is the safer or better choice.
         </p>
       </ContentSection>
 
@@ -232,7 +232,7 @@ export default function SpinGoldVsYonoArcadePage() {
         items={[
           {
             question: "Is Spin Gold the same as Yono Arcade?",
-            answer: "No verified evidence currently shows that they are the same app. They use separate names, branding and websites, and no shared package ID, publisher or signing certificate has been confirmed.",
+            answer: "No. The two run under different names and branding on different websites, and there's never been a matching package ID, publisher or signing certificate found between them.",
           },
           {
             question: "Is Spin Gold the same as Gold Spin?",
@@ -248,11 +248,11 @@ export default function SpinGoldVsYonoArcadePage() {
           },
           {
             question: "Does Yono Arcade have more documentation than Spin Gold?",
-            answer: "Yes, currently. AllYonoArcade.com has a published Mall guide, APK guide and promo-code tracker for Yono Arcade; equivalent documentation for Spin Gold doesn't yet exist here.",
+            answer: "At this point, yes — this site already has a Mall guide, an APK guide and promo-code tracking built for Yono Arcade, and nothing close exists yet for Spin Gold.",
           },
           {
             question: "Does AllYonoArcade.com operate either platform?",
-            answer: "No. AllYonoArcade.com is an independent, unofficial information guide. It does not operate Spin Gold or Yono Arcade and does not process accounts, payments or withdrawals.",
+            answer: "Neither one. This site is an independent, unofficial guide only — no account handling, payments or withdrawals for Spin Gold or Yono Arcade happen here.",
           },
         ]}
       />
