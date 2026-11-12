@@ -7,19 +7,19 @@ import FAQSection from "../../../components/sections/FAQSection";
 import RelatedLinks from "../../../components/sections/RelatedLinks";
 import GuideImage from "../../../components/sections/GuideImage";
 
-const TITLE = "Spin Rummy APK Download: Launch-Day Status";
-const META_TITLE = "Spin Rummy APK Download: Launch-Day Status";
+const TITLE = "Spin Rummy APK Download: Current Status";
+const META_TITLE = "Spin Rummy APK Download: Current Status";
 const DESCRIPTION =
-  "Spin Rummy launched 30 October 2026. Here's the download link, what's confirmed about the APK, and what's still unverified.";
+  "Spin Rummy launched 30 October 2026 and has been live for two weeks. Here's the download link, what's confirmed about the APK, and what's still unverified.";
 const URL = "https://allyonoarcade.com/blog/spin-rummy-apk-download";
 const IMAGE = "https://allyonoarcade.com/images/guides/spin-rummy-apk-download.webp";
 const PUBLISHED = "2026-10-30";
-const LAST_REVIEWED = "2026-10-30";
+const LAST_REVIEWED = "2026-11-12";
 const REFERRAL_LINK = "https://spinrummy.cx/?code=31X42Q6DH9P&t=1793332810";
 const EXTERNAL = { target: "_blank", rel: "nofollow noopener noreferrer" } as const;
 
 const ANSWER =
-  "Spin Rummy launched 30 October 2026. Our sponsored download link is below. The APK itself hasn't been independently inspected yet — package name, permissions, and signing certificate are still unverified, and no welcome bonus or promo code has been confirmed.";
+  "Spin Rummy launched 30 October 2026 and has been live for two weeks. Our sponsored download link is below. The APK itself still hasn't been independently inspected — package name, permissions, and signing certificate remain unverified, and no welcome bonus or promo code has been confirmed.";
 
 export const metadata: Metadata = {
   title: { absolute: META_TITLE },
@@ -74,7 +74,7 @@ export default function SpinRummyApkDownloadPage() {
       <PageHeader eyebrow="Live Platform" title={TITLE} answer={ANSWER} />
 
       <div className="mx-auto max-w-[760px] px-4 sm:px-6 -mt-2 mb-2 text-[12.5px] text-[var(--color-ink-400)]">
-        Published: October 30, 2026 &middot; Last reviewed: October 30, 2026
+        Published: October 30, 2026 &middot; Last reviewed: November 12, 2026
       </div>
 
       <RelatedLinks />
@@ -108,9 +108,9 @@ export default function SpinRummyApkDownloadPage() {
       <ContentSection heading="What's confirmed so far">
         <p>
           Spin Rummy is listed as a rummy-category real-money game, pairing a spin-wheel icon with the rummy format
-          in the same green-diamond branding used elsewhere in this network. It launched 30 October 2026. We
-          haven&apos;t yet independently inspected the APK&apos;s package name, version number, or signing
-          certificate.
+          in the same green-diamond branding used elsewhere in this network. It launched 30 October 2026 and has
+          now been live for two weeks. We still haven&apos;t independently inspected the APK&apos;s package name,
+          version number, or signing certificate.
         </p>
       </ContentSection>
 
@@ -145,7 +145,7 @@ export default function SpinRummyApkDownloadPage() {
         items={[
           {
             question: "Is Spin Rummy available for download now?",
-            answer: "Yes — it launched 30 October 2026. Our sponsored link is above.",
+            answer: "Yes — it launched 30 October 2026 and has been live for two weeks. Our sponsored link is above.",
           },
           {
             question: "Is Spin Rummy safe to install?",
