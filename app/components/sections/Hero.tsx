@@ -117,10 +117,11 @@ export default function Hero() {
               <Image
                 src="/images/yono-arcade-home-screen.webp"
                 alt="Yono Arcade app home screen with bonus rewards"
-                width={2000}
-                height={1920}
+                width={1200}
+                height={1152}
                 priority
                 fetchPriority="high"
+                quality={65}
                 sizes="(max-width: 640px) 360px, (max-width: 1024px) 440px, 460px"
                 className="h-auto w-full"
               />
