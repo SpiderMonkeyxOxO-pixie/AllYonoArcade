@@ -109,13 +109,25 @@ export default function AllGamesPage() {
         </p>
       </ContentSection>
 
-      <ContentSection heading="Looking for All Yono games?">
+      <ContentSection heading="Is there a Yono Arcade old version APK?">
+        <p>
+          No archived old-version APK. YonoArcade.com does not offer a version history or older
+          builds to download — the only version we&apos;ve independently confirmed is the current
+          one: build 1.1.9 (code 119), uploaded 18 September 2026, package{" "}
+          <code>com.arcade.games.yo</code>, signed with the &quot;lamislot&quot; certificate. There
+          is no iOS app as of 28 September 2026. See our{" "}
+          <Link href="/blog/yono-arcade-old-version-apk">full old-version APK write-up</Link> for
+          what we checked and why no archive exists.
+        </p>
+      </ContentSection>
+
+      <ContentSection heading="Where's the full list of all Yono apps?">
         <p>
           &quot;All Yono&quot; is a name for the wider family of Yono-branded apps, not a single app.
           The apps below are separately branded and separately downloaded; they are not games
           inside Yono Arcade. Our{" "}
-          <Link href="/blog/all-yono-games">All Yono Games guide</Link> explains why different
-          lists show different totals. Several unrelated sites also use names like AllYono and
+          <Link href="/blog/all-yono-games">complete All Yono apps list guide</Link> explains why
+          different lists show different totals. Several unrelated sites also use names like AllYono and
           AllYonoGames; see{" "}
           <ScheduledLink href="/blog/allyono-allyonogames-allyonogame-art-which-site" date="2026-10-10">
             which site is which
