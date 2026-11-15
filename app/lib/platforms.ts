@@ -227,6 +227,159 @@ const RAW_PLATFORMS: {
     blogHref: "/blog/spin-rummy-apk-download",
     justLaunched: true,
   },
+  {
+    name: "Diwa777",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/diwa777.webp",
+    description:
+      "Diwa777 pairs the classic slots jackpot number with a plain gold wordmark and Indian tricolor swoosh — the same branding style shared across its network. Here's the Diwa777 APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://sharediwa777.top?pid=474948727&channel=2030501&pkg=com.diwa777diwa001.app",
+    blogHref: "/blog/diwa777-apk-download",
+  },
+  {
+    name: "DiwaAce",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/diwaace.webp",
+    description:
+      "DiwaAce frames a three-card slot reel — queen, ace, king — inside an ornate gold crown icon, more elaborate than its network's usual plain wordmark. Here's the DiwaAce APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://diwaaceshare.win?pid=307328239&channel=2010003&pkg=com.diwaace003.app",
+    blogHref: "/blog/diwaace-apk-download",
+  },
+  {
+    name: "DiwaBonus",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/diwabonus.webp",
+    description:
+      "DiwaBonus names its incentive directly in its branding rather than a specific game format. Here's the DiwaBonus APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://diwabonusshare.win?pid=498064801&channel=2010003&pkg=com.diwabonus003.com",
+    blogHref: "/blog/diwabonus-apk-download",
+  },
+  {
+    name: "DiwaFun",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/diwafun.webp",
+    description:
+      "DiwaFun keeps to the plain gold wordmark and tricolor swoosh shared across its network, without a game-type word attached to the name. Here's the DiwaFun APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://diwafunshare.cyou?pid=303955249&channel=2010005&pkg=com.diwafundiwa001.app",
+    blogHref: "/blog/diwafun-apk-download",
+  },
+  {
+    name: "DiwaGame",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/diwagame.webp",
+    description:
+      "DiwaGame uses the most generic name in its family, pointing at a multi-game app rather than one specific title. Here's the DiwaGame APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://diwagameshare.me?pid=528775003&channel=2010005&pkg=com.diwagamediwa001.app",
+    blogHref: "/blog/diwagame-apk-download",
+  },
+  {
+    name: "DiwaKing",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/diwaking.webp",
+    description:
+      "DiwaKing pairs a royalty-themed name with the plain gold wordmark and tricolor swoosh shared across its network. Here's the DiwaKing APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://diwakingshare.info?pid=421935348&channel=2010003&pkg=com.diwaking0003.com",
+    blogHref: "/blog/diwaking-apk-download",
+  },
+  {
+    name: "DiwaLucky",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/diwalucky.webp",
+    description:
+      "DiwaLucky frames a cherry-bell-cherry slot reel inside the same ornate gold icon style as DiwaAce and DiwaWin, rather than the plain wordmark used elsewhere in its network. Here's the DiwaLucky APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://share1diwaluck.vip?pid=482834010&channel=2010002&pkg=com.diwalucky2.app",
+    blogHref: "/blog/diwalucky-apk-download",
+  },
+  {
+    name: "DiwaPlay",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/diwaplay.webp",
+    description:
+      "DiwaPlay is the plainest name in its family, with no game-type word attached — just the shared gold wordmark and tricolor swoosh. Here's the DiwaPlay APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://diwaplayshare.cyou?pid=381588617&channel=2010001&pkg=com.diwaplay.app",
+    blogHref: "/blog/diwaplay-apk-download",
+  },
+  {
+    name: "DiwaRummy",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/diwarummy.webp",
+    description:
+      "DiwaRummy names the rummy format directly, pairing it with the same gold wordmark and tricolor swoosh as others in its network. Here's the DiwaRummy APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://diwarummyshare.cyou?pid=336927528&channel=2010005&pkg=com.diwarummytg.app",
+    blogHref: "/blog/diwarummy-apk-download",
+  },
+  {
+    name: "DiwaSlot",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/diwaslot.webp",
+    description:
+      "DiwaSlot names its game format directly, pairing it with the same plain gold wordmark as others in its network. Here's the DiwaSlot APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://sharediwaslot.vip?pid=274077973&channel=2030401&pkg=com.diwaslotdiwa001.app",
+    blogHref: "/blog/diwaslot-apk-download",
+  },
+  {
+    name: "DiwaSpin",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/diwaspin.webp",
+    description:
+      "DiwaSpin renders its network's usual gold wordmark with extra ornamentation — a starburst flare and heavier bevel — rather than the plain flat-gold style used elsewhere. Here's the DiwaSpin APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://diwaspinshare.win?pid=408505218&channel=2010004&pkg=com.diwaspin0004.com",
+    blogHref: "/blog/diwaspin-apk-download",
+  },
+  {
+    name: "DiwaTop",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/diwatop.webp",
+    description:
+      "DiwaTop's name doesn't point at any specific game format, unlike several others in its network. Here's the DiwaTop APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://diwatopshare.win?pid=526974857&channel=2010001&pkg=com.diwatop.app",
+    blogHref: "/blog/diwatop-apk-download",
+  },
+  {
+    name: "DiwaVIP",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/diwavip.webp",
+    description:
+      "DiwaVIP pairs an exclusivity-themed name with the plain gold wordmark and tricolor swoosh shared across its network. Here's the DiwaVIP APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://diwavipshare.win?pid=492244166&channel=2030402&pkg=com.diwavipdiwa001.app",
+    blogHref: "/blog/diwavip-apk-download",
+  },
+  {
+    name: "DiwaWin",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/diwawin.webp",
+    description:
+      "DiwaWin frames a 777 slot reel above a two-tone gold-and-silver wordmark with a star accent, more detailed than its network's usual plain wordmark. Here's the DiwaWin APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://diwawinshare.one?pid=396584296&channel=2020007&pkg=com.diwawin007.app",
+    blogHref: "/blog/diwawin-apk-download",
+  },
+  {
+    name: "DiwaWow",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/diwawow.webp",
+    description:
+      "DiwaWow frames a cherry-bell-seven slot reel above a two-tone wordmark — gold for \"Diwa,\" red gem-textured lettering for \"Wow.\" Here's the DiwaWow APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://diwawowshare.one?pid=310197642&channel=2010001&pkg=com.diwawow.app",
+    blogHref: "/blog/diwawow-apk-download",
+  },
+  {
+    name: "DiwaX",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/diwax.webp",
+    description:
+      "DiwaX frames a cherry-bell-seven slot reel above a wordmark that pairs gold \"Diwa\" lettering with a large red X. Here's the DiwaX APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://diwaxshare.one?pid=510040040&channel=2010003&pkg=com.diwax003.app",
+    blogHref: "/blog/diwax-apk-download",
+  },
+  {
+    name: "Goodslots",
+    playCheck: "Not checked yet.",
+    image: "/images/platforms/goodslots.webp",
+    description:
+      "Goodslots breaks from its network's usual gold-wordmark-and-tricolor look entirely — a blue background, a gold thumbs-up icon, and tile-style lettering for \"SLOTS\" — though its package name ties it to the same Diwa-branded family. Here's the Goodslots APK download and what we've verified about its promo codes.",
+    downloadUrl: "https://sharegoodslots.club?pid=512559578&channel=2030506&pkg=com.goodslotsdiwa001.app",
+    blogHref: "/blog/goodslots-apk-download",
+  },
 ];
 
 /**
