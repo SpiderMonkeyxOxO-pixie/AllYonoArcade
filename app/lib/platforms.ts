@@ -152,6 +152,7 @@ const RAW_PLATFORMS: {
     description:
       "Yono 777 combines the Yono name with the classic slots jackpot number — this guide covers its APK download and promo code status.",
     downloadUrl: "https://yononewgames.vip/?code=SCHFQRY8DAS",
+    blogHref: "/blog/yono-777-apk-download",
   },
   {
     name: "Gold Rummy",

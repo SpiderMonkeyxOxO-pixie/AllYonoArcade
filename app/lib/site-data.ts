@@ -1068,6 +1068,42 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "unverified",
     publishedAt: "2026-11-15",
   },
+  {
+    slug: "/blog/yono-777-apk-download",
+    title: "Yono 777 APK Download: What's Confirmed & Promo Code Status",
+    description:
+      "Yono 777 APK download link, what we've verified about the app, and today's promo code status — plus why its name doesn't connect it to Yono Arcade.",
+    icon: "download",
+    image: "/images/platforms/yono-777.webp",
+    keyword: "yono 777 apk download",
+    volume: "new listing",
+    verificationStatus: "unverified",
+    publishedAt: "2026-11-15",
+  },
+  {
+    slug: "/blog/money-rummy-and-yono-network-lookalikes",
+    title: "Money Rummy and the Growing Yono-Network Look-Alikes",
+    description:
+      "Money Rummy launched September 9, 2026, reported as the 57th platform on the Yono network — here's what's confirmed, and how to verify it's the platform you think it is.",
+    icon: "download",
+    image: "/images/guides/money-rummy-and-yono-network-lookalikes.jpg",
+    keyword: "money rummy yono network lookalikes",
+    volume: "new listing",
+    verificationStatus: "unverified",
+    publishedAt: "2026-09-08",
+  },
+  {
+    slug: "/blog/what-is-gold-rummy",
+    title: "What Is Gold Rummy? Now Live on the Yono Network",
+    description:
+      "Gold Rummy launched August 19, 2026 on the Yono network. Here's what's confirmed at launch, what's still unverified, and how it compares to other rummy apps.",
+    icon: "download",
+    image: "/images/guides/what-is-gold-rummy.jpg",
+    keyword: "what is gold rummy",
+    volume: "new listing",
+    verificationStatus: "unverified",
+    publishedAt: "2026-08-18",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
