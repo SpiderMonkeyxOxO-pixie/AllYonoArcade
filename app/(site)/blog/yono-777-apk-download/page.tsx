@@ -12,7 +12,7 @@ const META_TITLE = "Yono 777 APK Download: What's Confirmed & Promo Code Status"
 const DESCRIPTION =
   "Yono 777 APK download link, what we've verified about the app, and today's promo code status — plus why its name doesn't connect it to Yono Arcade.";
 const URL = "https://allyonoarcade.com/blog/yono-777-apk-download";
-const IMAGE = "https://allyonoarcade.com/images/platforms/yono-777.webp";
+const IMAGE = "https://allyonoarcade.com/images/guides/yono-777-apk-download.webp";
 const PUBLISHED = "2026-11-15";
 const LAST_REVIEWED = "2026-11-15";
 const REFERRAL_LINK = "https://yononewgames.vip/?code=SCHFQRY8DAS";
@@ -80,8 +80,8 @@ export default function Yono777ApkDownloadPage() {
       <RelatedLinks />
 
       <GuideImage
-        src="/images/platforms/yono-777.webp"
-        alt="Yono 777 app download screen on a smartphone, a platform in the same network as Yono Arcade"
+        src="/images/guides/yono-777-apk-download.webp"
+        alt="Yono 777 app branding with green diamond logo and slot reels showing 777"
         className="mx-auto max-w-[760px] px-4 sm:px-6 mt-2"
       />
 
