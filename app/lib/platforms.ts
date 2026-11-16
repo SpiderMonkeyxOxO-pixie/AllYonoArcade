@@ -144,6 +144,7 @@ const RAW_PLATFORMS: {
     description:
       "Win Rummy pairs an outcome-focused name with a crown-and-card-suit icon similar to others in this family — here's the Win Rummy APK download and what we've verified about its promo codes.",
     downloadUrl: "https://www.winrummy10.com/?code=8JT9D83WCC3&t=1785293043",
+    blogHref: "/blog/win-rummy-apk-download",
   },
   {
     name: "Yono 777",
