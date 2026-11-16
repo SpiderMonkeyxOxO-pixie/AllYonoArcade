@@ -6,18 +6,20 @@ import Callout from "../../../components/sections/Callout";
 import FAQSection from "../../../components/sections/FAQSection";
 import RelatedLinks from "../../../components/sections/RelatedLinks";
 import GuideImage from "../../../components/sections/GuideImage";
-import ComparisonTable from "../../../components/sections/ComparisonTable";
-import { requirePublished } from "../../../lib/schedule";
 
-const TITLE = "123 Rummy APK Download & Promo Code — Launching 16 November 2026";
-const META_TITLE = "123 Rummy APK Download & Promo Code — Launching 16 Nov 2026";
+const TITLE = "123 Rummy APK Download & Promo Code — Live Now";
+const META_TITLE = "123 Rummy APK Download & Promo Code — Live Now";
 const DESCRIPTION =
-  "123 Rummy launches 16 Nov 2026, 8:00 AM IST, as the newest real-money rummy app on the Yono network. What's confirmed so far, and what to check once it goes live.";
+  "123 Rummy launched 16 Nov 2026, 8:00 AM IST, as a real-money rummy app on the Yono network. Download link, promo code status, and an honest first look.";
 const URL = "https://allyonoarcade.com/blog/123-rummy-apk-download";
 const IMAGE = "https://allyonoarcade.com/images/platforms/123-rummy.webp";
 const PUBLISHED = "2026-11-10";
+const LAST_REVIEWED = "2026-11-16";
+const REFERRAL_LINK = "https://www.123rummy2.com/?code=HT9PS5WTMED&t=1794797556";
+const EXTERNAL = { target: "_blank", rel: "nofollow noopener noreferrer" } as const;
 
-export const dynamic = "force-dynamic";
+const ANSWER =
+  "123 Rummy launched 16 November 2026 at 8:00 AM IST on the Yono network. No welcome bonus or promo code has been independently confirmed yet, and the APK itself hasn't been inspected for package name, permissions, or signing certificate — this page will update as those are verified.";
 
 export const metadata: Metadata = {
   title: { absolute: META_TITLE },
@@ -41,7 +43,7 @@ const ARTICLE_SCHEMA = {
     logo: { "@type": "ImageObject", url: "https://allyonoarcade.com/logo.png" },
   },
   datePublished: PUBLISHED,
-  dateModified: PUBLISHED,
+  dateModified: LAST_REVIEWED,
   mainEntityOfPage: { "@type": "WebPage", "@id": URL },
 };
 
@@ -56,20 +58,15 @@ const BREADCRUMB_SCHEMA = {
 };
 
 export default function Rummy123ApkDownloadPage() {
-  requirePublished(PUBLISHED);
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ARTICLE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
 
-      <PageHeader
-        eyebrow="Launching Soon"
-        title={TITLE}
-        answer="123 Rummy is a real-money rummy app launching 16 November 2026 at 8:00 AM IST as part of the Yono network. No APK download link or promo code has been confirmed yet — this page will update with verified details once the app goes live."
-      />
+      <PageHeader eyebrow="Live Platform" title={TITLE} answer={ANSWER} />
 
       <div className="mx-auto max-w-[760px] px-4 sm:px-6 -mt-2 mb-2 text-[12.5px] text-[var(--color-ink-400)]">
-        Published: November 10, 2026 · Pre-launch listing — details will be updated after the app goes live
+        Published: November 10, 2026 &middot; Last reviewed: November 16, 2026
       </div>
 
       <RelatedLinks />
@@ -82,9 +79,9 @@ export default function Rummy123ApkDownloadPage() {
 
       <ContentSection heading="What is 123 Rummy?">
         <p>
-          123 Rummy is a real-money rummy app scheduled to launch on 16 November 2026 as the newest
-          entry in the Yono network. As a pre-launch listing, we have not yet installed or tested the
-          app — everything on this page comes from what&apos;s publicly confirmed so far, which is
+          123 Rummy is a real-money rummy app that launched 16 November 2026 as the newest entry in
+          the Yono network. We have not yet independently installed or tested the app — everything on
+          this page beyond the download link comes from what&apos;s publicly confirmed so far, which is
           limited to the app name, category, and launch date.
         </p>
         <p>
@@ -93,66 +90,72 @@ export default function Rummy123ApkDownloadPage() {
         </p>
       </ContentSection>
 
-      <ContentSection heading="Download status">
-        <ComparisonTable
-          headers={["Field", "Status", "Note"]}
-          rows={[
-            ["App name", "123 Rummy", "Real-money rummy app"],
-            ["APK download link", "Not yet available", "Will be added after launch"],
-            ["Google Play listing", "Not found", "As of 10 November 2026"],
-            ["Expected launch", "16 November 2026, 8:00 AM IST", "Date and time as announced"],
-            ["File size", "Not yet known", "Will be verified post-launch"],
-            ["Minimum Android", "Not yet confirmed", "Likely Android 5.0+"],
-            ["Category", "Rummy", "Real-money card game"],
-          ]}
-        />
+      <ContentSection heading="Download Status">
         <p>
-          This table will be updated with verified details once the APK becomes available. Download
-          links on AllYonoArcade.com always point to the platform&apos;s own website — we do not host
-          APK files.
+          Download 123 Rummy here. It is not an official store link, and we may earn a commission if you use it.
+          AllYonoArcade.com does not host APK files or operate 123 Rummy.
+        </p>
+        <p>
+          <a
+            href={REFERRAL_LINK}
+            {...EXTERNAL}
+            className="btn-brand inline-flex items-center gap-1.5 rounded-full px-5 py-2.5 text-[13px] font-semibold"
+            style={{
+              background: "linear-gradient(135deg, var(--color-cyan-400), var(--color-magenta-400))",
+              color: "#1a0e00",
+            }}
+          >
+            Download 123 Rummy
+          </a>
         </p>
       </ContentSection>
 
-      <ContentSection heading="Promo code status">
+      <ContentSection heading="What's Still Unverified">
         <p>
-          No 123 Rummy promo code has been announced as of 10 November 2026. Many apps in the Yono
-          network offer a welcome bonus or first-deposit promo code at launch, but nothing has been
-          confirmed for 123 Rummy.
-        </p>
-        <p>
-          Check our <Link href="/promo-codes">promo codes page</Link> for daily-updated codes across
-          all platforms. If a 123 Rummy code is released, it will be added there.
+          No welcome bonus or promo code has been independently confirmed for 123 Rummy. We also
+          haven&apos;t yet run our usual technical check on the APK &mdash; package name, permission
+          list, signing certificate &mdash; the same standard covered in our{" "}
+          <Link href="/is-yono-arcade-safe">is Yono Arcade safe</Link> methodology. This page will be
+          updated once that&apos;s done.
         </p>
       </ContentSection>
 
-      <Callout tone="info" title="Pre-launch listing">
+      <ContentSection heading="Promo Code Status">
+        <p>
+          No fixed 123 Rummy promo code has been confirmed yet. Check our{" "}
+          <Link href="/promo-codes">promo codes page</Link> for daily-updated codes across all
+          platforms &mdash; if a 123 Rummy code is released, it will be added there.
+        </p>
+      </ContentSection>
+
+      <Callout tone="info" title="Pre-launch listing no longer applies">
         <p>
           AllYonoArcade.com does not develop, host, or operate 123 Rummy or any other app in this
-          directory. This page is a pre-launch listing based on publicly available information and
-          will be updated with tested, verified details once the app is live.
+          directory. This page was originally a pre-launch listing; it now reflects the live app and
+          will keep updating as package, permission, and bonus details get verified.
         </p>
       </Callout>
 
       <FAQSection
         items={[
           {
-            question: "When does 123 Rummy launch?",
-            answer: "123 Rummy is scheduled to launch on 16 November 2026 at 8:00 AM IST.",
+            question: "Has 123 Rummy launched?",
+            answer: "Yes — it launched 16 November 2026 at 8:00 AM IST. The download link is above.",
           },
           {
             question: "Where can I download 123 Rummy?",
             answer:
-              "The download link is not yet available. Once 123 Rummy launches, the official download link will be added to this page.",
+              "The link is now live — use the download button in the \"Download Status\" section above.",
           },
           {
             question: "Is there a 123 Rummy promo code?",
             answer:
-              "No code has been announced yet. Check our promo codes page after launch for the current status.",
+              "No code has been independently confirmed yet. Check our promo codes page for the current status.",
           },
           {
             question: "What is 123 Rummy's welcome bonus?",
             answer:
-              "No welcome bonus has been confirmed yet. This page will be updated once that's announced.",
+              "No welcome bonus has been independently confirmed yet. This page will be updated once that's verified.",
           },
         ]}
       />

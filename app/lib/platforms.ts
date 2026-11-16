@@ -214,9 +214,10 @@ const RAW_PLATFORMS: {
     playCheck: "Not checked yet.",
     image: "/images/platforms/123-rummy.webp",
     description:
-      "123 Rummy is a real-money rummy app scheduled to join the Yono network — launching 16 November 2026. No download link, welcome bonus or promo code is available yet; this page will update once the app goes live.",
-    comingSoon: true,
-    releaseDate: "2026-11-16T08:00:00+05:30",
+      "123 Rummy launched 16 November 2026 as a real-money rummy app on the Yono network — here's the 123 Rummy APK download and what we've verified about its welcome bonus and promo codes.",
+    downloadUrl: "https://www.123rummy2.com/?code=HT9PS5WTMED&t=1794797556",
+    blogHref: "/blog/123-rummy-apk-download",
+    justLaunched: true,
   },
   {
     name: "Spin Rummy",
