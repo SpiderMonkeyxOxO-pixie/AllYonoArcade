@@ -1104,6 +1104,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "unverified",
     publishedAt: "2026-08-18",
   },
+  {
+    slug: "/blog/yono-arcade-poker",
+    title: "Poker in Yono Arcade: How It Works, Skill vs Chance, and Legal Status",
+    description:
+      "How poker works inside Yono Arcade, why its own games list calls Poker \"skill and chance\" rather than pure skill, and what the 2025 Act means for real-money poker in India.",
+    icon: "gamepad",
+    image: "/images/guides/yono-arcade-poker.webp",
+    keyword: "yono arcade poker",
+    volume: "autocomplete",
+    verificationStatus: "verified",
+    publishedAt: "2026-11-17",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
