@@ -1116,6 +1116,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "verified",
     publishedAt: "2026-11-17",
   },
+  {
+    slug: "/blog/yono-arcade-ludo",
+    title: "Ludo in Yono Arcade: How It Works, Skill vs Chance, and Legal Status",
+    description:
+      "How Ludo works inside Yono Arcade, why its own games list calls Ludo \"skill and chance\" rather than pure skill, and what the 2025 Act means for real-money Ludo in India.",
+    icon: "gamepad",
+    image: "/images/guides/yono-arcade-ludo.webp",
+    keyword: "yono arcade ludo",
+    volume: "autocomplete",
+    verificationStatus: "verified",
+    publishedAt: "2026-11-18",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
