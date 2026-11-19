@@ -1128,6 +1128,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "verified",
     publishedAt: "2026-11-18",
   },
+  {
+    slug: "/blog/yono-arcade-teen-patti",
+    title: "Does Yono Arcade Include Teen Patti?",
+    description:
+      "Does Yono Arcade have Teen Patti? YonoArcade.com's own 10-game \"Top Games\" list doesn't include it — what's actually there, and why the confusion happens.",
+    icon: "gamepad",
+    image: "/images/guides/yono-arcade-teen-patti.webp",
+    keyword: "yono arcade teen patti",
+    volume: "new listing",
+    verificationStatus: "verified",
+    publishedAt: "2026-11-19",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
