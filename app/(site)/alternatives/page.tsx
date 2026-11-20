@@ -91,7 +91,7 @@ export default function AlternativesPage() {
           {
             question: "Is Jaiho Arcade the same company as Yono Arcade?",
             answer:
-              "We don't have confirmation either way. Treat them as separate apps until you can verify the publisher information yourself on each one's store listing.",
+              "They're separate apps with different package names, but our APK check found both signed with the same certificate and served from the same download host — see our full Jaiho Arcade vs Yono Arcade comparison. That means whoever controls the signing key controls both apps, but it doesn't mean they share accounts or balances.",
           },
           {
             question: "Which one should I use?",

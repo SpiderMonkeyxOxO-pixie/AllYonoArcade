@@ -493,6 +493,16 @@ export const BLOG_PILLARS: BlogPillar[] = [
     publishedAt: "2026-10-07",
   },
   {
+    slug: "/blog/arcade-91-vs-yono-arcade",
+    title: "Arcade 91 vs Yono Arcade: Same App Family?",
+    description: "Arcade 91 shows up in the same searches as Yono Arcade, but we couldn't find a public app or site for it to compare. What we checked and why it's still unconfirmed.",
+    icon: "swap",
+    image: "/images/guides/arcade-91-vs-yono-arcade.webp",
+    keyword: "arcade 91 yono",
+    volume: "unclaimed",
+    verificationStatus: "unverified",
+  },
+  {
     slug: "/blog/jaiho-play-vs-jaiho-arcade",
     title: "Jaiho Play vs Jaiho Arcade: How to Tell Them Apart",
     description:
