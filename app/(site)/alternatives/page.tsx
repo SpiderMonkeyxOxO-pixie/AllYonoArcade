@@ -41,7 +41,7 @@ export default function AlternativesPage() {
           items={[
             <><strong>Jaiho Arcade</strong> — a separate app name that pairs with "yono" in a large number of related searches.</>,
             <><strong>Arcade 91</strong> — another distinctly branded app appearing in the same search cluster.</>,
-            <><strong>Spin Arcade</strong> — shows up specifically around spin/wheel-game searches.</>,
+            <><strong>Spin Arcade</strong> — shows up specifically around spin/wheel-game searches. We looked for a real app behind the name and found only search-spam pages pairing it with "Yono Arcade" — see our <Link href="/blog/spin-arcade-vs-yono-arcade" className="underline text-[var(--color-cyan-400)]">Spin Arcade vs Yono Arcade comparison</Link>.</>,
             <><strong>Yono Rummy</strong> — a rummy-specific naming variant that may or may not refer to the same product as "Yono Arcade" itself.</>,
           ]}
         />
