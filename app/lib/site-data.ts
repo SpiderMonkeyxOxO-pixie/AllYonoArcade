@@ -503,6 +503,16 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "unverified",
   },
   {
+    slug: "/blog/spin-arcade-vs-yono-arcade",
+    title: "Spin Arcade vs Yono Arcade: Same App Family?",
+    description: "Spin Arcade pairs with Yono Arcade in search, but we found no public app or site for it — only SEO pages using both names. What we checked and why it's still unconfirmed.",
+    icon: "swap",
+    image: "/images/guides/spin-arcade-vs-yono-arcade.webp",
+    keyword: "spin arcade yono",
+    volume: "unclaimed",
+    verificationStatus: "unverified",
+  },
+  {
     slug: "/blog/jaiho-play-vs-jaiho-arcade",
     title: "Jaiho Play vs Jaiho Arcade: How to Tell Them Apart",
     description:
