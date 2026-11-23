@@ -225,9 +225,10 @@ const RAW_PLATFORMS: {
     playCheck: "Not checked yet.",
     image: "/images/platforms/rush-gala.webp",
     description:
-      "Rush Gala is a real-money app scheduled to join the Yono network — launching 23 November 2026. No download link, welcome bonus or promo code is available yet; this page will update once the app goes live.",
-    comingSoon: true,
-    releaseDate: "2026-11-23T08:00:00+05:30",
+      "Rush Gala launched 23 November 2026 as a multi-game casino-style app on the Yono network — here's the Rush Gala APK download and what we've verified about its welcome bonus and promo codes.",
+    downloadUrl: "https://rushgala.club/?code=MBZQC5NXWUP&t=1795408331",
+    blogHref: "/blog/rush-gala-apk-download",
+    justLaunched: true,
   },
   {
     name: "Spin Rummy",

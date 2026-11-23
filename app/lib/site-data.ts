@@ -886,9 +886,9 @@ export const BLOG_PILLARS: BlogPillar[] = [
   },
   {
     slug: "/blog/rush-gala-apk-download",
-    title: "Rush Gala APK Download & Promo Code — Launching 23 November 2026",
+    title: "Rush Gala APK Download & Promo Code — Live Now",
     description:
-      "Rush Gala launches 23 Nov 2026, 8:00 AM IST, as the newest real-money app on the Yono network. What's confirmed so far, and what to check once it goes live.",
+      "Rush Gala launched 23 Nov 2026 as a multi-game casino-style app on the Yono network — Slots, Fishing, Fly and Roulette. Download link, bonus range, and an honest first look.",
     icon: "gamepad",
     image: "/images/platforms/rush-gala.webp",
     keyword: "rush gala apk download",
