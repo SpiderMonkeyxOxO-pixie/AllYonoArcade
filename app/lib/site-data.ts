@@ -897,6 +897,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     publishedAt: "2026-11-22",
   },
   {
+    slug: "/blog/jaiho-play-apk-download",
+    title: "Jaiho Play APK Download: What We've Verified So Far",
+    description:
+      "Jaiho Play launched 15 October 2026 on the Yono network with rummy and Teen Patti. The APK download link, and what's confirmed and still unconfirmed about it.",
+    icon: "download",
+    image: "/images/guides/jaiho-play-apk-download.webp",
+    keyword: "jaiho play apk download",
+    volume: "new listing",
+    verificationStatus: "unverified",
+    publishedAt: "2026-11-25",
+  },
+  {
     slug: "/blog/diwa777-apk-download",
     title: "Diwa777 APK Download, Promo Code & Guide",
     description:
