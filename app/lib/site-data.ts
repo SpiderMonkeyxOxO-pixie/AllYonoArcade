@@ -1184,6 +1184,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "verified",
     publishedAt: "2026-11-19",
   },
+  {
+    slug: "/blog/diwa-apps-list-which-is-which",
+    title: "Diwa Apps List: All 17 Names Compared (2026)",
+    description:
+      "Diwa777, DiwaAce, DiwaRummy, Goodslots and 13 more — the full list of Diwa-branded apps we track, each one's Android package name, visual differences, and download link in one place.",
+    icon: "store",
+    image: "/images/guides/diwa-apps-list-which-is-which.webp",
+    keyword: "diwa apps list",
+    volume: "new listing",
+    verificationStatus: "unverified",
+    publishedAt: "2026-11-26",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
