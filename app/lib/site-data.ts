@@ -1196,6 +1196,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "unverified",
     publishedAt: "2026-11-26",
   },
+  {
+    slug: "/blog/yono-arcade-domino-uno-baccarat-pool-carrom-cricket",
+    title: "Domino, UNO, Baccarat, Pool, Carrom & Fantasy Cricket in Yono Arcade: What's Actually Confirmed",
+    description:
+      "YonoArcade.com's About text names Domino, UNO, Baccarat, Pool, Carrom and fantasy cricket — none appear on its own homepage games list. Here's what we checked.",
+    icon: "gamepad",
+    image: "/images/guides/yono-arcade-domino-uno-baccarat-pool-carrom-cricket.webp",
+    keyword: "yono arcade baccarat",
+    volume: "new listing, unconfirmed demand",
+    verificationStatus: "unverified",
+    publishedAt: "2026-11-27",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
