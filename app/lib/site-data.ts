@@ -885,6 +885,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     publishedAt: "2026-11-10",
   },
   {
+    slug: "/blog/spin-dost-apk-download",
+    title: "Spin Dost APK Download & Promo Code — Launching 1 December 2026",
+    description:
+      "Spin Dost launches 1 Dec 2026, 8:00 AM IST, as the newest real-money app on the Yono network. What's confirmed so far, and what to check once it goes live.",
+    icon: "gamepad",
+    image: "/images/platforms/spin-dost.webp",
+    keyword: "spin dost apk download",
+    volume: "new listing",
+    verificationStatus: "verified",
+    publishedAt: "2026-11-27",
+  },
+  {
     slug: "/blog/rush-gala-apk-download",
     title: "Rush Gala APK Download & Promo Code — Live Now",
     description:
