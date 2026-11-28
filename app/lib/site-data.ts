@@ -1220,6 +1220,18 @@ export const BLOG_PILLARS: BlogPillar[] = [
     verificationStatus: "unverified",
     publishedAt: "2026-11-27",
   },
+  {
+    slug: "/blog/complete-list-of-all-yono-apps",
+    title: "Complete List of All Yono-Network Apps (2026), Newest First",
+    description:
+      "All 33 Yono-network apps we track, in one list — category, launch date and current status for each, newest arrivals first. Independent, unofficial.",
+    icon: "store",
+    image: "/images/guides/complete-list-of-all-yono-apps.webp",
+    keyword: "complete list of all yono games",
+    volume: "new listing",
+    verificationStatus: "unverified",
+    publishedAt: "2026-11-28",
+  },
 ];
 
 /** Blog posts that are live now (scheduled ones appear from 07:00 IST on their date). */
