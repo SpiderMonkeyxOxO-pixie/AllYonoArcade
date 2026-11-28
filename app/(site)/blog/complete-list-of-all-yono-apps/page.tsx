@@ -59,11 +59,57 @@ const BREADCRUMB_SCHEMA = {
   ],
 };
 
+const DIWA_URL = "https://allyonoarcade.com/blog/diwa-apps-list-which-is-which";
+
+const APP_ITEM_LIST_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Every Yono-Network App We Track, Newest First",
+  itemListOrder: "https://schema.org/ItemListOrderDescending",
+  numberOfItems: 33,
+  itemListElement: [
+    { "@type": "ListItem", position: 1, item: { "@type": "Thing", name: "Spin Dost", url: "https://allyonoarcade.com/blog/spin-dost-apk-download" } },
+    { "@type": "ListItem", position: 2, item: { "@type": "Thing", name: "Rush Gala", url: "https://allyonoarcade.com/blog/rush-gala-apk-download" } },
+    { "@type": "ListItem", position: 3, item: { "@type": "Thing", name: "123 Rummy", url: "https://allyonoarcade.com/blog/123-rummy-apk-download" } },
+    { "@type": "ListItem", position: 4, item: { "@type": "Thing", name: "Cash Rummy", url: "https://allyonoarcade.com/blog/cash-rummy-apk-download" } },
+    { "@type": "ListItem", position: 5, item: { "@type": "Thing", name: "Spin Rummy", url: "https://allyonoarcade.com/blog/spin-rummy-apk-download" } },
+    { "@type": "ListItem", position: 6, item: { "@type": "Thing", name: "VIP Rummy", url: "https://allyonoarcade.com/blog/vip-rummy-apk-download" } },
+    { "@type": "ListItem", position: 7, item: { "@type": "Thing", name: "Jaiho Play", url: "https://allyonoarcade.com/blog/jaiho-play-apk-download" } },
+    { "@type": "ListItem", position: 8, item: { "@type": "Thing", name: "Jeet Spin", url: "https://allyonoarcade.com/blog/jeet-spin-apk-download" } },
+    { "@type": "ListItem", position: 9, item: { "@type": "Thing", name: "Money Rummy", url: "https://allyonoarcade.com/blog/money-rummy-apk-download" } },
+    { "@type": "ListItem", position: 10, item: { "@type": "Thing", name: "Gold Rummy" } },
+    { "@type": "ListItem", position: 11, item: { "@type": "Thing", name: "101z" } },
+    { "@type": "ListItem", position: 12, item: { "@type": "Thing", name: "Club INR" } },
+    { "@type": "ListItem", position: 13, item: { "@type": "Thing", name: "DhanGame" } },
+    { "@type": "ListItem", position: 14, item: { "@type": "Thing", name: "Rummy 91" } },
+    { "@type": "ListItem", position: 15, item: { "@type": "Thing", name: "Win Rummy" } },
+    { "@type": "ListItem", position: 16, item: { "@type": "Thing", name: "Yono 777" } },
+    { "@type": "ListItem", position: 17, item: { "@type": "Thing", name: "Diwa777", url: DIWA_URL } },
+    { "@type": "ListItem", position: 18, item: { "@type": "Thing", name: "DiwaAce", url: DIWA_URL } },
+    { "@type": "ListItem", position: 19, item: { "@type": "Thing", name: "DiwaBonus", url: DIWA_URL } },
+    { "@type": "ListItem", position: 20, item: { "@type": "Thing", name: "DiwaFun", url: DIWA_URL } },
+    { "@type": "ListItem", position: 21, item: { "@type": "Thing", name: "DiwaGame", url: DIWA_URL } },
+    { "@type": "ListItem", position: 22, item: { "@type": "Thing", name: "DiwaKing", url: DIWA_URL } },
+    { "@type": "ListItem", position: 23, item: { "@type": "Thing", name: "DiwaLucky", url: DIWA_URL } },
+    { "@type": "ListItem", position: 24, item: { "@type": "Thing", name: "DiwaPlay", url: DIWA_URL } },
+    { "@type": "ListItem", position: 25, item: { "@type": "Thing", name: "DiwaRummy", url: DIWA_URL } },
+    { "@type": "ListItem", position: 26, item: { "@type": "Thing", name: "DiwaSlot", url: DIWA_URL } },
+    { "@type": "ListItem", position: 27, item: { "@type": "Thing", name: "DiwaSpin", url: DIWA_URL } },
+    { "@type": "ListItem", position: 28, item: { "@type": "Thing", name: "DiwaTop", url: DIWA_URL } },
+    { "@type": "ListItem", position: 29, item: { "@type": "Thing", name: "DiwaVIP", url: DIWA_URL } },
+    { "@type": "ListItem", position: 30, item: { "@type": "Thing", name: "DiwaWin", url: DIWA_URL } },
+    { "@type": "ListItem", position: 31, item: { "@type": "Thing", name: "DiwaWow", url: DIWA_URL } },
+    { "@type": "ListItem", position: 32, item: { "@type": "Thing", name: "DiwaX", url: DIWA_URL } },
+    { "@type": "ListItem", position: 33, item: { "@type": "Thing", name: "Goodslots", url: DIWA_URL } },
+  ],
+};
+
 export default function CompleteListOfAllYonoAppsPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ARTICLE_SCHEMA) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(BREADCRUMB_SCHEMA) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(APP_ITEM_LIST_SCHEMA) }} />
 
       <PageHeader
         eyebrow="App Guide"
